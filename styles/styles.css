@@ -42,3 +42,18 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
+
+.titlebar{
+  display:flex;
+  align-items: baseline;
+  background-color: yellow;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /* background-color: yellow; */
+  color: green;
+  flex-grow: 8;
+}
