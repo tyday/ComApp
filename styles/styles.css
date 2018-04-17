@@ -57,3 +57,18 @@
   color: green;
   flex-grow: 8;
 }
+
+.logoTitle{
+  text-align: center;
+}
+
+.logoTitle h1{
+  
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  border-bottom: 1px solid black;
+}
+.logoTitle h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; 
+}
