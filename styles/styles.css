@@ -6,6 +6,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  /* flex-grow: 1; */
 }
 
 /* Dropdown button on hover & focus */
@@ -57,7 +58,9 @@
   color: green;
   flex-grow: 8;
 }
-
+.spacer{
+  flex-grow: 2;
+}
 .logoTitle{
   text-align: center;
 }
@@ -71,4 +74,9 @@
 .logoTitle h5{
   font-family: 'Raleway', sans-serif;
   font-weight: 700; 
+}
+.logoTitle img{
+  position: relative;
+  /* top:.4em; */
+  height: .8em;
 }
