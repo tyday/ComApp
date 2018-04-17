@@ -10,14 +10,14 @@
 
 
     </head>
-    <body>
+    <body onload="openSection('frontpage')">
         <div class="titlebar">
         <div class="dropdown">
             <button onclick="fncBtnDropClick()" class="dropbtn">Menu</button>
             <!-- <h1>Comfest</h1> -->
             <div id="myDropdown" class="dropdown-content">
-            <a href="#home" class="active">Home</a>
-            <a href="#purpose">Purpose</a>
+            <a onclick="openSection('frontpage')" class="active" id="defaultpage">Home</a>
+            <a onclick="openSection('sctPurpose')">Purpose</a>
             <a href="#program">Program</a>
             <a href="#website">Website</a>
             <a href="#volunteer">Volunteer</a>
@@ -28,8 +28,8 @@
         <div class="spacer"></div>
         </div><!--/titlebar--> 
     <script src="scripts/main.js"></script>
-    <!-- front page -->
-    <div class="frontpage">
+    <!-- Section Frontpage -->
+    <div class="tabcontent" id="frontpage">
         <header class="logoTitle"><h2>THE C<img src="images/Comfest-Logo-Basic.png">MMUNITY FESTIVAL</h2><h5>EST.1972</h5></header>
         <div class="buttongroup">
             <div class="buttonpackage">
@@ -60,6 +60,8 @@
 
 
     </div><!--/front page-->
+    <!-- Section Purpose -->
+    <div class="tabcontent" id="sctPurpose"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
     </body>
 
 </html>

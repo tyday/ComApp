@@ -17,4 +17,18 @@ window.onclick = function(event) {
       }
     }
   }
-} 
+}
+/**********
+ * open tabs that correspond to menu name or front page button
+ * https://www.w3schools.com/howto/howto_js_tab_header.asp
+ */
+function openSection(sctName) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    // Show the specific tab content
+    document.getElementById(sctName).style.display = "block";
+}
