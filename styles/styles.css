@@ -68,10 +68,11 @@
 .spacer{
   flex-grow: 4;
 }
+
+/* front page */
 .logoTitle{
   text-align: center;
 }
-
 .logoTitle h2{
   
   font-family: 'Raleway', sans-serif;
@@ -86,4 +87,18 @@
   position: relative;
   /* top:.4em; */
   height: .8em;
+}
+.buttongroup{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 0em 1em 0em 1em;
+}
+.buttonpackage img{
+  height: 5em;
+}
+.buttonpackage p{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e8554e;
 }
