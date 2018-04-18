@@ -33,3 +33,9 @@ function openSection(sctName) {
     document.getElementById(sctName).style.display = "block";
     document.getElementById('pagetitle').innerHTML = sctName.slice(3);
 }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
+  }
