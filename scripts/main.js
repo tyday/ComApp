@@ -31,4 +31,5 @@ function openSection(sctName) {
     }
     // Show the specific tab content
     document.getElementById(sctName).style.display = "block";
+    document.getElementById('pagetitle').innerHTML = sctName.slice(3);
 }

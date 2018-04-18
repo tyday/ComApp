@@ -10,58 +10,86 @@
 
 
     </head>
-    <body onload="openSection('frontpage')">
+    <body onload="openSection('sctComfest')">
         <div class="titlebar">
         <div class="dropdown">
             <button onclick="fncBtnDropClick()" class="dropbtn">Menu</button>
             <!-- <h1>Comfest</h1> -->
             <div id="myDropdown" class="dropdown-content">
-            <a onclick="openSection('frontpage')" class="active" id="defaultpage">Home</a>
+            <a onclick="openSection('sctComfest')" class="active" id="defaultpage">Home</a>
             <a onclick="openSection('sctPurpose')">Purpose</a>
-            <a href="#program">Program</a>
-            <a href="#website">Website</a>
-            <a href="#volunteer">Volunteer</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#funmap">Funmap</a>
+            <a onclick="openSection('sctProgram')">Program</a>
+            <a onclick="openSection('sctWebsite')">Website</a>
+            <a onclick="openSection('sctVolunteer')">Volunteer</a>
+            <a onclick="openSection('sctSchedule')">Schedule</a>
+            <a onclick="openSection('sctMap')">Map</a>
         </div></div>
-        <div class="title"><h3>Comfest</h3></div>
+        <div class="title"><h3 id="pagetitle">Comfest</h3></div>
         <div class="spacer"></div>
         </div><!--/titlebar--> 
     <script src="scripts/main.js"></script>
     <!-- Section Frontpage -->
-    <div class="tabcontent" id="frontpage">
+    <div class="tabcontent" id="sctComfest">
         <header class="logoTitle"><h2>THE C<img src="images/Comfest-Logo-Basic.png">MMUNITY FESTIVAL</h2><h5>EST.1972</h5></header>
         <div class="buttongroup">
-            <div class="buttonpackage">
+            <div class="buttonpackage" onclick="openSection('sctPurpose')">
                 <img src="images/Purpose.svg" alt="map icon"/>
                 <p>Purpose</p>
             </div>
-            <div class="buttonpackage">
+            <div class="buttonpackage" onclick="openSection('sctProgram')">
                 <img src="images/Program.svg" alt="map icon" />
                 <p>Program</p>
             </div>
-            <div class="buttonpackage">
+            <div class="buttonpackage" onclick="openSection('sctWebsite')">
                 <img src="images/Website.svg" alt="map icon" />
                 <p>Website</p>
             </div>
-            <div class="buttonpackage">
+            <div class="buttonpackage" onclick="openSection('sctVolunteer')">
                 <img src="images/Volunteer.svg" alt="map icon" />
                 <p>Volunteer</p>
             </div>
-            <div class="buttonpackage">
+            <div class="buttonpackage" onclick="openSection('sctSchedule')">
                 <img src="images/Schedule.svg" alt="map icon" />
                 <p>Schedule</p>
             </div>
-            <div class="buttonpackage">
+            <div class="buttonpackage" onclick="openSection('sctMap')">
                 <img src="images/Map.svg" alt="map icon" />
                 <p>Map</p>
             </div>
         </div>
 
 
-    </div><!--/front page-->
+    </div><!--end front page-->
     <!-- Section Purpose -->
-    <div class="tabcontent" id="sctPurpose"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-    </body>
+    <div class="tabcontent" id="sctPurpose">
+        <h3>The Community Festival is guided by its Principles. The Principles are statements of what the members believe is basically important. They are:</h3>
+        <ul>
+            <li>We think that people ought to work for the collective good of all people rather than for personal gain. We support cooperation and collective activity rather than competition and individual profit.</li>
+            <li>The basic necessities of life are a right and not a privilege. People have the collective right to control the conditions of their lives.</li>
+            <li>People should strive to conduct their lives in harmony with the environment.</li>
+            <li>We recognize that there are primary attitudes which divide and oppress people. These attitudes are usually shown by prejudice against people on the basis of age, class, ability, income, race, sex and sexual preference/orientation.</li>
+            <li>We seek to eliminate these attitudes.</li>
+            <li>The Statement of Principles is more important than any other writings of the Community Festival.</li>
+        </ul>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+    
+    <!-- end Purpose -->
+    <!-- Section Program -->
+    <div class="tabcontent" id="sctProgram"><h1>Program</h1></div>
+    <!-- end Program -->
+    <!-- Section Website -->
+    <div class="tabcontent" id="sctWebsite"><h1>Website</h1></div>
+    <!-- end Website -->
+    <!-- Section Volunteer -->
+    <div class="tabcontent" id="sctVolunteer"><h1>Volunteering</h1></div>
+    <!-- end Volunteer -->
+    <!-- Section Schedule -->
+    <div class="tabcontent" id="sctSchedule"><h1>Schedule</h1></div>
+    <!-- end Schedule -->
+    <!-- Section Map -->
+    <div class="tabcontent" id="sctMap"><img src="images/FestivalMap-Test3.svg" alt="Park Map"></div>
+    <!-- end Map -->
+
+</body>
 
 </html>
