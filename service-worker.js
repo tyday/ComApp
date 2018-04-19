@@ -11,7 +11,11 @@ var urlsToCache = [
   '/images/Purpose.svg',
   '/images/Schedule.svg',
   '/images/Volunteer.svg',
-  '/images/Website.svg'
+  '/images/Website.svg',
+  '/images/ComfestLogo-Basic-48.png',
+  '/images/ComfestLogo-Basic-96.png',
+  '/images/ComfestLogo-Basic-192.png',
+  '/images/ComfestLogo-Basic.png'
 ];
 
 self.addEventListener('install', function(event) {

@@ -1,0 +1,22 @@
+{
+  "short_name": "ComFest",
+  "name": "Community Festival App",
+  "icons": [
+    {
+      "src": "images/ComfestLogo-Basic-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/ComfestLogo-Basic-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/ComfestLogo-Basic-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true"
+}
