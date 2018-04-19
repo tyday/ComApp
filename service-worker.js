@@ -4,7 +4,7 @@ var urlsToCache = [
   '/index.html',
   '/styles/styles.css',
   '/scripts/main.js',
-  '/images/FestivalMap-Test3.svg',
+  '/images/FestivalMap.svg',
   '/images/FunMap.svg',
   '/images/Map.svg',
   '/images/Program.svg',
