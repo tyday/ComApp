@@ -39,3 +39,30 @@ if ('serviceWorker' in navigator) {
              .register('./service-worker.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
+
+/*****
+ * Events to download performer list
+ * Set to happen after window loads to prevent slow load
+ */
+window.addEventListener("load", getPerformerList());
+
+function getPerformerList(){
+  console.log('fetch started');
+  fetch('api/findSchedule.php')
+    .then(
+      function(response){
+        if (response.status !== 200) {
+          console.log("Looks like there was a problem. Status Code: " +
+            response.status);
+          return;
+        }
+        // Examine the text in the response
+        response.json().then(function(data){
+          console.log(data);
+        });
+      }
+    )
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    }); 
+}

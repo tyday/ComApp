@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+    window.addEventListener("load", getPerformerList());
+
+function getPerformerList(){
+  console.log('fetch started');
+  fetch('/db-test.php')
+    .then(function(response){
+      console.log(response);
+      console.log(response.json);
+      return response.json();
+    })
+    .then(function(myjson){
+      console.log(myJson);
+    });
+}
+</script>

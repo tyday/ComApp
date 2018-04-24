@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Comfest PWA</title>
-        <link rel="shortcut icon" href="images/ComfestLogo-Basic-48.png" type="image/x-icon">
-        <link rel="stylesheet" href = "styles/styles.css?v=1">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="apple-touch-icon" href="/images/ComfestLogo-Basic-192.png">
-        <meta name='mobile-web-app-capable' content='yes'>
-        <meta name='apple-mobile-web-app-capable' content='yes'>
-        <meta name='application-name' content='ComFest'>
-        <meta name='apple-mobile-web-app-status-bar-style' content='black'>
-        <meta name='apple-mobile-web-app-title' content='ComFest'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,900&text=THECOMUNIYFS%20.1972VAL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfest PWA</title>
+    <link rel="shortcut icon" href="images/ComfestLogo-Basic-48.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/ComfestLogo-Basic-192.png">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='ComFest'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='ComFest'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,900&text=THECOMUNIYFS%20.1972VAL">
 
 
-    </head>
-    <body onload="openSection('sctComfest')">
-        <div class="titlebar">
+</head>
+
+<body onload="openSection('sctComfest')">
+    <div class="titlebar">
         <div class="dropdown">
             <button onclick="fncBtnDropClick()" class="dropbtn">Menu</button>
             <!-- <h1>Comfest</h1> -->
             <div id="myDropdown" class="dropdown-content">
-            <a onclick="openSection('sctComfest')" class="active" id="defaultpage">Home</a>
-            <a onclick="openSection('sctPurpose')">Purpose</a>
-            <a onclick="openSection('sctProgram')">Program</a>
-            <a onclick="openSection('sctWebsite')">Website</a>
-            <a onclick="openSection('sctVolunteer')">Volunteer</a>
-            <a onclick="openSection('sctSchedule')">Schedule</a>
-            <a onclick="openSection('sctMap')">Map</a>
-        </div></div>
-        <div class="title"><h3 id="pagetitle">Comfest</h3></div>
+                <a onclick="openSection('sctComfest')" class="active" id="defaultpage">Home</a>
+                <a onclick="openSection('sctPurpose')">Purpose</a>
+                <a onclick="openSection('sctProgram')">Program</a>
+                <a onclick="openSection('sctWebsite')">Website</a>
+                <a onclick="openSection('sctVolunteer')">Volunteer</a>
+                <a onclick="openSection('sctSchedule')">Schedule</a>
+                <a onclick="openSection('sctMap')">Map</a>
+            </div>
+        </div>
+        <div class="title">
+            <h3 id="pagetitle">Comfest</h3>
+        </div>
         <div class="spacer"></div>
-        </div><!--/titlebar--> 
-    <script src="scripts/main.js?v=1"></script>
+    </div>
+    <!--/titlebar-->
+    <script src="scripts/main.js"></script>
     <!-- Section Frontpage -->
     <div class="tabcontent" id="sctComfest">
-        <header class="logoTitle"><h2>THE C<img src="images/ComfestLogo-Basic.png">MMUNITY FESTIVAL</h2><h5>EST.1972</h5></header>
+        <header class="logoTitle">
+            <h2>THE C
+                <img src="images/ComfestLogo-Basic.png">MMUNITY FESTIVAL</h2>
+            <h5>EST.1972</h5>
+        </header>
         <div class="buttongroup">
             <div class="buttonpackage" onclick="openSection('sctPurpose')">
-                <img src="images/Purpose.svg" alt="map icon"/>
+                <img src="images/Purpose.svg" alt="map icon" />
                 <p>Purpose</p>
             </div>
             <div class="buttonpackage" onclick="openSection('sctProgram')">
@@ -66,37 +76,80 @@
         </div>
 
 
-    </div><!--end front page-->
+    </div>
+    <!--end front page-->
     <!-- Section Purpose -->
     <div class="tabcontent" id="sctPurpose">
-        <h3>The Community Festival is guided by its Principles. The Principles are statements of what the members believe is basically important. They are:</h3>
+        <h3>The Community Festival is guided by its Principles. The Principles are statements of what the members believe is
+            basically important. They are:</h3>
         <ul>
-            <li>We think that people ought to work for the collective good of all people rather than for personal gain. We support cooperation and collective activity rather than competition and individual profit.</li>
-            <li>The basic necessities of life are a right and not a privilege. People have the collective right to control the conditions of their lives.</li>
+            <li>We think that people ought to work for the collective good of all people rather than for personal gain. We support
+                cooperation and collective activity rather than competition and individual profit.</li>
+            <li>The basic necessities of life are a right and not a privilege. People have the collective right to control the
+                conditions of their lives.</li>
             <li>People should strive to conduct their lives in harmony with the environment.</li>
-            <li>We recognize that there are primary attitudes which divide and oppress people. These attitudes are usually shown by prejudice against people on the basis of age, class, ability, income, race, sex and sexual preference/orientation.</li>
+            <li>We recognize that there are primary attitudes which divide and oppress people. These attitudes are usually shown
+                by prejudice against people on the basis of age, class, ability, income, race, sex and sexual preference/orientation.</li>
             <li>We seek to eliminate these attitudes.</li>
             <li>The Statement of Principles is more important than any other writings of the Community Festival.</li>
         </ul>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-    
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.
+        </p>
+    </div>
+
     <!-- end Purpose -->
     <!-- Section Program -->
-    <div class="tabcontent" id="sctProgram" >
+    <div class="tabcontent" id="sctProgram">
         <object data="assets/ComFest2016.pdf" width="100%" height="500px"></object>
-        </div>
+    </div>
     <!-- end Program -->
     <!-- Section Website -->
-    <div class="tabcontent" id="sctWebsite"><h1>Website</h1></div>
+    <div class="tabcontent" id="sctWebsite">
+        <h1>Website</h1>
+    </div>
     <!-- end Website -->
     <!-- Section Volunteer -->
-    <div class="tabcontent" id="sctVolunteer"><h1>Volunteering</h1></div>
+    <div class="tabcontent" id="sctVolunteer">
+        <h1>Volunteering</h1>
+    </div>
     <!-- end Volunteer -->
     <!-- Section Schedule -->
-    <div class="tabcontent" id="sctSchedule"><h1>Schedule</h1></div>
+    <div class="tabcontent" id="sctSchedule">
+        <h1>Schedule</h1>
+        <ul>
+            <li class="slot-card">
+                <div class="card-time">1:50 PM</div>
+                <div class="card-stage">I wish you Jazz</div>
+                <div class="card-day">Friday</div>
+                <div class="card-band">Band Name</div>
+                <div class="card-description">Description</div>
+            </li>
+            <li class="slot-card">
+                <h4>1:50 PM</h4>
+                <h4>I wish you Jazz</h4>
+                <h4>Friday</h4>
+                <div class="card-band">Band Name</div>
+                <div class="card-description">Description</div>
+            </li>
+            <li class="slot-card">
+                <h4>1:50 PM</h4>
+                <h4>I wish you Jazz</h4>
+                <h4>Friday</h4>
+                <div class="card-band">Band Name</div>
+                <div class="card-description">Description</div>
+            </li>
+        </ul>
+    </div>
     <!-- end Schedule -->
     <!-- Section Map -->
-    <div class="tabcontent" id="sctMap"><img src="images/FestivalMap.svg" alt="Park Map"></div>
+    <div class="tabcontent" id="sctMap">
+        <img src="images/FestivalMap.svg" alt="Park Map">
+    </div>
     <!-- end Map -->
 
 </body>

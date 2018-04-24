@@ -106,3 +106,50 @@
   background-color: #e8554e;
   color: white;
 }
+/* Schedule CSS */
+#sctSchedule ul{
+  padding-left: 0em;
+}
+.slot-card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+/*   background-color:red; */
+  grid-gap:10 px;
+  box-shadow: 0 .2em .5em 0 rgba(0,0,0,0.9);
+  margin:1em;
+}
+.slot-card h4{
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+/*   background-color:orange; */
+  padding:.5em;
+  margin: 1em 0 .5em 0;
+}
+.card-time, .card-stage, .card-day{
+  padding:.5em;
+  margin: 1em 0 .5em 0;
+  text-align:center;
+  font:bold 1em Helvetica, sans-serif;
+}
+.card-time{
+  grid-column:1;
+}
+.card-stage{
+  grid-column:2;
+}
+.card-day{
+  grid-column:3;
+}
+.card-band{
+  grid-column:1/4;
+  grid-row:2;
+  text-align: center;
+  font:bold 1.5em  Helvetica, sans-serif;
+}
+.card-description{
+  grid-column:1/4;
+  grid-row:3;
+  text-align:center;
+  font: 1em Helvetica, sans-serif;
+  margin: 0.5em 0 .5em 0;
+}
