@@ -107,7 +107,7 @@
   color: white;
 }
 /* Schedule CSS */
-#sctSchedule ul{
+#performancelist{
   padding-left: 0em;
 }
 .slot-card{
@@ -130,6 +130,7 @@
   margin: 1em 0 .5em 0;
   text-align:center;
   font:bold 1em Helvetica, sans-serif;
+  grid-row: 1;
 }
 .card-time{
   grid-column:1;
