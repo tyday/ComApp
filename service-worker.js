@@ -1,7 +1,7 @@
-var CACHE_NAME = 'my-site-cache-v2.06';
+var CACHE_NAME = 'my-site-cache-v2.09';
 var urlsToCache = [
   '/',
-  // '/index.html',
+  '/index.html',
   '/styles/styles.css',
   '/scripts/main.js',
   '/images/FestivalMap.svg',
