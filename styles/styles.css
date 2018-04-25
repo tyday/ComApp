@@ -1,6 +1,6 @@
  /* Dropdown Button */
  .dropbtn {
-  background-color: #e53d34; /*#3498DB;*/
+  background-color: #e53d34;
   color: white;
   padding: 16px;
   font-size: 1em;
@@ -49,9 +49,16 @@
 .show {display:block;} 
 
 .titlebar{
+  position: fixed;
+  top: 0em;
+  left: 0%;
+  width: 100%;
   display:flex;
   align-items: baseline;
   background-color: #e8554e;
+}
+.maincontentholder{
+  height: 59px;
 }
 
 .title {
@@ -70,7 +77,7 @@
 }
 
 /* front page */
-.logoTitle{
+/* .logoTitle{
   text-align: center;
 }
 .logoTitle h2{
@@ -82,11 +89,11 @@
 .logoTitle h5{
   font-family: 'Raleway', sans-serif;
   font-weight: 700; 
-}
+} */
 .logoTitle img{
-  position: relative;
+  /* position: relative; */
   /* top:.4em; */
-  height: .8em;
+  height: 4em;
 }
 .buttongroup{
   display: flex;
