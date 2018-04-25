@@ -77,33 +77,43 @@ function getPerformerList(){
 function placePerformanceList(data){
   var card;
   var performerList = document.getElementById("performancelist")
-
-  card = createPerformanceCard('7:00 AM','Tuesday','Off-Ramp','T-Rex','Fictional,Delusional,Tempremental');
-  performerList.appendChild(card);
-
-  for(performance in data){
+  // for(performance in data){
+  //   card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc);
+  //   performerList.appendChild(card);
+  data.forEach(function(performance){
     card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc);
     performerList.appendChild(card);
-  }
+  });
+  
 
 }
 function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords){
+  var stageColors = {
+    "Bozo":"stage-bozo",
+    "Gazebo":"stage-gazebo",
+    "Off Ramp":"stage-offramp",
+    "I Wish You Jazz":"stage-jazz",
+    "Live Arts":"stage-livearts",
+    "Solar":"stage-solar",
+    "Peace & Healing Pavilion":"stage-peace",
+    "KiDSART":"stage-kidsart"
+   }
   var card = document.createElement("li");
   card.className="slot-card";
   var eleTime = document.createElement("div");
   var subTime = document.createTextNode(vTime);
   eleTime.appendChild(subTime);
-  eleTime.className="card-time";
+  eleTime.className="card-time "+stageColors[vStage];
 
   var eleDay = document.createElement("div");
   var subDay = document.createTextNode(vDay);
   eleDay.appendChild(subDay);
-  eleDay.className="card-day";
+  eleDay.className="card-day "+stageColors[vStage];
 
   var eleStage = document.createElement("div");
   var subStage = document.createTextNode(vStage);
   eleStage.appendChild(subStage);
-  eleStage.className="card-stage";
+  eleStage.className="card-stage "+stageColors[vStage];
 
   var elePerformer = document.createElement("div");
   var subPerformer = document.createTextNode(vPerformer);
