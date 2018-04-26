@@ -20,7 +20,17 @@
   display: inline-block;
   flex-grow: 1;
 }
-.dropdown a{
+.rt-dropdown {
+  /* float: right;
+  position: relative;
+  display: inline-block;
+  flex-grow: 1;
+  text-align: left; */
+  float: right;
+    position: relative;
+    display: inline-block;
+}
+.dropdown a, .rt-dropdown-content a{
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -33,9 +43,18 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+.rt-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a, .rt-dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -43,10 +62,11 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover, .rt-dropdown-content a:hover {background-color: #ddd}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
+/* .show-jazz{display:block;} */
 
 .titlebar{
   position: fixed;
@@ -73,14 +93,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .spacer{
-  flex-grow: 4;
+  text-align: right;
+  flex-grow: 1;
+
 }
 
 /* front page */
-/* .logoTitle{
+ .logoTitle{
   text-align: center;
 }
-.logoTitle h2{
+/*.logoTitle h2{
   
   font-family: 'Raleway', sans-serif;
   font-weight: 900;

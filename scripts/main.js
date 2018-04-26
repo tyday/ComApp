@@ -1,7 +1,7 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function fncBtnDropClick() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function fncBtnDropClick(eleID) {
+    document.getElementById(eleID).classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -29,9 +29,32 @@ function openSection(sctName) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
+    if(sctName=='sctSchedule'){
+      document.getElementById('filterButton').style.display = "inline-block";
+    } else {
+      document.getElementById('filterButton').style.display = "none";
+    };
     // Show the specific tab content
     document.getElementById(sctName).style.display = "block";
     document.getElementById('pagetitle').innerHTML = sctName.slice(3);
+}
+function toggleSlot(showstage){
+  var stage = "stage-" + showstage.slice(5);
+  var elementID = "btn-" + showstage.slice(5); 
+  var slots = document.getElementsByClassName(showstage);
+  for(i=0;i<slots.length;i++){
+    if (slots[i].style.display === 'none'){
+      slots[i].style.display = 'grid';
+      if(i==0){
+        document.getElementById(elementID).classList.add(stage);
+      }
+    } else {
+      slots[i].style.display = 'none';
+      if(i==0){
+        document.getElementById(elementID).classList.remove(stage);
+      }
+    }
+  }
 }
 
 if ('serviceWorker' in navigator) {
@@ -89,31 +112,31 @@ function placePerformanceList(data){
 }
 function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords){
   var stageColors = {
-    "Bozo":"stage-bozo",
-    "Gazebo":"stage-gazebo",
-    "Off Ramp":"stage-offramp",
-    "I Wish You Jazz":"stage-jazz",
-    "Live Arts":"stage-livearts",
-    "Solar":"stage-solar",
-    "Peace & Healing Pavilion":"stage-peace",
-    "KiDSART":"stage-kidsart"
+    "Bozo":["stage-bozo", "show-bozo"],
+    "Gazebo":["stage-gazebo", "show-gazebo"],
+    "Off Ramp":["stage-offramp", "show-offramp"],
+    "I Wish You Jazz":["stage-jazz", "show-jazz"],
+    "Live Arts":["stage-livearts", "show-livearts"],
+    "Solar":["stage-solar", "show-solar"],
+    "Peace & Healing Pavilion":["stage-peace", "show-peace"],
+    "KiDSART":["stage-kidsart","show-kidsart"]
    }
   var card = document.createElement("li");
-  card.className="slot-card";
+  card.className="slot-card " + stageColors[vStage][1];
   var eleTime = document.createElement("div");
   var subTime = document.createTextNode(vTime);
   eleTime.appendChild(subTime);
-  eleTime.className="card-time "+stageColors[vStage];
+  eleTime.className="card-time "+stageColors[vStage][0];
 
   var eleDay = document.createElement("div");
   var subDay = document.createTextNode(vDay);
   eleDay.appendChild(subDay);
-  eleDay.className="card-day "+stageColors[vStage];
+  eleDay.className="card-day "+stageColors[vStage][0];
 
   var eleStage = document.createElement("div");
   var subStage = document.createTextNode(vStage);
   eleStage.appendChild(subStage);
-  eleStage.className="card-stage "+stageColors[vStage];
+  eleStage.className="card-stage "+stageColors[vStage][0];
 
   var elePerformer = document.createElement("div");
   var subPerformer = document.createTextNode(vPerformer);

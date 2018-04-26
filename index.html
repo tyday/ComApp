@@ -22,9 +22,9 @@
 <body onload="openSection('sctComfest')">
     <div class="titlebar">
         <div class="dropdown">
-            <button onclick="fncBtnDropClick()" class="dropbtn">Menu</button>
+            <button onclick="fncBtnDropClick('mainDropdown')" class="dropbtn">Menu</button>
             <!-- <h1>Comfest</h1> -->
-            <div id="myDropdown" class="dropdown-content">
+            <div id="mainDropdown" class="dropdown-content">
                 <a onclick="openSection('sctComfest')" class="active" id="defaultpage">Home</a>
                 <a onclick="openSection('sctPurpose')">Purpose</a>
                 <a onclick="openSection('sctProgram')">Program</a>
@@ -37,12 +37,27 @@
         <div class="title">
             <h3 id="pagetitle">Comfest</h3>
         </div>
-        <div class="spacer"></div>
+        <!-- <div class="spacer"> -->
+                <div class="rt-dropdown" id="filterButton">
+                        <button onclick="fncBtnDropClick('scheduleDropdown')" class="dropbtn">Filter</button>
+                        <!-- <h1>Comfest</h1> -->
+                        <div id="scheduleDropdown" class="rt-dropdown-content">
+                            <a id="btn-bozo" class="stage-bozo" onclick="toggleSlot('show-bozo')">Bozo</a>
+                            <a id="btn-gazebo" class="stage-gazebo" onclick="toggleSlot('show-gazebo')">Gazebo</a>
+                            <a id="btn-offramp" class="stage-offramp" onclick="toggleSlot('show-offramp')">Off Ramp</a>
+                            <a id="btn-jazz" class="stage-jazz" onclick="toggleSlot('show-jazz')">Jazz</a>
+                            <a id="btn-livearts" class="stage-livearts" onclick="toggleSlot('show-livearts')">Live Arts</a>
+                            <a id="btn-solar" class="stage-solar" onclick="toggleSlot('show-solar')">Solar</a>
+                            <a id="btn-peace" class="stage-peace" onclick="toggleSlot('show-peace')">Peace & Healing</a>
+                            <a id="btn-kidsart" class="stage-kidsart" onclick="toggleSlot('show-kidsart')">KiDSART</a>
+                        </div>
+                    <!-- </div> -->
+        </div>
     </div>
     <!--/titlebar-->
     <!--placing div to space everything below title bar-->
-    <div class="maincontentholder" ></div> 
-    
+    <div class="maincontentholder"></div>
+
     <!-- Section Frontpage -->
     <div class="tabcontent" id="sctComfest">
         <header class="logoTitle">
@@ -123,9 +138,12 @@
     <!-- end Volunteer -->
     <!-- Section Schedule -->
     <div class="tabcontent" id="sctSchedule">
-        <h1>Schedule-Test</h1>
+        <div class="subtitleSchedule">
+        
+    </div><!-- end subTitle-->
+        <!-- <h1>Schedule-Test</h1>-->
         <ul id="performancelist">
-            <!-- <li class="slot-card">
+            <!--<li class="slot-card show-jazz">
                 <div class="card-time">1:50 PM</div>
                 <div class="card-stage">I wish you Jazz</div>
                 <div class="card-day">Friday</div>
@@ -145,7 +163,7 @@
                 <h4>Friday</h4>
                 <div class="card-band">Band Name</div>
                 <div class="card-description">Description</div>
-            </li> -->
+            </li>-->
         </ul>
     </div>
     <!-- end Schedule -->
