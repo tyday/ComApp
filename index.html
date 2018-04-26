@@ -24,7 +24,7 @@
         <div class="dropdown">
             <button onclick="fncBtnDropClick('mainDropdown')" class="dropbtn">Menu</button>
             <!-- <h1>Comfest</h1> -->
-            <div id="mainDropdown" class="dropdown-content">
+            <div id="mainDropdown" class="dropdown-content dropdown-toggle">
                 <a onclick="openSection('sctComfest')" class="active" id="defaultpage">Home</a>
                 <a onclick="openSection('sctPurpose')">Purpose</a>
                 <a onclick="openSection('sctProgram')">Program</a>
@@ -41,7 +41,7 @@
                 <div class="rt-dropdown" id="filterButton">
                         <button onclick="fncBtnDropClick('scheduleDropdown')" class="dropbtn">Filter</button>
                         <!-- <h1>Comfest</h1> -->
-                        <div id="scheduleDropdown" class="rt-dropdown-content">
+                        <div id="scheduleDropdown" class="rt-dropdown-content dropdown-toggle">
                             <a id="btn-bozo" class="stage-bozo" onclick="toggleSlot('show-bozo')">Bozo</a>
                             <a id="btn-gazebo" class="stage-gazebo" onclick="toggleSlot('show-gazebo')">Gazebo</a>
                             <a id="btn-offramp" class="stage-offramp" onclick="toggleSlot('show-offramp')">Off Ramp</a>
@@ -50,6 +50,9 @@
                             <a id="btn-solar" class="stage-solar" onclick="toggleSlot('show-solar')">Solar</a>
                             <a id="btn-peace" class="stage-peace" onclick="toggleSlot('show-peace')">Peace & Healing</a>
                             <a id="btn-kidsart" class="stage-kidsart" onclick="toggleSlot('show-kidsart')">KiDSART</a>
+                            <a id="btn-friday" class="stage-friday" onclick="toggleSlot('show-friday')">Friday</a>
+                            <a id="btn-saturday" class="stage-saturday" onclick="toggleSlot('show-saturday')">Saturday</a>
+                            <a id="btn-sunday" class="stage-sunday" onclick="toggleSlot('show-sunday')">Sunday</a>
                         </div>
                     <!-- </div> -->
         </div>

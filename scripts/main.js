@@ -8,7 +8,7 @@ function fncBtnDropClick(eleID) {
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns = document.getElementsByClassName("dropdown-toggle");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -30,9 +30,9 @@ function openSection(sctName) {
         tabcontent[i].style.display = "none";
     }
     if(sctName=='sctSchedule'){
-      document.getElementById('filterButton').style.display = "inline-block";
+      document.getElementById('filterButton').style.visibility = "visible";
     } else {
-      document.getElementById('filterButton').style.display = "none";
+      document.getElementById('filterButton').style.visibility = "hidden";
     };
     // Show the specific tab content
     document.getElementById(sctName).style.display = "block";
@@ -119,10 +119,13 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords){
     "Live Arts":["stage-livearts", "show-livearts"],
     "Solar":["stage-solar", "show-solar"],
     "Peace & Healing Pavilion":["stage-peace", "show-peace"],
-    "KiDSART":["stage-kidsart","show-kidsart"]
+    "KiDSART":["stage-kidsart","show-kidsart"],
+    "Friday":"show-friday",
+    "Saturday":"show-saturday",
+    "Sunday":"show-sunday"
    }
   var card = document.createElement("li");
-  card.className="slot-card " + stageColors[vStage][1];
+  card.className="slot-card " + stageColors[vStage][1] +" "+ stageColors[vDay];
   var eleTime = document.createElement("div");
   var subTime = document.createTextNode(vTime);
   eleTime.appendChild(subTime);

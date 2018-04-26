@@ -78,7 +78,7 @@
   background-color: #e8554e;
 }
 .maincontentholder{
-  height: 59px;
+  height: 47px;
 }
 
 .title {
@@ -196,5 +196,11 @@
   background-color: #c27ba0;
 }.stage-kidsart{
   background-color: #dd7e6b;
+}.stage-friday{
+  background-color: #28de3f52;
+}.stage-saturday{
+  background-color: #28de3f52;
+}.stage-sunday{
+  background-color: #28de3f52;
 }
 
