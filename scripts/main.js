@@ -101,19 +101,22 @@ function toggleExtendedCard(card){
     // var query = {'Performer': card.children[3].innerHTML}
     //var data = getBandData(query);
     var getDescription = card.dataset.description;
+    if(getDescription == "null"){getDescription = ""};
     var getImage = card.dataset.image;
     var getWebsite = card.dataset.website;
     var cardExtension = document.createElement("div");
     var bandImage = document.createElement('img');
     var bandDescription = document.createElement('p');
     var subBandDescription = document.createTextNode(getDescription);
+    cardExtension.className = "card-extension";
     bandDescription.appendChild(subBandDescription);
     bandDescription.className = "card-extendedDescription";
     bandImage.src = getImage;
     bandImage.onerror = "imageError(this)";
     bandImage.className = "card-photo";
-    card.appendChild(bandImage);
-    card.appendChild(bandDescription);
+    cardExtension.appendChild(bandImage);
+    cardExtension.appendChild(bandDescription);
+    card.appendChild(cardExtension);
 
   // } else {
   //   toggle card on or off
