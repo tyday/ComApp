@@ -60,6 +60,11 @@ function toggleSlot(showstage){
     }
   }
 }
+function imageError(image){
+  image.onerror = "";
+  image.src = "images/ComfestLogo-Basic-48.png";
+
+}
 /***************
  * Grab the Band data from PHP file
  * findBandInfo.php
@@ -92,15 +97,20 @@ function toggleExtendedCard(card){
     card.classList.add("extended-card");
     // Grab photo info/ description/ website from server
     //
-    var data = {"Description":"Words about the band", "Image":"http://t2.ftcdn.net/jpg/00/43/60/13/400_F_43601359_7i5eXOlvXVmMms2NudQ7e3uykHuSV8PS.jpg","Website":"https://www.facebook.com/Blue-Spectrum-1439630629605363/"};
-    var query = {'Performer': card.children[3].innerHTML}
-    var data = getBandData(query);
+    // var data = {"Description":"Words about the band", "Image":"http://t2.ftcdn.net/jpg/00/43/60/13/400_F_43601359_7i5eXOlvXVmMms2NudQ7e3uykHuSV8PS.jpg","Website":"https://www.facebook.com/Blue-Spectrum-1439630629605363/"};
+    // var query = {'Performer': card.children[3].innerHTML}
+    //var data = getBandData(query);
+    var getDescription = card.dataset.description;
+    var getImage = card.dataset.image;
+    var getWebsite = card.dataset.website;
     var cardExtension = document.createElement("div");
     var bandImage = document.createElement('img');
     var bandDescription = document.createElement('p');
-    var subBandDescription = document.createTextNode(data["Description"]);
+    var subBandDescription = document.createTextNode(getDescription);
     bandDescription.appendChild(subBandDescription);
-    bandImage.src = data["Image"];
+    bandDescription.className = "card-extendedDescription";
+    bandImage.src = getImage;
+    bandImage.onerror = "imageError(this)";
     bandImage.className = "card-photo";
     card.appendChild(bandImage);
     card.appendChild(bandDescription);
@@ -129,7 +139,7 @@ function afterLoadEvents() {
 function getPerformerList(){
   //https://developers.google.com/web/updates/2015/03/introduction-to-fetch
   console.log('fetch started');
-  fetch('api/findSchedule.php')
+  fetch('api/findSchedule1.php')
     .then(
       function(response){
         if (response.status !== 200) {
@@ -157,13 +167,13 @@ function placePerformanceList(data){
   //   card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc);
   //   performerList.appendChild(card);
   data.forEach(function(performance){
-    card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc);
+    card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc,performance.Description, performance.Image, performance.WebSite);
     performerList.appendChild(card);
   });
   
 
 }
-function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords){
+function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescription, vImage, vWebsite){
   var stageColors = {
     "Bozo":["stage-bozo", "show-bozo"],
     "Gazebo":["stage-gazebo", "show-gazebo"],
@@ -180,6 +190,9 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords){
   var card = document.createElement("li");
   card.className="slot-card " + stageColors[vStage][1] +" "+ stageColors[vDay];
   var eleTime = document.createElement("div");
+  card.dataset.description = vDescription;
+  card.dataset.image = vImage;
+  card.dataset.website = vWebsite;
   var subTime = document.createTextNode(vTime);
   eleTime.appendChild(subTime);
   eleTime.className="card-time "+stageColors[vStage][0];

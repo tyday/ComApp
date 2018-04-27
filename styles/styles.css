@@ -181,6 +181,13 @@
 }
 .card-photo{
   grid-column: 1/4;
+  max-width: 90%;
+  justify-self: center
+}
+.card-extendedDescription{
+  grid-column: 1/4;
+  padding: 0em 1em;
+  font-family: Helvetica, sans-serif;
 }
 .stage-bozo{
   background-color: #ff7e79;
