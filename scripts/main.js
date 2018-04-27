@@ -17,7 +17,11 @@ window.onclick = function(event) {
       }
     }
   }
+  if (event.target.parentNode.matches('.slot-card')) {
+    toggleExtendedCard(event.target.parentNode);
+  }
 }
+
 /**********
  * open tabs that correspond to menu name or front page button
  * https://www.w3schools.com/howto/howto_js_tab_header.asp
@@ -55,6 +59,55 @@ function toggleSlot(showstage){
       }
     }
   }
+}
+/***************
+ * Grab the Band data from PHP file
+ * findBandInfo.php
+ * https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+ * 
+ */
+function getBandData(data){
+  var url = "api/findBandInfo.php"
+  return fetch(url, {
+    body: JSON.stringify(data),
+    cache: 'default',
+    credentials: 'same-origin',
+    headers: {'user-agent': 'Mozilla/4.0',
+              'content-type': 'application/json'
+    },
+    method: 'POST',
+    mode: 'cors',
+    redirect: 'follow',
+    referrer: 'no-referrer',
+    })
+    .then(response => response.json())
+}
+/************
+ * Toggle extended performance card
+ * 
+ */
+function toggleExtendedCard(card){
+  // if(card hasnt been updated){
+  //   fill out extended card info
+    card.classList.add("extended-card");
+    // Grab photo info/ description/ website from server
+    //
+    var data = {"Description":"Words about the band", "Image":"http://t2.ftcdn.net/jpg/00/43/60/13/400_F_43601359_7i5eXOlvXVmMms2NudQ7e3uykHuSV8PS.jpg","Website":"https://www.facebook.com/Blue-Spectrum-1439630629605363/"};
+    var query = {'Performer': card.children[3].innerHTML}
+    var data = getBandData(query);
+    var cardExtension = document.createElement("div");
+    var bandImage = document.createElement('img');
+    var bandDescription = document.createElement('p');
+    var subBandDescription = document.createTextNode(data["Description"]);
+    bandDescription.appendChild(subBandDescription);
+    bandImage.src = data["Image"];
+    bandImage.className = "card-photo";
+    card.appendChild(bandImage);
+    card.appendChild(bandDescription);
+
+  // } else {
+  //   toggle card on or off
+  // }
 }
 
 if ('serviceWorker' in navigator) {
