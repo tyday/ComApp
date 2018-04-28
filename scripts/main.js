@@ -92,7 +92,7 @@ function getBandData(data){
  * 
  */
 function toggleExtendedCard(card){
-  // if(card hasnt been updated){
+  if(!card.className.includes("extended-card")){
   //   fill out extended card info
     card.classList.add("extended-card");
     // Grab photo info/ description/ website from server
@@ -118,9 +118,14 @@ function toggleExtendedCard(card){
     cardExtension.appendChild(bandDescription);
     card.appendChild(cardExtension);
 
-  // } else {
-  //   toggle card on or off
-  // }
+  } else {
+    // toggle card on or off
+    if (card.children[5].style.display === 'none'){
+      card.children[5].style.display = 'flex';
+    } else {
+      card.children[5].style.display = 'none';
+    }    
+  }
 }
 
 if ('serviceWorker' in navigator) {
