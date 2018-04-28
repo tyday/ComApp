@@ -4,6 +4,7 @@ function fncBtnDropClick(eleID) {
     document.getElementById(eleID).classList.toggle("show");
 }
 
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -17,10 +18,11 @@ window.onclick = function(event) {
       }
     }
   }
-  if (event.target.parentNode.matches('.slot-card')) {
-    toggleExtendedCard(event.target.parentNode);
-  }
+  // if (event.target.parentNode.matches('.slot-card')) {
+  //   toggleExtendedCard(event.target.parentNode);
+  // }
 }
+// document.getElementsByClassName('slot-card').addEventListener("click",toggleExtendedCard(this),false);
 
 /**********
  * open tabs that correspond to menu name or front page button
@@ -201,6 +203,9 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
   card.dataset.description = vDescription;
   card.dataset.image = vImage;
   card.dataset.website = vWebsite;
+  // card.onclick =  "toggleExtendedCard(card);";
+  // card.addEventListener("click",toggleExtendedCard(card),false);
+  card.setAttribute("onclick","toggleExtendedCard(this)")
   var subTime = document.createTextNode(vTime);
   eleTime.appendChild(subTime);
   eleTime.className="card-time "+stageColors[vStage][0];

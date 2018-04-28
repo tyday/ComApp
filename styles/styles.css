@@ -116,6 +116,7 @@
   /* position: relative; */
   /* top:.4em; */
   height: 6em;
+  max-width: 90%;
 }
 .buttongroup{
   display: flex;
