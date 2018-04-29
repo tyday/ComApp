@@ -1,3 +1,4 @@
+var filteredList = [];
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function fncBtnDropClick(eleID) {
@@ -15,14 +16,10 @@ window.onclick = function(event) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
-      }
-    }
-  }
-  // if (event.target.parentNode.matches('.slot-card')) {
-  //   toggleExtendedCard(event.target.parentNode);
-  // }
+      };
+    };
+  };
 }
-// document.getElementsByClassName('slot-card').addEventListener("click",toggleExtendedCard(this),false);
 
 /**********
  * open tabs that correspond to menu name or front page button
@@ -44,29 +41,72 @@ function openSection(sctName) {
     document.getElementById(sctName).style.display = "block";
     document.getElementById('pagetitle').innerHTML = sctName.slice(3);
 }
+function inFilteredList(element){
+  return filteredList.includes(element)
+}
+function findCommonality(list_one, list_two){
+  return list_one.some (function(list_one_val){
+    return list_two.contains(list_one_val);
+  });
+}
+
 function toggleSlot(showstage){
   var stage = "stage-" + showstage.slice(5);
-  var elementID = "btn-" + showstage.slice(5); 
+  var elementID = "btn-" + showstage.slice(5);
+  var show = "show-" + showstage.slice(5); 
   var slots = document.getElementsByClassName(showstage);
-  for(i=0;i<slots.length;i++){
-    if (slots[i].style.display === 'none'){
-      slots[i].style.display = 'grid';
-      if(i==0){
-        document.getElementById(elementID).classList.add(stage);
-      }
-    } else {
-      slots[i].style.display = 'none';
-      if(i==0){
-        document.getElementById(elementID).classList.remove(stage);
-      }
+  var button = document.getElementById(elementID);
+  //
+  //if(!card.className.includes(stage))
+  //
+  // Toggles filter button on
+  if(button.dataset.visible === 'false'){
+    var index = filteredList.indexOf(show);
+    if (index > -1){
+      filteredList.splice(index,1);
     }
+    var setDisplay = 'grid';
+    button.dataset.visible = 'true';
+    button.classList.add(stage);
+  } else {
+    // Toggles filter button off
+    var setDisplay = 'none';
+    button.dataset.visible = 'false';
+    button.classList.remove(stage);
+    filteredList.push(show);
   }
-}
-function imageError(image){
-  image.onerror = "";
-  image.src = "images/ComfestLogo-Basic-48.png";
+  for(i=0;i<slots.length;i++){
+    if (setDisplay == 'none'){
+      slots[i].style.display = 'none';
+    } else {
+      /// Check to see if card has other filters
+      // if(!slots[i].classList.some(inFilteredList)){
+      //   slots[1].style.display = setDisplay;
 
+      // }
+      if (!findCommonality(filteredList,slots[i].classList)){
+        slots[i].style.display = setDisplay;
+      };
+    };
+  };
 }
+
+  //   if (button.dataset.visible === 'false'){
+  //     slots[i].style.display = 'grid';
+  //     if(i==0){
+  //       button.dataset.visible = 'true';
+  //       button.classList.add(stage);
+  //     }
+  //   } else {
+  //     slots[i].style.display = 'none';
+  //     if(i==0){
+  //       button.dataset.visible = 'false';
+  //       button.classList.remove(stage);
+  //     }
+  //   }
+  // }
+
+
 /***************
  * Grab the Band data from PHP file
  * findBandInfo.php
@@ -110,6 +150,11 @@ function toggleExtendedCard(card){
     var bandImage = document.createElement('img');
     var bandDescription = document.createElement('p');
     var subBandDescription = document.createTextNode(getDescription);
+    var bandWebsite = document.createElement("a");
+    bandWebsite.setAttribute('href', getWebsite);
+    bandWebsite.setAttribute('target', '_blank');
+    bandWebsite.innerHTML = getWebsite;
+    bandWebsite.className = "card-website";
     cardExtension.className = "card-extension";
     bandDescription.appendChild(subBandDescription);
     bandDescription.className = "card-extendedDescription";
@@ -118,6 +163,8 @@ function toggleExtendedCard(card){
     bandImage.className = "card-photo";
     cardExtension.appendChild(bandImage);
     cardExtension.appendChild(bandDescription);
+    cardExtension.appendChild(bandWebsite);
+    
     card.appendChild(cardExtension);
 
   } else {

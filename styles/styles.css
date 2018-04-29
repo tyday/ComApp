@@ -206,6 +206,10 @@
   /* iteration as part of flexbox */
   order: 2;
 }
+.card-website{
+  order: 3;
+  padding: 0em 1em 1em 1em;
+}
 .stage-bozo{
   background-color: #ff7e79;
 }
