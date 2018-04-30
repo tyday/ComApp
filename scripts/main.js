@@ -41,9 +41,7 @@ function openSection(sctName) {
     document.getElementById(sctName).style.display = "block";
     document.getElementById('pagetitle').innerHTML = sctName.slice(3);
 }
-function inFilteredList(element){
-  return filteredList.includes(element)
-}
+
 function findCommonality(list_one, list_two){
   return list_one.some (function(list_one_val){
     return list_two.contains(list_one_val);

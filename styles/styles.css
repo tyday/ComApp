@@ -194,6 +194,7 @@
   /* padding-right: 1em;
   padding-bottom: .5em; */
   /* iteration as part of flexbox */
+  object-fit: contain;
   order: 1;
   flex: 3; 
   padding: 1em;

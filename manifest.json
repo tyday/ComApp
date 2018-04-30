@@ -16,11 +16,17 @@
       "src": "images/ComfestLogo-Basic-192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "images/ComfestLogo-Basic-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "index.html?launcher=true",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#e8554e"
+  "theme_color": "#e8554e",
+  "background_color": "#FAFAFA"
 
 }

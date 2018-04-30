@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v2.13';
+var CACHE_NAME = 'my-site-cache-v2.16';
 var urlsToCache = [
   '/',
   // '/index.html',
@@ -6,6 +6,7 @@ var urlsToCache = [
   '/scripts/main.js',
   '/images/FestivalMap.svg',
   '/images/FunMap.svg',
+  '/images/Header.svg',
   '/images/Map.svg',
   '/images/Program.svg',
   '/images/Purpose.svg',
@@ -15,14 +16,15 @@ var urlsToCache = [
   '/images/ComfestLogo-Basic-48.png',
   '/images/ComfestLogo-Basic-96.png',
   '/images/ComfestLogo-Basic-192.png',
+  '/images/ComfestLogo-Basic-512.png',
   '/images/ComfestLogo-Basic.png'
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(function(cache) {
+      .then(function (cache) {
         console.log('Opened cache');
         return cache.addAll(urlsToCache);
       })
@@ -47,11 +49,15 @@ self.addEventListener('activate', event => {
 });
 
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
     // console.log(event);
+  var requestUrl = new URL(event.request.url);
+  if (requestUrl.hostname == 'exp.habernashing.com') {
+
+
     event.respondWith(
       caches.match(event.request)
-        .then(function(response) {
+        .then(function (response) {
           // Cache hit - return response
           if (response) {
             return response;
@@ -64,9 +70,9 @@ self.addEventListener('fetch', function(event) {
           var fetchRequest = event.request.clone();
   
           return fetch(fetchRequest).then(
-            function(response) {
+            function (response) {
               // Check if we received a valid response
-              if(!response || response.status !== 200 || response.type !== 'basic') {
+              if (!response || response.status !== 200 || response.type !== 'basic') {
                 return response;
               }
   
@@ -77,7 +83,7 @@ self.addEventListener('fetch', function(event) {
               var responseToCache = response.clone();
   
               caches.open(CACHE_NAME)
-                .then(function(cache) {
+                .then(function (cache) {
                   cache.put(event.request, responseToCache);
                 });
   
@@ -86,5 +92,6 @@ self.addEventListener('fetch', function(event) {
           );
         })
       );
+  }
   });
   
