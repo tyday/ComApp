@@ -1,4 +1,10 @@
- /* Dropdown Button */
+html, body {
+  height: 100%;
+}
+h1, h2, p, ul, div {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Dropdown Button */
  .dropbtn {
   background-color: #e53d34;
   color: white;
@@ -26,7 +32,7 @@
   display: inline-block;
   flex-grow: 1;
   text-align: left; */
-  float: right;
+  /* float: right; */
     position: relative;
     display: inline-block;
 }
@@ -135,6 +141,9 @@
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e8554e;
   color: white;
+}
+#sctProgram{
+  height: 100%;
 }
 /* Schedule CSS */
 #performancelist{
