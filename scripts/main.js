@@ -151,6 +151,7 @@ function toggleExtendedCard(card){
     var bandWebsite = document.createElement("a");
     bandWebsite.setAttribute('href', getWebsite);
     bandWebsite.setAttribute('target', '_blank');
+    bandWebsite.setAttribute('rel', 'external')
     bandWebsite.innerHTML = getWebsite;
     bandWebsite.className = "card-website";
     cardExtension.className = "card-extension";
@@ -194,7 +195,9 @@ function afterLoadEvents() {
 function getPerformerList(){
   //https://developers.google.com/web/updates/2015/03/introduction-to-fetch
   console.log('fetch started');
-  fetch('api/findSchedule1.php')
+  var a = new Date;
+  a = a.getTime()
+  fetch('api/findSchedule1.php?'+a)
     .then(
       function(response){
         if (response.status !== 200) {
