@@ -245,3 +245,15 @@ h1, h2, p, ul, div {
   background-color: #28de3f52;
 }
 
+@media screen and (min-width: 510px){
+  .program-main{
+    width: 500px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 810px){
+  .program-main{
+    width: 800px;
+    height: auto;
+  }
+}
