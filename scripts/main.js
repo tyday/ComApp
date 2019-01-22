@@ -197,7 +197,7 @@ function getPerformerList(){
   console.log('fetch started');
   var a = new Date;
   a = a.getTime()
-  fetch('api/findSchedule1.php?'+a)
+  fetch('http://localhost:3000/performers')//('api/findSchedule1.php?'+a)
     .then(
       function(response){
         if (response.status !== 200) {
