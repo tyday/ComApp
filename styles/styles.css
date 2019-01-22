@@ -24,17 +24,12 @@ h1, h2, p, ul, div {
 .dropdown {
   position: relative;
   display: inline-block;
-  flex-grow: 1;
+  flex: 0 0 80px;
 }
 .rt-dropdown {
-  /* float: right;
+  flex: 0 0 70px;
   position: relative;
   display: inline-block;
-  flex-grow: 1;
-  text-align: left; */
-  /* float: right; */
-    position: relative;
-    display: inline-block;
 }
 .dropdown a, .rt-dropdown-content a{
   font-family: Arial, Helvetica, sans-serif;
