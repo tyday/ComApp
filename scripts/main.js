@@ -75,7 +75,10 @@ function toggleSlot(showstage){
     var setDisplay = 'none';
     button.dataset.visible = 'false';
     button.classList.remove(stage);
-    filteredList.push(show);
+    if(!filteredList.includes(show)){
+      filteredList.push(show);
+    }
+    
   }
   localStorage.filteredList = JSON.stringify(filteredList)
   for(i=0;i<slots.length;i++){
@@ -207,27 +210,23 @@ if ('serviceWorker' in navigator) {
  */
 window.addEventListener("load", afterLoadEvents());
 
-function initializeScheduleFilter(){
+async function initializeScheduleFilter(){
   if (!localStorage.hasOwnProperty('filteredList')){
     localStorage.filteredList = JSON.stringify([]);
     console.log(localStorage.filteredList)
   } else {
     console.log('attempt to run initialize schedule filter')
-    initializeScheduleFilter()
+    for(let listItem of JSON.parse(localStorage.filteredList)){
+      console.log(listItem)
+      toggleSlot(listItem)
+    }
   }
 }
-function afterLoadEvents() {
-  getPerformerList().then(result => {
-      console.log('result: ' + result)
-      initializeScheduleFilter()
-    })
-    .catch(error =>{
-      console.log('failure'+error)
-    })
+async function afterLoadEvents() {
+  
+  getPerformerList()
   
   // Check to see app has been initialized
-  console.log('timing check')
-  
   
   if (!localStorage.hasOwnProperty('currentSection')){
     localStorage.currentSection = 'sctComfest';
@@ -244,12 +243,13 @@ function afterLoadEvents() {
   }
 }
 
-function getPerformerList(){
+async function getPerformerList(){
   //https://developers.google.com/web/updates/2015/03/introduction-to-fetch
   console.log('fetch started');
   var a = new Date;
   a = a.getTime()
-  fetch('http://localhost:3000/performers')//('api/findSchedule1.php?'+a)
+  // fetch('api/findSchedule1.php?'+a)
+  fetch('test_data.json')//('http://localhost:3000/performers'))
     .then(
       function(response){
         if (response.status !== 200) {
@@ -261,8 +261,11 @@ function getPerformerList(){
         response.json().then(function(data){
           console.log(data);
           placePerformanceList(data);
-          return 'success'
-        });
+          // return 'success'
+        }).then(function (){
+          console.log('when did this get run?')
+          initializeScheduleFilter()
+        })
       }
     )
     .catch(function(err) {
