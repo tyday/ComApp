@@ -26,20 +26,22 @@ window.onclick = function(event) {
  * https://www.w3schools.com/howto/howto_js_tab_header.asp
  */
 function openSection(sctName) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    if(sctName=='sctSchedule'){
-      document.getElementById('filterButton').style.visibility = "visible";
-    } else {
-      document.getElementById('filterButton').style.visibility = "hidden";
-    };
-    // Show the specific tab content
-    document.getElementById(sctName).style.display = "block";
-    document.getElementById('pagetitle').innerHTML = sctName.slice(3);
+  localStorage.currentSection = sctName;
+  localStorage.time_of_last_section_selection = Date.now();
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  if(sctName=='sctSchedule'){
+    document.getElementById('filterButton').style.visibility = "visible";
+  } else {
+    document.getElementById('filterButton').style.visibility = "hidden";
+  };
+  // Show the specific tab content
+  document.getElementById(sctName).style.display = "block";
+  document.getElementById('pagetitle').innerHTML = sctName.slice(3);
 }
 
 function findCommonality(list_one, list_two){
@@ -190,8 +192,22 @@ window.addEventListener("load", afterLoadEvents());
 
 function afterLoadEvents() {
   getPerformerList();
-  // placePerformanceList();
+  // Check to see app has been initialized
+  if (!localStorage.hasOwnProperty('currentSection')){
+    localStorage.currentSection = 'sctComfest';
+  }
+  if (!localStorage.hasOwnProperty('time_of_last_section_selection')){
+    localStorage.time_of_last_section_selection = Date.now()
+  }
+  const milliseconds_since_last_selection = Date.now() - localStorage.time_of_last_section_selection;
+  const milliseconds_in_a_day = 86400000; //10000; 
+  if(milliseconds_since_last_selection < milliseconds_in_a_day){
+    openSection(localStorage.currentSection)
+  } else {
+    openSection('sctComfest')
+  }
 }
+
 function getPerformerList(){
   //https://developers.google.com/web/updates/2015/03/introduction-to-fetch
   console.log('fetch started');
