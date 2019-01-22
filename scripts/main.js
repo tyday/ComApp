@@ -1,4 +1,5 @@
-var filteredList = [];
+// var filteredList = [];
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function fncBtnDropClick(eleID) {
@@ -56,6 +57,7 @@ function toggleSlot(showstage){
   var show = "show-" + showstage.slice(5); 
   var slots = document.getElementsByClassName(showstage);
   var button = document.getElementById(elementID);
+  let filteredList = JSON.parse(localStorage.filteredList)
   //
   //if(!card.className.includes(stage))
   //
@@ -75,6 +77,7 @@ function toggleSlot(showstage){
     button.classList.remove(stage);
     filteredList.push(show);
   }
+  localStorage.filteredList = JSON.stringify(filteredList)
   for(i=0;i<slots.length;i++){
     if (setDisplay == 'none'){
       slots[i].style.display = 'none';
@@ -90,6 +93,20 @@ function toggleSlot(showstage){
     };
   };
 }
+// function initializeScheduleFilter(){
+//   // runs through the locally saved filter list on reload 
+//   // and sets the buttons to off and the correct cards to setDisplay none
+//   let filteredList = JSON.parse(localStorage.filteredList)
+//   // let stage = "stage-" + showstage.slice(5);
+//   // let elementID = "btn-" + showstage.slice(5);
+//   // let show = "show-" + showstage.slice(5); 
+//   // let slots = document.getElementsByClassName(showstage);
+//   // let button = document.getElementById(elementID);
+
+//   for(let showstage of filteredList){
+//     toggleSlot(showstage)
+//   }
+// }
 
   //   if (button.dataset.visible === 'false'){
   //     slots[i].style.display = 'grid';
@@ -190,9 +207,28 @@ if ('serviceWorker' in navigator) {
  */
 window.addEventListener("load", afterLoadEvents());
 
+function initializeScheduleFilter(){
+  if (!localStorage.hasOwnProperty('filteredList')){
+    localStorage.filteredList = JSON.stringify([]);
+    console.log(localStorage.filteredList)
+  } else {
+    console.log('attempt to run initialize schedule filter')
+    initializeScheduleFilter()
+  }
+}
 function afterLoadEvents() {
-  getPerformerList();
+  getPerformerList().then(result => {
+      console.log('result: ' + result)
+      initializeScheduleFilter()
+    })
+    .catch(error =>{
+      console.log('failure'+error)
+    })
+  
   // Check to see app has been initialized
+  console.log('timing check')
+  
+  
   if (!localStorage.hasOwnProperty('currentSection')){
     localStorage.currentSection = 'sctComfest';
   }
@@ -225,6 +261,7 @@ function getPerformerList(){
         response.json().then(function(data){
           console.log(data);
           placePerformanceList(data);
+          return 'success'
         });
       }
     )
