@@ -300,6 +300,27 @@
     </div>
     <!-- end Map -->
 
+    <!-- callout button for iOS install -->
+    <!-- https://www.w3schools.com/howto/howto_js_callout.asp -->
+    <!-- https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native -->
+    <div class="callout-container">
+        <div class="callout">
+          <div class="callout-image">
+                <img src="images/add.svg" alt="add icon">
+          </div>
+          <div class="callout-text">Install this webapp on your iPhone: tap 
+              <img src="images/square-arrow.svg">
+               then Add to homescreen</div>
+          <div class="callout-closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</div>
+        </div>
+        <div class="svg-holder">
+            <svg width="1em" height=".7em"
+                viewBox="0 0 100 100">
+            <polygon points="0,0 100,0 50,100" style="fill:#ddd;stroke:none" />
+            </svg>
+        </div>
+    </div>
+
 </body>
 <script src="scripts/main.js"></script>
 
