@@ -1,23 +1,24 @@
+// from export.habernashing.com
 var CACHE_NAME = 'my-site-cache-v2.21';
 var urlsToCache = [
   '/',
   // '/index.html',
-  '/comapp/styles/styles.css',
-  '/comapp/scripts/main.js',
-  '/comapp/images/FestivalMap.svg',
-  '/comapp/images/FunMap.svg',
-  '/comapp/images/Header.svg',
-  '/comapp/images/Map.svg',
-  '/comapp/images/Program.svg',
-  '/comapp/images/Purpose.svg',
-  '/comapp/images/Schedule.svg',
-  '/comapp/images/Volunteer.svg',
-  '/comapp/images/Website.svg',
-  '/comapp/images/ComfestLogo-Basic-48.png',
-  '/comapp/images/ComfestLogo-Basic-96.png',
-  '/comapp/images/ComfestLogo-Basic-192.png',
-  '/comapp/images/ComfestLogo-Basic-512.png',
-  '/comapp/images/ComfestLogo-Basic.png'
+  '/styles/styles.css',
+  '/scripts/main.js',
+  '/images/FestivalMap.svg',
+  '/images/FunMap.svg',
+  '/images/Header.svg',
+  '/images/Map.svg',
+  '/images/Program.svg',
+  '/images/Purpose.svg',
+  '/images/Schedule.svg',
+  '/images/Volunteer.svg',
+  '/images/Website.svg',
+  '/images/ComfestLogo-Basic-48.png',
+  '/images/ComfestLogo-Basic-96.png',
+  '/images/ComfestLogo-Basic-192.png',
+  '/images/ComfestLogo-Basic-512.png',
+  '/images/ComfestLogo-Basic.png'
 ];
 
 self.addEventListener('install', function (event) {
