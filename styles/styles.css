@@ -241,24 +241,23 @@ h1, h2, h3, p, ul, div {
 }
 
  /* Callout box - fixed position at the bottom of the page */
- .callout-container{   
-  /* background:#ccc; */
+ .callout-container{
   left: 0%;
   position:fixed;
   bottom:10px;
   width:100%;
-  display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  display:flex;
 }
 .callout{
   background:#ddd;
   max-width: 400px;
+  padding: .5em .75em .5em .75em;
+  border-radius: .5em;
   display:flex;
   align-items: center;
-  padding: .5em .75em .5em .75em;
-  border-radius: .5em
 }
 .callout-image{
   height: 1.5em;
