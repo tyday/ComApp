@@ -282,7 +282,10 @@ h1, h2, h3, p, ul, div {
   padding-left: .5em;
   align-self: flex-start;
 }
-
+.callout-button{
+  padding: .3em;
+  margin-left: .2em;
+}
 @media screen and (min-width: 510px){
   .program-main{
     width: 500px;
