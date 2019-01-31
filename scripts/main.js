@@ -210,6 +210,54 @@ if ('serviceWorker' in navigator) {
  * Set to happen after window loads to prevent slow load
  */
 window.addEventListener("load", afterLoadEvents());
+/****
+ * Add android/chrome install listener
+ */
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can add to home screen
+  androidCallout = document.getElementById("android-callout")
+  if (!localStorage.hasOwnProperty('canceledAndroidInstall')){
+    androidCallout.style.display = 'flex';
+  } 
+  
+});
+btnAdd = document.getElementById('android-callout-button-add')
+btnAdd.addEventListener('click', (e) => {
+  // hide our user interface that shows our A2HS button
+  // btnAdd.style.display = 'none';
+  // Show the prompt
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  deferredPrompt.userChoice
+    .then((choiceResult) => {
+      androidCallout = document.getElementById("android-callout")
+      androidCallout.style.display = 'none'
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      deferredPrompt = null;
+    });
+});
+document.getElementById('android-callout-button-cancel').addEventListener('click', (e) => {
+  const cancelAndroidInstall = () => {
+    if (localStorage.hasOwnProperty('canceledAndroidInstall')){
+      return true;
+    } else {
+      localStorage.canceledAndroidInstall = 'true'
+      return false }
+    }
+  cancelAndroidInstall();
+  // Remove the parent element
+  e.srcElement.parentElement.style.display = 'none';
+      
+});
+
 
 async function initializeScheduleFilter(){
   if (!localStorage.hasOwnProperty('filteredList')){
