@@ -200,6 +200,7 @@ function toggleExtendedCard(card){
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
+            //  .register('./service-worker.original.js')
              .register('./service-worker.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
@@ -222,12 +223,9 @@ async function initializeScheduleFilter(){
     }
   }
 }
-async function afterLoadEvents() {
-  
-  getPerformerList()
-  
-  // Check to see app has been initialized
-  
+function initializeApp(){
+  // Opens app to the last page user was on
+  // resets to first page after 24 hours
   if (!localStorage.hasOwnProperty('currentSection')){
     localStorage.currentSection = 'sctComfest';
   }
@@ -241,6 +239,30 @@ async function afterLoadEvents() {
   } else {
     openSection('sctComfest')
   }
+  
+  // Detects if device is on iOS 
+  const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test( userAgent );
+  }
+  // Detects if device is in standalone mode
+  const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+  // Detects if device has seen this user before
+  const isRepeatVisitor = () => {
+    if (localStorage.hasOwnProperty('visitedBefore')){
+      return true;
+    } else {
+      localStorage.visitedBefore = 'true'
+      return false }}
+  // Checks if should display install popup notification:
+  if (!isRepeatVisitor() && isIos() && !isInStandaloneMode()) {
+    iOSCallout = document.getElementById("iOS-callout")
+    iOSCallout.style.display = 'flex'
+  }
+}
+async function afterLoadEvents() {
+  getPerformerList()
+  initializeApp()
 }
 
 async function getPerformerList(){
