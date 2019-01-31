@@ -54,8 +54,9 @@ self.addEventListener('fetch', function (event) {
     // console.log(event);
   var requestUrl = new URL(event.request.url);
   // if (requestUrl.hostname == 'exp.habernashing.com') {
+  if (requestUrl.hostname == 'localhost') {
   // if (requestUrl.hostname == '127.0.0.1') {
-  if (requestUrl.hostname == 'tyday.net') {
+  // if (requestUrl.hostname == 'tyday.net') {
 
 
     event.respondWith(
