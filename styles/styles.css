@@ -146,9 +146,7 @@ h1, h2, h3, p, ul, div {
 }
 .slot-card{
   display: grid;
-  grid-template-columns: auto auto auto;
-/*   background-color:red; */
-  grid-gap:10 px;
+  grid-template-columns: 1fr 1.5fr 1fr;
   box-shadow: 0 .2em .5em 0 rgba(0,0,0,0.9);
   margin:1em;
 }
