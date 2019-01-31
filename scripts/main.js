@@ -86,45 +86,12 @@ function toggleSlot(showstage){
       slots[i].style.display = 'none';
     } else {
       /// Check to see if card has other filters
-      // if(!slots[i].classList.some(inFilteredList)){
-      //   slots[1].style.display = setDisplay;
-
-      // }
       if (!findCommonality(filteredList,slots[i].classList)){
         slots[i].style.display = setDisplay;
       };
     };
   };
 }
-// function initializeScheduleFilter(){
-//   // runs through the locally saved filter list on reload 
-//   // and sets the buttons to off and the correct cards to setDisplay none
-//   let filteredList = JSON.parse(localStorage.filteredList)
-//   // let stage = "stage-" + showstage.slice(5);
-//   // let elementID = "btn-" + showstage.slice(5);
-//   // let show = "show-" + showstage.slice(5); 
-//   // let slots = document.getElementsByClassName(showstage);
-//   // let button = document.getElementById(elementID);
-
-//   for(let showstage of filteredList){
-//     toggleSlot(showstage)
-//   }
-// }
-
-  //   if (button.dataset.visible === 'false'){
-  //     slots[i].style.display = 'grid';
-  //     if(i==0){
-  //       button.dataset.visible = 'true';
-  //       button.classList.add(stage);
-  //     }
-  //   } else {
-  //     slots[i].style.display = 'none';
-  //     if(i==0){
-  //       button.dataset.visible = 'false';
-  //       button.classList.remove(stage);
-  //     }
-  //   }
-  // }
 
 
 /***************
