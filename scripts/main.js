@@ -165,18 +165,18 @@ function toggleExtendedCard(card){
   }
 }
 
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./service-worker.original.js')
-            //  .register('./service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
-  }
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker
+//              .register('./service-worker.js')
+//             //  .register('./service-worker.js')
+//              .then(function() { console.log('Service Worker Registered'); });
+//   }
 
 /*****
  * Events to download performer list
  * Set to happen after window loads to prevent slow load
  */
-window.addEventListener("load", afterLoadEvents());
+window.addEventListener("load", afterLoadEvents);
 /****
  * Add android/chrome install listener
  */
@@ -276,8 +276,8 @@ function initializeApp(){
   }
 }
 async function afterLoadEvents() {
-  getPerformerList()
-  initializeApp()
+  getPerformerList();
+  initializeApp();
 }
 
 async function getPerformerList(){
