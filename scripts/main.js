@@ -165,12 +165,12 @@ function toggleExtendedCard(card){
   }
 }
 
-// if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker
-//              .register('./service-worker.js')
-//             //  .register('./service-worker.js')
-//              .then(function() { console.log('Service Worker Registered'); });
-//   }
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+            //  .register('service-worker.original') // works with localhost
+             .register('./service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
+  }
 
 /*****
  * Events to download performer list
