@@ -116,6 +116,18 @@ function getBandData(data){
     })
     .then(response => response.json())
 }
+function toggleFavorite(event){
+  console.log(event)
+  event.stopPropagation();
+  console.log('toggleFavorite Fired');
+  // this.parentElement.classList.add('card-favorite')
+  const card = this.parentElement
+  if (card.classList.contains('show-favorite')){
+    card.classList.remove('show-favorite')
+  } else {
+    card.classList.add('show-favorite')
+  }
+}
 /************
  * Toggle extended performance card
  * 
@@ -157,10 +169,10 @@ function toggleExtendedCard(card){
 
   } else {
     // toggle card on or off
-    if (card.children[5].style.display === 'none'){
-      card.children[5].style.display = 'flex';
+    if (card.children[6].style.display === 'none'){
+      card.children[6].style.display = 'flex';
     } else {
-      card.children[5].style.display = 'none';
+      card.children[6].style.display = 'none';
     }    
   }
 }
@@ -361,6 +373,13 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
   eleStage.appendChild(subStage);
   eleStage.className="card-stage "+stageColors[vStage][0];
 
+  var eleFavorite = document.createElement("div");
+  var subFavorite = document.createElement("img");
+  eleFavorite.addEventListener("click",toggleFavorite)
+  subFavorite.src = "images/star.svg";
+  eleFavorite.appendChild(subFavorite);
+  eleFavorite.className="card-favorite-icon "+stageColors[vStage][0];
+
   var elePerformer = document.createElement("div");
   var subPerformer = document.createTextNode(vPerformer);
   elePerformer.appendChild(subPerformer);
@@ -374,6 +393,7 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
   card.appendChild(eleTime);
   card.appendChild(eleDay);
   card.appendChild(eleStage);
+  card.appendChild(eleFavorite);
   card.appendChild(elePerformer);
   card.appendChild(ele3Words);
 
