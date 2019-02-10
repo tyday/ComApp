@@ -162,6 +162,9 @@ h1, h2, h3, p, ul, div {
   grid-column: 4;
   padding: 0;
 }
+.show-favorite .card-favorite-icon{
+  background-color: blue;
+}
 .card-time{
   grid-column:1;
 }

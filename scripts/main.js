@@ -116,12 +116,23 @@ function getBandData(data){
     })
     .then(response => response.json())
 }
+function addOrRemoveFavoriteFromStorage(performer){
+  favoriteList = JSON.parse(localStorage.favorites)
+  if (favoriteList.includes(performer)){
+    favoriteList = favoriteList.filter(item => item != performer)
+    localStorage.favorites = JSON.stringify(favoriteList)
+  } else {
+    favoriteList.push(performer)
+    localStorage.favorites = JSON.stringify(favoriteList)
+  }
+}
 function toggleFavorite(event){
   console.log(event)
   event.stopPropagation();
   console.log('toggleFavorite Fired');
   // this.parentElement.classList.add('card-favorite')
   const card = this.parentElement
+  addOrRemoveFavoriteFromStorage(this.parentElement.dataset.performer)
   if (card.classList.contains('show-favorite')){
     card.classList.remove('show-favorite')
   } else {
@@ -259,6 +270,19 @@ function initializeApp(){
   if (!localStorage.hasOwnProperty('time_of_last_section_selection')){
     localStorage.time_of_last_section_selection = Date.now()
   }
+  if (!localStorage.hasOwnProperty('favorites')){
+    localStorage.favorites = JSON.stringify([]);
+  } else {
+    favorites = JSON.parse(localStorage.favorites)
+    console.log(favorites)
+    cardList = document.getElementsByClassName("slot-card")
+    // filterList = Array.prototype.filter(cardList => favorites.includes(cardList.dataset.performer)) 
+    filterList = Array.prototype.filter.call(cardList, function(card){
+       return favorites.includes(card.dataset.performer)
+    });
+    filterList.forEach((card)=> card.classList.add('show-favorite'))
+    console.log(filterList)   
+  }
   const milliseconds_since_last_selection = Date.now() - localStorage.time_of_last_section_selection;
   const milliseconds_in_a_day = 86400000; //10000; 
   if(milliseconds_since_last_selection < milliseconds_in_a_day){
@@ -288,8 +312,12 @@ function initializeApp(){
   }
 }
 async function afterLoadEvents() {
-  getPerformerList();
-  initializeApp();
+// function afterLoadEvents() {
+  // getPerformerList();
+  // initializeApp();
+  await getPerformerListTwo()
+  console.log('waiting')
+  initializeApp()
 }
 
 async function getPerformerList(){
@@ -314,6 +342,7 @@ async function getPerformerList(){
         }).then(function (){
           console.log('when did this get run?')
           initializeScheduleFilter()
+          return 'success'
         })
       }
     )
@@ -321,7 +350,12 @@ async function getPerformerList(){
       console.log('Fetch Error :-S', err);
     }); 
 }
-
+async function getPerformerListTwo(){
+  console.log('fetching..')
+  band_data = await fetch('test_data.json')
+  await placePerformanceList( await band_data.json())
+  await initializeScheduleFilter()
+}
 
 function placePerformanceList(data){
   var card;
@@ -353,6 +387,7 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
   var card = document.createElement("li");
   card.className="slot-card " + stageColors[vStage][1] +" "+ stageColors[vDay];
   var eleTime = document.createElement("div");
+  card.dataset.performer = vPerformer;
   card.dataset.description = vDescription;
   card.dataset.image = vImage;
   card.dataset.website = vWebsite;
