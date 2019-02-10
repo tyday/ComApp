@@ -44,17 +44,20 @@
             <button onclick="fncBtnDropClick('scheduleDropdown')" class="dropbtn">Filter</button>
             <!-- <h1>Comfest</h1> -->
             <div id="scheduleDropdown" class="rt-dropdown-content dropdown-toggle">
-                <a id="btn-bozo" class="stage-bozo" onclick="toggleSlot('show-bozo')" data-visible="true">Bozo</a>
-                <a id="btn-gazebo" class="stage-gazebo" onclick="toggleSlot('show-gazebo')" data-visible="true">Gazebo</a>
-                <a id="btn-offramp" class="stage-offramp" onclick="toggleSlot('show-offramp')" data-visible="true">Off Ramp</a>
-                <a id="btn-jazz" class="stage-jazz" onclick="toggleSlot('show-jazz')" data-visible="true">Jazz</a>
-                <a id="btn-livearts" class="stage-livearts" onclick="toggleSlot('show-livearts')" data-visible="true">Live Arts</a>
-                <a id="btn-solar" class="stage-solar" onclick="toggleSlot('show-solar')" data-visible="true">Solar</a>
-                <a id="btn-peace" class="stage-peace" onclick="toggleSlot('show-peace')" data-visible="true">Peace & Healing</a>
-                <a id="btn-kidsart" class="stage-kidsart" onclick="toggleSlot('show-kidsart')" data-visible="true">KiDSART</a>
-                <a id="btn-friday" class="stage-friday" onclick="toggleSlot('show-friday')" data-visible="true">Friday</a>
-                <a id="btn-saturday" class="stage-saturday" onclick="toggleSlot('show-saturday')" data-visible="true">Saturday</a>
-                <a id="btn-sunday" class="stage-sunday" onclick="toggleSlot('show-sunday')" data-visible="true">Sunday</a>
+                <a id="btn-bozo" class="stage-bozo rt-buttons" onclick="toggleSlot('show-bozo')" data-visible="true">Bozo</a>
+                <a id="btn-gazebo" class="stage-gazebo rt-buttons" onclick="toggleSlot('show-gazebo')" data-visible="true">Gazebo</a>
+                <a id="btn-offramp" class="stage-offramp rt-buttons" onclick="toggleSlot('show-offramp')" data-visible="true">Off Ramp</a>
+                <a id="btn-jazz" class="stage-jazz rt-buttons" onclick="toggleSlot('show-jazz')" data-visible="true">Jazz</a>
+                <a id="btn-livearts" class="stage-livearts rt-buttons" onclick="toggleSlot('show-livearts')" data-visible="true">Live Arts</a>
+                <a id="btn-solar" class="stage-solar rt-buttons" onclick="toggleSlot('show-solar')" data-visible="true">Solar</a>
+                <a id="btn-peace" class="stage-peace rt-buttons" onclick="toggleSlot('show-peace')" data-visible="true">Peace & Healing</a>
+                <a id="btn-kidsart" class="stage-kidsart rt-buttons" onclick="toggleSlot('show-kidsart')" data-visible="true">KiDSART</a>
+                <a id="btn-friday" class="stage-friday rt-buttons" onclick="toggleSlot('show-friday')" data-visible="true">Friday</a>
+                <a id="btn-saturday" class="stage-saturday rt-buttons" onclick="toggleSlot('show-saturday')" data-visible="true">Saturday</a>
+                <a id="btn-sunday" class="stage-sunday rt-buttons" onclick="toggleSlot('show-sunday')" data-visible="true">Sunday</a>
+                <a id="btn-favorites" class="stage-favorites rt-buttons" onclick="openSection('sctFavorites')" data-visible="true">Favorites</a>
+                <a id="btn-return" class="stage-favorites rt-buttons" onclick="openSection('sctSchedule')" data-visible="true">Return</a>
+                <a id="btn-clear-filter" class="stage-favorites rt-buttons" onclick="openSection('sctFavorites')" data-visible="true">Clear Filters</a>
             </div>
             <!-- </div> -->
         </div>
@@ -230,6 +233,10 @@
         </ul>
     </div>
     <!-- end Schedule -->
+    <!-- Favorites -->
+    <div class="tabcontent" id="sctFavorites">
+
+    </div>
     <!-- Section Map -->
     <div class="tabcontent" id="sctMap">
         <img src="images/FestivalMap.svg" alt="Park Map">

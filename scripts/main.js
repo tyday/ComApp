@@ -35,10 +35,25 @@ function openSection(sctName) {
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
   }
-  if(sctName=='sctSchedule'){
-    document.getElementById('filterButton').style.visibility = "visible";
+  if(sctName=='sctSchedule' | sctName=='sctFavorites'){
+    // document.getElementById('filterButton').style.visibility = "visible";
+    document.getElementById('filterButton').classList.add('show')
+    document.getElementById('filterButton').classList.remove('hide')
+    if(sctName=='sctSchedule'){
+      document.getElementById('btn-return').classList.add('hide')
+      document.getElementById('btn-return').classList.remove('show')
+      document.getElementById('btn-favorites').classList.add('show')
+      document.getElementById('btn-favorites').classList.remove('hide')
+    } else {
+      document.getElementById('btn-favorites').classList.add('hide')
+      document.getElementById('btn-favorites').classList.remove('show')
+      document.getElementById('btn-return').classList.add('show')
+      document.getElementById('btn-return').classList.remove('hide')
+    }
   } else {
-    document.getElementById('filterButton').style.visibility = "hidden";
+    // document.getElementById('filterButton').style.visibility = "hidden";
+    document.getElementById('filterButton').classList.remove('show')
+    document.getElementById('filterButton').classList.add('hide')
   };
   // Show the specific tab content
   document.getElementById(sctName).style.display = "block";
@@ -134,10 +149,45 @@ function toggleFavorite(event){
   const card = this.parentElement
   addOrRemoveFavoriteFromStorage(this.parentElement.dataset.performer)
   if (card.classList.contains('show-favorite')){
-    card.classList.remove('show-favorite')
+    if (card.parentElement == 'sctSchedule'){
+      card.classList.remove('show-favorite')
+    } else{
+      performancelist = document.getElementById('performancelist')
+      cardList = performancelist.childNodes
+      for(item of cardList){
+        if (item.isEqualNode(card)){
+          item.classList.remove('show-favorite')
+        }
+      }
+    }
+    
+    // Remove card from sctFavorites
+    sctFavorites = document.getElementById('sctFavorites')
+    cardList = sctFavorites.childNodes
+    for(favorite_card of cardList){
+      if (card.isEqualNode(favorite_card)){
+        sctFavorites.removeChild(favorite_card)
+      }
+    }
   } else {
     card.classList.add('show-favorite')
+    // Add to sctFavorites
+    copyCardToFavorites(card)
+    // sctFavorites = document.getElementById('sctFavorites')
+    // newCard = card.cloneNode(true)
+    // eleFavorite = newCard.getElementsByClassName("card-favorite-icon")
+    // eleFavorite[0].addEventListener("click",toggleFavorite)
+    // sctFavorites.appendChild(newCard)
+
   }
+}
+function copyCardToFavorites(card){
+  sctFavorites = document.getElementById('sctFavorites')
+  newCard = card.cloneNode(true)
+  newCard.style.display = 'grid'
+  eleFavorite = newCard.getElementsByClassName("card-favorite-icon")
+  eleFavorite[0].addEventListener("click",toggleFavorite)
+  sctFavorites.appendChild(newCard)
 }
 /************
  * Toggle extended performance card
@@ -280,7 +330,9 @@ function initializeApp(){
     filterList = Array.prototype.filter.call(cardList, function(card){
        return favorites.includes(card.dataset.performer)
     });
-    filterList.forEach((card)=> card.classList.add('show-favorite'))
+    filterList.forEach((card)=> {
+      card.classList.add('show-favorite');
+      copyCardToFavorites(card)})
     console.log(filterList)   
   }
   const milliseconds_since_last_selection = Date.now() - localStorage.time_of_last_section_selection;
