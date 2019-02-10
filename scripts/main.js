@@ -492,8 +492,8 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
   var eleFavorite = document.createElement("div");
   var subFavorite = document.createElement("img");
   eleFavorite.addEventListener("click",toggleFavorite)
-  subFavorite.src = "images/star.svg";
-  eleFavorite.appendChild(subFavorite);
+  // subFavorite.src = "images/star.svg";
+  // eleFavorite.appendChild(subFavorite);
   eleFavorite.className="card-favorite-icon "+stageColors[vStage][0];
 
   var elePerformer = document.createElement("div");
