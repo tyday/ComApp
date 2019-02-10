@@ -298,7 +298,12 @@ document.getElementById('android-callout-button-cancel').addEventListener('click
       
 });
 
-
+function clearFilter(){
+  if(localStorage.hasOwnProperty('filteredList')){
+    localStorage.filterList = JSON.stringify([])
+    initializeScheduleFilter()
+  }
+}
 async function initializeScheduleFilter(){
   if (!localStorage.hasOwnProperty('filteredList')){
     localStorage.filteredList = JSON.stringify([]);
