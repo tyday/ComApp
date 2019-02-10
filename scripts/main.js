@@ -22,17 +22,31 @@ window.onclick = function(event) {
   };
 }
 
+function getScrollToPosition(previousSection,newSection){
+  // returns scroll position
+  if (previousSection == newSection){
+    // This happens on reload. -1 allows browser to define scroll position
+    return -1
+  }
+  localStorage[previousSection+'ScrollPosition'] = window.pageYOffset
+  if (localStorage.hasOwnProperty(newSection+'ScrollPosition')){
+    return localStorage[newSection+'ScrollPosition']
+  } else {
+    return 0
+  }
+}
 /**********
  * open tabs that correspond to menu name or front page button
  * https://www.w3schools.com/howto/howto_js_tab_header.asp
  */
 function openSection(sctName) {
   previousSection = localStorage.currentSection
-  localStorage[previousSection+'ScrollPosition'] = window.pageYOffset
+  scrollToPosition = getScrollToPosition(previousSection,sctName)
+  
   localStorage.currentSection = sctName;
   localStorage.time_of_last_section_selection = Date.now();
   // Hide all elements with class="tabcontent" by default */
-  var i, tabcontent, tablinks;
+  var i, tabcontent;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
@@ -60,10 +74,11 @@ function openSection(sctName) {
   // Show the specific tab content
   document.getElementById(sctName).style.display = "block";
   document.getElementById('pagetitle').innerHTML = sctName.slice(3);
-  if (localStorage.hasOwnProperty(sctName+'ScrollPosition')){
-    window.scrollTo(0,localStorage[sctName+'ScrollPosition'])
-  } else {
-    window.scrollTo(0,0)
+  
+  // Set scroll position to saved value
+  // unless this is a reload which returns -1
+  if(scrollToPosition>-1){
+    window.scrollTo(0,scrollToPosition)
   }
 }
 
@@ -257,6 +272,7 @@ if ('serviceWorker' in navigator) {
  * Set to happen after window loads to prevent slow load
  */
 window.addEventListener("load", afterLoadEvents);
+
 /****
  * Add android/chrome install listener
  */
@@ -375,6 +391,7 @@ function initializeApp(){
     iOSCallout.style.display = 'flex'
   }
 }
+
 async function afterLoadEvents() {
 // function afterLoadEvents() {
   // getPerformerList();
