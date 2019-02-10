@@ -27,6 +27,8 @@ window.onclick = function(event) {
  * https://www.w3schools.com/howto/howto_js_tab_header.asp
  */
 function openSection(sctName) {
+  previousSection = localStorage.currentSection
+  localStorage[previousSection+'ScrollPosition'] = window.pageYOffset
   localStorage.currentSection = sctName;
   localStorage.time_of_last_section_selection = Date.now();
   // Hide all elements with class="tabcontent" by default */
@@ -58,6 +60,11 @@ function openSection(sctName) {
   // Show the specific tab content
   document.getElementById(sctName).style.display = "block";
   document.getElementById('pagetitle').innerHTML = sctName.slice(3);
+  if (localStorage.hasOwnProperty(sctName+'ScrollPosition')){
+    window.scrollTo(0,localStorage[sctName+'ScrollPosition'])
+  } else {
+    window.scrollTo(0,0)
+  }
 }
 
 function findCommonality(list_one, list_two){
