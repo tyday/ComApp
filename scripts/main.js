@@ -56,15 +56,15 @@ function openSection(sctName) {
     document.getElementById('filterButton').classList.add('show')
     document.getElementById('filterButton').classList.remove('hide')
     if(sctName=='sctSchedule'){
-      document.getElementById('btn-return').classList.add('hide')
+      document.getElementById('btn-return').classList.add('remove')
       document.getElementById('btn-return').classList.remove('show')
       document.getElementById('btn-favorites').classList.add('show')
-      document.getElementById('btn-favorites').classList.remove('hide')
+      document.getElementById('btn-favorites').classList.remove('remove')
     } else {
-      document.getElementById('btn-favorites').classList.add('hide')
+      document.getElementById('btn-favorites').classList.add('remove')
       document.getElementById('btn-favorites').classList.remove('show')
       document.getElementById('btn-return').classList.add('show')
-      document.getElementById('btn-return').classList.remove('hide')
+      document.getElementById('btn-return').classList.remove('remove')
     }
   } else {
     // document.getElementById('filterButton').style.visibility = "hidden";

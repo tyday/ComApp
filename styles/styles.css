@@ -73,7 +73,8 @@ h1, h2, h3, p, ul, div {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show{display:block;} 
-.hide{display:none;}
+.hide{visibility: hidden;}
+.remove{display: none;}
 
 .titlebar{
   position: fixed;
@@ -132,7 +133,10 @@ h1, h2, h3, p, ul, div {
   text-align: center; 
 }
 .buttonpackage{
-  padding: 0em 1em 0em 1em;
+  padding: .7em 1em 0em 1em;
+  box-shadow: 0 .2em .5em 0 	hsla(3, 7%, 30%, .9);
+  margin: 1em;
+  cursor: pointer;
 }
 .buttonpackage img{
   height: 5em;
@@ -140,8 +144,8 @@ h1, h2, h3, p, ul, div {
 }
 .buttonpackage p{
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #e8554e;
-  color: white;
+  color:hsl(3, 77%, 50%);
+  font-weight:bold;
 }
 #sctProgram{
   height: 100%;
@@ -153,7 +157,7 @@ h1, h2, h3, p, ul, div {
 .slot-card{
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr 40px;
-  box-shadow: 0 .2em .5em 0 rgba(0,0,0,0.9);
+  box-shadow: 0 .2em .5em 0 hsla(3, 7%, 30%, .9);
   margin:1em;
 }
 .card-time, .card-stage, .card-day, .card-favorite-icon{
