@@ -164,7 +164,7 @@ h1, h2, h3, p, ul, div {
   background-repeat: no-repeat;
 }
 .show-favorite .card-favorite-icon{
-  background-color: blue;
+  background-image: url("../images/star2.svg");
 }
 .card-time{
   grid-column:1;
