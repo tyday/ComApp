@@ -110,19 +110,7 @@ h1, h2, h3, p, ul, div {
  .logoTitle{
   text-align: center;
 }
-/*.logoTitle h2{
-  
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-  border-bottom: 1px solid black;
-}
-.logoTitle h5{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700; 
-} */
 .logoTitle img{
-  /* position: relative; */
-  /* top:.4em; */
   height: 6em;
   max-width: 90%;
 }
@@ -189,44 +177,37 @@ h1, h2, h3, p, ul, div {
 }
 .card-band{
   word-break: break-word;
-  grid-column:1/4;
+  grid-column:1/5;
   grid-row:2;
   text-align: center;
   font:bold 1.5em  Helvetica, sans-serif;
 }
 .card-description{
   word-break: break-word;
-  grid-column:1/4;
+  grid-column:1/5;
   grid-row:3;
   text-align:center;
   font: 1em Helvetica, sans-serif;
   margin: 0.5em 0 .5em 0;
 }
 .card-extension{
-  grid-column: 1/4;
+  grid-column: 1/5;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }
 .card-photo{
-  /* previous iteration as part of grid */
-  /* grid-column: 1/4; */
-  /* justify-self: center */
   max-width: 90%;
-  /* float:left; */
-  /* padding-right: 1em;
-  padding-bottom: .5em; */
-  /* iteration as part of flexbox */
   object-fit: contain;
   order: 1;
-  flex: 3; 
+  max-height: 50%;
   padding: 1em;
   align-self: center;
 }
 .card-extendedDescription{
-  /* grid-column: 1/4; */
   padding: .5em 1em;
   font-family: Helvetica, sans-serif;
-  /* iteration as part of flexbox */
   order: 2;
 }
 .card-website{
