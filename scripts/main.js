@@ -1,3 +1,4 @@
+var CACHE_NAME = 'CPWA-cache-v0.01'
 // var filteredList = [];
 
 /* When the user clicks on the button,
@@ -262,7 +263,7 @@ function toggleExtendedCard(card){
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-            //  .register('service-worker.original') // works with localhost
+            //  .register('service-worker.original.js') // works with localhost
              .register('./service-worker.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
@@ -288,38 +289,56 @@ window.addEventListener('beforeinstallprompt', (e) => {
   } 
   
 });
-btnAdd = document.getElementById('android-callout-button-add')
-btnAdd.addEventListener('click', (e) => {
-  // hide our user interface that shows our A2HS button
-  // btnAdd.style.display = 'none';
-  // Show the prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  deferredPrompt.userChoice
-    .then((choiceResult) => {
-      androidCallout = document.getElementById("android-callout")
-      androidCallout.style.display = 'none'
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-      deferredPrompt = null;
+function button_listeners(){
+  btnReload = document.getElementById('app_reload_page')
+  btnReload.addEventListener('click', (e) => {
+    window.location.reload(true);
+  })
+  btnReset = document.getElementById('app_reset_app')
+  btnReset.addEventListener('click', (e) =>{
+    caches.delete(CACHE_NAME)
+    localStorage.clear()
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      // https://stackoverflow.com/questions/33704791/how-do-i-uninstall-a-service-worker
+      for(let registration of registrations) {
+       registration.unregister()
+     } })
+     window.location.reload(true)
+  })
+  btnAdd = document.getElementById('android-callout-button-add')
+  btnAdd.addEventListener('click', (e) => {
+    // hide our user interface that shows our A2HS button
+    // btnAdd.style.display = 'none';
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice
+      .then((choiceResult) => {
+        androidCallout = document.getElementById("android-callout")
+        androidCallout.style.display = 'none'
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
     });
-});
-document.getElementById('android-callout-button-cancel').addEventListener('click', (e) => {
-  const cancelAndroidInstall = () => {
-    if (localStorage.hasOwnProperty('canceledAndroidInstall')){
-      return true;
-    } else {
-      localStorage.canceledAndroidInstall = 'true'
-      return false }
-    }
-  cancelAndroidInstall();
-  // Remove the parent element
-  e.srcElement.parentElement.style.display = 'none';
-      
-});
+  document.getElementById('android-callout-button-cancel').addEventListener('click', (e) => {
+    const cancelAndroidInstall = () => {
+      if (localStorage.hasOwnProperty('canceledAndroidInstall')){
+        return true;
+      } else {
+        localStorage.canceledAndroidInstall = 'true'
+        return false }
+      }
+    cancelAndroidInstall();
+    // Remove the parent element
+    e.srcElement.parentElement.style.display = 'none';
+        
+  });
+}
+
 
 function clearFilter(){
   if(localStorage.hasOwnProperty('filteredList')){
@@ -343,7 +362,7 @@ function initializeApp(){
   // Opens app to the last page user was on
   // resets to first page after 24 hours
   if (!localStorage.hasOwnProperty('currentSection')){
-    localStorage.currentSection = 'sctComfest';
+    localStorage.currentSection = 'sctComFest';
   }
   if (!localStorage.hasOwnProperty('time_of_last_section_selection')){
     localStorage.time_of_last_section_selection = Date.now()
@@ -399,6 +418,8 @@ async function afterLoadEvents() {
   await getPerformerListTwo()
   console.log('waiting')
   initializeApp()
+  button_listeners()
+  console.log(CACHE_NAME)
 }
 
 async function getPerformerList(){
