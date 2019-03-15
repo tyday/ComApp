@@ -12,6 +12,8 @@ var urlsToCache = [
   '/images/Program.svg',
   '/images/Purpose.svg',
   '/images/Schedule.svg',
+  '/images/star.svg',
+  '/images/star2.svg',
   '/images/Volunteer.svg',
   '/images/Website.svg',
   '/images/ComfestLogo-Basic-48.png',

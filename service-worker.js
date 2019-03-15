@@ -11,6 +11,8 @@ var urlsToCache = [
   '/comapp/images/Program.svg',
   '/comapp/images/Purpose.svg',
   '/comapp/images/Schedule.svg',
+  '/comapp/images/star.svg',
+  '/comapp/images/star2.svg',
   '/comapp/images/Volunteer.svg',
   '/comapp/images/Website.svg',
   '/comapp/images/ComfestLogo-Basic-48.png',
