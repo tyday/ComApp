@@ -1,5 +1,5 @@
 // from export.habernashing.com
-var CACHE_NAME = 'CPWA-lcl-cache-v0.01';
+var CACHE_NAME = 'CPWA-cache-v0.01';
 var urlsToCache = [
   '/',
   // '/index.html',

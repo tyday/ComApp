@@ -21,13 +21,13 @@
 </head>
 
 <body>
-<!-- <body onload="openSection('sctComfest')"> -->
+<!-- <body onload="openSection('sctComFest')"> -->
     <div class="titlebar">
         <div class="dropdown">
             <button onclick="fncBtnDropClick('mainDropdown')" class="dropbtn">Menu</button>
             <!-- <h1>Comfest</h1> -->
             <div id="mainDropdown" class="dropdown-content dropdown-toggle">
-                <a onclick="openSection('sctComfest')" class="active" id="defaultpage">Home</a>
+                <a onclick="openSection('sctComFest')" class="active" id="defaultpage">Home</a>
                 <a onclick="openSection('sctPurpose')">Purpose</a>
                 <a onclick="openSection('sctProgram')">Program</a>
                 <a onclick="openSection('sctWebsite')">Website</a>
@@ -68,7 +68,7 @@
     <div class="maincontentholder"></div>
 
     <!-- Section Frontpage -->
-    <div class="tabcontent" id="sctComfest">
+    <div class="tabcontent" id="sctComFest">
         <header class="logoTitle">
             <img src="images/Header.svg" alt="Comfest. Est: 1972">
             <!-- <h2>THE C
@@ -274,12 +274,12 @@
             </div>
         </ul>
         <h3>Reset</h3>
-        <p>If you're having issues it may help to reload the app.</p>
+        <p>If you're having issues it may help to reload the app. This is like turning it off and on again.</p>
         <button type="button" id="app_reload_page">Reload</button></br>
-        <p>It may be necessary to clear the cache as well.</p>
-        <button type="button" id="app_clear_cache">Clear Cache</button>
+        <p>If that doesn't work it may be necessary to reset the app. This will remove comfest's saved files from your browser and request the files directly from the server. It should reset the App completely.</p>
+        <button type="button" id="app_reset_app">Reset</button>
         <h3>Contact Us</h3>
-        <p>Let us know if you like the app, if you have any suggestions to improve it or if you have any problems.</p>
+        <a href="mailto:pwa@comfest.com?subject=PWA%20Comment"><p>Email us if you like the app, if you have any suggestions to improve it or if you have any problems.</p></a>
     </div>
     <!-- end Utilities -->
     <!-- callout button for iOS install -->
