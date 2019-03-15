@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v2.21';
+var CACHE_NAME = 'CPWA-cache-v0.01';
 var urlsToCache = [
   '/',
   // '/index.html',
