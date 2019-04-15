@@ -1,5 +1,3 @@
-var CACHE_NAME = 'CPWA-cache-v0.01'
-// var filteredList = [];
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -264,7 +262,8 @@ function toggleExtendedCard(card){
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
             //  .register('service-worker.original.js') // works with localhost
-             .register('./service-worker.js')
+            //  .register('./service-worker.js')
+            .register('sw.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
 
@@ -296,7 +295,6 @@ function button_listeners(){
   })
   btnReset = document.getElementById('app_reset_app')
   btnReset.addEventListener('click', (e) =>{
-    caches.delete(CACHE_NAME)
     localStorage.clear()
     navigator.serviceWorker.getRegistrations().then(function(registrations) {
       // https://stackoverflow.com/questions/33704791/how-do-i-uninstall-a-service-worker
@@ -419,7 +417,6 @@ async function afterLoadEvents() {
   console.log('waiting')
   initializeApp()
   button_listeners()
-  console.log(CACHE_NAME)
 }
 
 async function getPerformerList(){
