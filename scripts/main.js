@@ -303,9 +303,10 @@ function button_listeners(){
      } })
      window.location.reload(true)
   })
-  btnAdd = document.getElementById('android-callout-button-add')
-  btnAdd.addEventListener('click', (e) => {
-    // hide our user interface that shows our A2HS button
+  android_add_buttons = document.getElementsByClassName('android-callout-button-add');
+  for (var i = 0; i < android_add_buttons.length; i++){
+    android_add_buttons[i].addEventListener('click', (e) => {
+      // hide our user interface that shows our A2HS button
     // btnAdd.style.display = 'none';
     // Show the prompt
     deferredPrompt.prompt();
@@ -320,8 +321,10 @@ function button_listeners(){
           console.log('User dismissed the A2HS prompt');
         }
         deferredPrompt = null;
-      });
+      });    
     });
+  }
+
   document.getElementById('android-callout-button-cancel').addEventListener('click', (e) => {
     const cancelAndroidInstall = () => {
       if (localStorage.hasOwnProperty('canceledAndroidInstall')){
