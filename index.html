@@ -24,19 +24,7 @@
 <!-- <body onload="openSection('sctComFest')"> -->
     <div class="titlebar">
         <div class="dropdown">
-            <!-- <button onclick="fncBtnDropClick('mainDropdown')" class="dropbtn">Menu</button> -->
-            <button onclick="openSection('sctComFest')" class="dropbtn">Menu</button>
-            <!-- <h1>Comfest</h1> -->
-            <!-- <div id="mainDropdown" class="dropdown-content dropdown-toggle">
-                <a onclick="openSection('sctComFest')" class="active" id="defaultpage">Home</a>
-                <a onclick="openSection('sctPurpose')">Purpose</a>
-                <a onclick="openSection('sctSchedule')">Schedule</a>
-                <a onclick="openSection('sctProgram')">Program</a>
-                <a onclick="openSection('sctWebsite')">Website</a>
-                <a onclick="openSection('sctVolunteer')">Volunteer</a>
-                <a onclick="openSection('sctMap')">Map</a>
-                <a onclick="openSection('sctUtilities')">Utilities</a>
-            </div> -->
+            <button onclick="openSection('sctComFest')" class="dropbtn">Menu</button>            
         </div>
         <div class="title">
             <h3 id="pagetitle">ComFest</h3>
@@ -77,30 +65,47 @@
             <h5>EST.1972</h5> -->
         </header>
         <div class="buttongroup">
-            <div class="buttonpackage" onclick="openSection('sctPurpose')">
-                <img src="images/Purpose.svg" alt="Purpose icon" />
-                <p>Purpose</p>
+            <div class="buttonpackage" onclick="openSection('sctSpeakers_Workshops')">
+                <img src="images/Map.svg" alt="Map icon" />
+                <p>Speakers</p>
             </div>
             <div class="buttonpackage" onclick="openSection('sctSchedule')">
                 <img src="images/Schedule.svg" alt="Schedule icon" />
                 <p>Schedule</p>
             </div>
+            <div class="buttonpackage" onclick="openSection('sctStreet_Fair')">
+                <img src="images/Map.svg" alt="Map icon" />
+                <p>Street Fair</p>
+            </div>
             <div class="buttonpackage" onclick="openSection('sctProgram')">
                 <img src="images/Program.svg" alt="Program icon" />
                 <p>Program</p>
             </div>
-            <div class="buttonpackage" onclick="openSection('sctVolunteer')">
-                <img src="images/Volunteer.svg" alt="Volunteer icon" />
-                <p>Volunteer</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctWebsite')">
-                <img src="images/Website.svg" alt="Website icon" />
-                <p>Website</p>
+            <div class="buttonpackage" onclick="openSection('sctInfo_Tips')">
+                <img src="images/Map.svg" alt="Map icon" />
+                <p>Info & Tips</p>
             </div>
             <div class="buttonpackage" onclick="openSection('sctMap')">
                 <img src="images/Map.svg" alt="Map icon" />
                 <p>Map</p>
             </div>
+            <div class="buttonpackage" onclick="openSection('sctPurpose')">
+                <img src="images/Purpose.svg" alt="Purpose icon" />
+                <p>Purpose</p>
+            </div>
+            <div class="buttonpackage" onclick="openSection('sctVolunteer')">
+                <img src="images/Volunteer.svg" alt="Volunteer icon" />
+                <p>Volunteer</p>
+            </div>
+            <!-- onclick="openSection('sctWebsite')" -->
+            <!-- <div class="buttonpackage" onclick="window.location.href='https://www.comfest.com'"> -->
+            <a href="https://www.comfest.com" class="buttonpackage" target="_blank">
+                <img src="images/Website.svg" alt="Website icon" />
+                <p>Website</p>
+            </a>
+                <!-- <img src="images/Website.svg" alt="Website icon" />
+                <p>Website</p>
+            </div> -->
             <div class="buttonpackage" onclick="openSection('sctUtilities')">
                 <img src="images/Map.svg" alt="Map icon" />
                 <p>Utilities</p>
@@ -198,6 +203,21 @@
         <h1>Website</h1>
     </div>
     <!-- end Website -->
+    <!-- Section Speakers Workshops -->
+    <div class="tabcontent" id="sctSpeakers_Workshops">
+        <h1>Speakers and Workshops</h1>
+    </div>
+    <!-- end Speakers Workshops -->
+    <!-- Section Street Fair -->
+    <div class="tabcontent" id="sctStreet_Fair">
+        <h1>Speakers and Workshops</h1>
+    </div>
+    <!-- end Street Fair -->
+    <!-- Info and Tips -->
+    <div class="tabcontent" id="sctInfo_Tips">
+        <h1>Info and Tips</h1>
+    </div>
+    <!-- end Info and Tips -->
     <!-- Section Volunteer -->
     <div class="tabcontent" id="sctVolunteer">
         <h1>Volunteer</h1>
