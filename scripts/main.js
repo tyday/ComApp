@@ -259,13 +259,16 @@ function toggleExtendedCard(card){
   }
 }
 
-if ('serviceWorker' in navigator) {
+function register_serviceWorker(){
+  if ('serviceWorker' in navigator) {
     navigator.serviceWorker
             //  .register('service-worker.original.js') // works with localhost
             //  .register('./service-worker.js')
             .register('sw.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
+}
+
 
 /*****
  * Events to download performer list
@@ -416,6 +419,7 @@ async function afterLoadEvents() {
 // function afterLoadEvents() {
   // getPerformerList();
   // initializeApp();
+  register_serviceWorker()
   await getPerformerListTwo()
   console.log('waiting')
   initializeApp()
