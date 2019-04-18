@@ -91,7 +91,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "4c5df792125b17edf5e771f82770de07"
+    "revision": "d8ca6dd0f239efa507a4c8188fc0b8ca"
   },
   {
     "url": "manifest.json",
@@ -99,7 +99,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "6eeded5aea3dc274038ed19bb63413bf"
+    "revision": "ef22826de64530763f6924fe63911715"
   },
   {
     "url": "service-worker-workbox.js",
@@ -107,11 +107,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "9d8603f799b4100f90b943d25161af70"
+    "revision": "4f61340730905022ad79e8ac0fb8a139"
+  },
+  {
+    "url": "test_data.2.json",
+    "revision": "a91865cea30071c9b403882e09d27f95"
   },
   {
     "url": "test_data.json",
-    "revision": "a91865cea30071c9b403882e09d27f95"
+    "revision": "e4789afe7008e90a972bbbc5853489de"
   },
   {
     "url": "test.html",

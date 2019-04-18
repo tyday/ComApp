@@ -470,9 +470,14 @@ function placePerformanceList(data){
   //   card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc);
   //   performerList.appendChild(card);
   data.forEach(function(performance){
-    card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc,performance.Description, performance.Image, performance.WebSite);
-    performerList.appendChild(card);
-  });
+    try{
+      card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc,performance.Description, performance.Image, performance.WebSite);
+      performerList.appendChild(card);
+    }
+    catch(e){
+      console.log(`Error during card creation: ${e}`)
+    }
+  })
   
 
 }
@@ -485,6 +490,7 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
     "Live Arts":["stage-livearts", "show-livearts"],
     "Solar":["stage-solar", "show-solar"],
     "Peace & Healing Pavilion":["stage-peace", "show-peace"],
+    // "Peace Tent" :["stage-peace", "show-peace"],
     "KiDSART":["stage-kidsart","show-kidsart"],
     "Friday":"show-friday",
     "Saturday":"show-saturday",
