@@ -458,7 +458,18 @@ async function getPerformerList(){
 }
 async function getPerformerListTwo(){
   console.log('fetching..')
-  band_data = await fetch('test_data.json')
+  settings = {
+    method: "GET", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, cors, *same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+        "Content-Type": "application/json",
+        // "Content-Type": "application/x-www-form-urlencoded",
+    }
+}
+  // band_data = await fetch('test_data.json')
+  band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
   await placePerformanceList( await band_data.json())
   await initializeScheduleFilter()
 }
@@ -471,11 +482,12 @@ function placePerformanceList(data){
   //   performerList.appendChild(card);
   data.forEach(function(performance){
     try{
-      card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc,performance.Description, performance.Image, performance.WebSite);
+      card = createPerformanceCard(performance.start_time, performance.day,performance.stage,performance.performer,performance.three_word_desc,performance.description, performance.image, performance.website);
       performerList.appendChild(card);
     }
     catch(e){
       console.log(`Error during card creation: ${e}`)
+      // console.log(performance.start_time, performance.day,performance.stage,performance.performer,performance.three_word_desc,performance.description, performance.image, performance.website)
     }
   })
   

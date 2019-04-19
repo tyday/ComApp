@@ -2,7 +2,8 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox
 workbox.precaching.cleanupOutdatedCaches()
 workbox.precaching.precacheAndRoute([]);
 
+
 workbox.routing.registerRoute(
-    /.+\\.(?:png|gif|jpg|jpeg|svg)$/,
-    new workbox.strategies.CacheFirst()
-  );
+  'http://192.168.1.12:8000/api/performers/',
+  new workbox.strategies.StaleWhileRevalidate(),
+);

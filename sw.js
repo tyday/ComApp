@@ -99,23 +99,19 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "ef22826de64530763f6924fe63911715"
+    "revision": "39e4f7bbd24ca9c53f73dab4732b6666"
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "109e839ea9da72a92f54433ff699d045"
+    "revision": "ac23ed4457110f97a4c941c6371c037a"
   },
   {
     "url": "styles/styles.css",
     "revision": "4f61340730905022ad79e8ac0fb8a139"
   },
   {
-    "url": "test_data.2.json",
-    "revision": "a91865cea30071c9b403882e09d27f95"
-  },
-  {
     "url": "test_data.json",
-    "revision": "e4789afe7008e90a972bbbc5853489de"
+    "revision": "a91865cea30071c9b403882e09d27f95"
   },
   {
     "url": "test.html",
@@ -127,7 +123,8 @@ workbox.precaching.precacheAndRoute([
   }
 ]);
 
+
 workbox.routing.registerRoute(
-    /.+\\.(?:png|gif|jpg|jpeg|svg)$/,
-    new workbox.strategies.CacheFirst()
-  );
+  'http://192.168.1.12:8000/api/performers/',
+  new workbox.strategies.StaleWhileRevalidate(),
+);
