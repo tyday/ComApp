@@ -428,8 +428,25 @@ async function afterLoadEvents() {
 }
 
 
+async function getSpeakerList(){
+  console.log('Fetching Speaker and Workshop data')
+  settings = {
+    method: "GET", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, cors, *same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+        "Content-Type": "application/json",
+        // "Content-Type": "application/x-www-form-urlencoded",
+    }
+  }
+    band_data = await fetch('test_data.json')
+    // band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
+    await placePerformanceList( await band_data.json())
+    await initializeScheduleFilter()
+}
 async function getPerformerListTwo(){
-  console.log('fetching..')
+  console.log('fetching Stage Schedule')
   settings = {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, cors, *same-origin
@@ -442,13 +459,13 @@ async function getPerformerListTwo(){
   }
     // band_data = await fetch('test_data.json')
     band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
-    await placePerformanceList( await band_data.json())
+    await placePerformanceList( await band_data.json(), "performancelist")
     await initializeScheduleFilter()
 }
 
-function placePerformanceList(data){
+function placePerformanceList(data, save_location){
   var card;
-  var performerList = document.getElementById("performancelist")
+  var performerList = document.getElementById(save_location)
   // for(performance in data){
   //   card = createPerformanceCard(performance.StartTime, performance.Day,performance.Stage,performance.Performer,performance.ThreeWordDesc);
   //   performerList.appendChild(card);
