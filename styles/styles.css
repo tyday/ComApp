@@ -151,7 +151,7 @@ a.buttonpackage{
   height: 100%;
 }
 /* Schedule CSS */
-#performancelist{
+.performancelist{
   padding-left: 0em;
 }
 .slot-card{
