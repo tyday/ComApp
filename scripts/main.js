@@ -71,7 +71,12 @@ function openSection(sctName) {
     document.getElementById('filterButton').classList.add('hide')
   };
   // Show the specific tab content
-  document.getElementById(sctName).style.display = "block";
+  try{
+    document.getElementById(sctName).style.display = "block";
+  }
+  catch(e){
+    console.error(`Failed to display page: ${sctName}\n${e}`)
+  }
   document.getElementById('pagetitle').innerHTML = sctName.slice(3);
   
   // Set scroll position to saved value
@@ -194,11 +199,6 @@ function toggleFavorite(event){
     card.classList.add('show-favorite')
     // Add to sctFavorites
     copyCardToFavorites(card)
-    // sctFavorites = document.getElementById('sctFavorites')
-    // newCard = card.cloneNode(true)
-    // eleFavorite = newCard.getElementsByClassName("card-favorite-icon")
-    // eleFavorite[0].addEventListener("click",toggleFavorite)
-    // sctFavorites.appendChild(newCard)
 
   }
 }
@@ -261,11 +261,8 @@ function toggleExtendedCard(card){
 
 function register_serviceWorker(){
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-            //  .register('service-worker.original.js') // works with localhost
-            //  .register('./service-worker.js')
-            .register('sw.js')
-             .then(function() { console.log('Service Worker Registered'); });
+    navigator.serviceWorker.register('sw.js')
+      .then(function() { console.log('Service Worker Registered'); });
   }
 }
 
@@ -294,7 +291,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
 function button_listeners(){
   btnReload = document.getElementById('app_reload_page')
   btnReload.addEventListener('click', (e) => {
-    window.location.reload(true);
+    // window.location.reload(true);
+    location.href = location.href;
   })
   btnReset = document.getElementById('app_reset_app')
   btnReset.addEventListener('click', (e) =>{
@@ -304,7 +302,8 @@ function button_listeners(){
       for(let registration of registrations) {
        registration.unregister()
      } })
-     window.location.reload(true)
+    //  window.location.reload(true);
+     location.href = location.href;
   })
   android_add_buttons = document.getElementsByClassName('android-callout-button-add');
   for (var i = 0; i < android_add_buttons.length; i++){
@@ -416,46 +415,19 @@ function initializeApp(){
 }
 
 async function afterLoadEvents() {
-// function afterLoadEvents() {
-  // getPerformerList();
-  // initializeApp();
+  // Initializing app before fetching performer list should solve loading problem
+  initializeApp();
   register_serviceWorker()
-  await getPerformerListTwo()
-  console.log('waiting')
-  initializeApp()
+  try{
+    await getPerformerListTwo()
+  }
+  catch(e){
+    console.error(`Failed to get band schedule\n${e}`)
+  }
   button_listeners()
 }
 
-async function getPerformerList(){
-  //https://developers.google.com/web/updates/2015/03/introduction-to-fetch
-  console.log('fetch started');
-  var a = new Date;
-  a = a.getTime()
-  // fetch('api/findSchedule1.php?'+a)
-  fetch('test_data.json')//('http://localhost:3000/performers'))
-    .then(
-      function(response){
-        if (response.status !== 200) {
-          console.log("Looks like there was a problem. Status Code: " +
-            response.status);
-          return;
-        }
-        // Examine the text in the response
-        response.json().then(function(data){
-          console.log(data);
-          placePerformanceList(data);
-          // return 'success'
-        }).then(function (){
-          console.log('when did this get run?')
-          initializeScheduleFilter()
-          return 'success'
-        })
-      }
-    )
-    .catch(function(err) {
-      console.log('Fetch Error :-S', err);
-    }); 
-}
+
 async function getPerformerListTwo(){
   console.log('fetching..')
   settings = {
@@ -467,11 +439,11 @@ async function getPerformerListTwo(){
         "Content-Type": "application/json",
         // "Content-Type": "application/x-www-form-urlencoded",
     }
-}
-  // band_data = await fetch('test_data.json')
-  band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
-  await placePerformanceList( await band_data.json())
-  await initializeScheduleFilter()
+  }
+    // band_data = await fetch('test_data.json')
+    band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
+    await placePerformanceList( await band_data.json())
+    await initializeScheduleFilter()
 }
 
 function placePerformanceList(data){
