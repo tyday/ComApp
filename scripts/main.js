@@ -390,7 +390,7 @@ function initializeApp(){
   if(milliseconds_since_last_selection < milliseconds_in_a_day){
     openSection(localStorage.currentSection)
   } else {
-    openSection('sctComfest')
+    openSection('sctComFest')
   }
   
   // Detects if device is on iOS 
@@ -417,13 +417,11 @@ function initializeApp(){
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   initializeApp();
-  register_serviceWorker()
-  try{
-    await getPerformerListTwo()
-  }
-  catch(e){
-    console.error(`Failed to get band schedule\n${e}`)
-  }
+  // register_serviceWorker()
+  try{  getPerformerListTwo()}
+  catch(e){ console.error(`Failed to get band schedule\n${e}`)}
+  try{  getSpeakerList()}
+  catch(e){ console.error(`Failed to get speaker schedule\n${e}`)}
   button_listeners()
 }
 
@@ -442,7 +440,7 @@ async function getSpeakerList(){
   }
     band_data = await fetch('test_data.json')
     // band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
-    await placePerformanceList( await band_data.json())
+    await placePerformanceList( await band_data.json(), "speakerslist")
     await initializeScheduleFilter()
 }
 async function getPerformerListTwo(){
