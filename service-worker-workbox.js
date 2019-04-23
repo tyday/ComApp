@@ -4,6 +4,6 @@ workbox.precaching.precacheAndRoute([]);
 
 
 workbox.routing.registerRoute(
-  'http://192.168.1.12:8000/api/performers/',
+  'https://api.comfest.com/api/performers/',
   new workbox.strategies.StaleWhileRevalidate(),
 );

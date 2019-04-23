@@ -381,6 +381,7 @@ function initializeApp(){
        return favorites.includes(card.dataset.performer)
     });
     filterList.forEach((card)=> {
+      console.log('this should add cards to favorite')
       card.classList.add('show-favorite');
       copyCardToFavorites(card)})
     console.log(filterList)   
@@ -416,12 +417,14 @@ function initializeApp(){
 
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
-  initializeApp();
-  // register_serviceWorker()
-  try{  getPerformerListTwo()}
+  // Nope, initializing app before fetching prevents favorite lists to be built correctly
+  
+  register_serviceWorker()
+  try{  await getPerformerList()}
   catch(e){ console.error(`Failed to get band schedule\n${e}`)}
-  try{  getSpeakerList()}
+  try{  await getSpeakerList()}
   catch(e){ console.error(`Failed to get speaker schedule\n${e}`)}
+  initializeApp();
   button_listeners()
 }
 
@@ -438,12 +441,12 @@ async function getSpeakerList(){
         // "Content-Type": "application/x-www-form-urlencoded",
     }
   }
-    band_data = await fetch('test_data.json')
-    // band_data = await fetch('https://api.comfest.com/api/performers/', settings)
+    // band_data = await fetch('test_data.json')
+    band_data = await fetch('https://api.comfest.com/api/performers/', settings)
     await placePerformanceList( await band_data.json(), "speakerslist")
     await initializeScheduleFilter()
 }
-async function getPerformerListTwo(){
+async function getPerformerList(){
   console.log('fetching Stage Schedule')
   settings = {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
@@ -469,7 +472,9 @@ function placePerformanceList(data, save_location){
   //   performerList.appendChild(card);
   data.forEach(function(performance){
     try{
-      card = createPerformanceCard(performance.start_time, performance.day,performance.stage,performance.performer,performance.three_word_desc,performance.description, performance.image, performance.website);
+      // showFavoriteIcon hides favoriting abilit from Speakers section
+      showFavoriteIcon = save_location=='performancelist' ? true : false;
+      card = createPerformanceCard(performance.start_time, performance.day,performance.stage,performance.performer,performance.three_word_desc,performance.description, performance.image, performance.website, showFavoriteIcon);
       performerList.appendChild(card);
     }
     catch(e){
@@ -480,7 +485,7 @@ function placePerformanceList(data, save_location){
   
 
 }
-function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescription, vImage, vWebsite){
+function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescription, vImage, vWebsite, hasFavorites){
   var stageColors = {
     "Bozo":["stage-bozo", "show-bozo"],
     "Gazebo":["stage-gazebo", "show-gazebo"],
@@ -495,8 +500,15 @@ function createPerformanceCard(vTime,vDay,vStage,vPerformer,vThreeWords, vDescri
     "Saturday":"show-saturday",
     "Sunday":"show-sunday"
    }
+  // favClass prevents sctSpeakers from having favoriting ability
+  var favClass = (hasFavorites ? "slot-card" : "slot-card-small")
+  // var favoritelist = localStorage.getItem('favorites')
+  // var favorited = favoritelist.includes(vPerformer)  ? "show-favorite" : ""
+  // console.log(hasFavorites, favClass)
+  // add this to card.className if favoriting doesnt work 
+  // + " " + favorited
   var card = document.createElement("li");
-  card.className="slot-card " + stageColors[vStage][1] +" "+ stageColors[vDay];
+  card.className=  favClass + " " + stageColors[vStage][1] +" "+ stageColors[vDay]+" ";
   var eleTime = document.createElement("div");
   card.dataset.performer = vPerformer;
   card.dataset.description = vDescription;

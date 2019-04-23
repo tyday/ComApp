@@ -91,7 +91,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "852591ca471ffd9d438b24df0efe4b04"
+    "revision": "0beb443a8a036b9bb61925c2b5be3ea4"
   },
   {
     "url": "manifest.json",
@@ -99,15 +99,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "f0272293d80542556f29af7bdb21dbbb"
+    "revision": "15b648189a86ed77d67790859d871619"
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "ac23ed4457110f97a4c941c6371c037a"
+    "revision": "096fc030ce4ce03a2e0057b73d66a943"
   },
   {
     "url": "styles/styles.css",
-    "revision": "f29a0faafb916aad1aa7eab33fb27b7b"
+    "revision": "253baf45c9f0d5cb85dc7df0d8c77757"
   },
   {
     "url": "test_data.json",
@@ -125,6 +125,6 @@ workbox.precaching.precacheAndRoute([
 
 
 workbox.routing.registerRoute(
-  'http://192.168.1.12:8000/api/performers/',
+  'https://api.comfest.com/api/performers/',
   new workbox.strategies.StaleWhileRevalidate(),
 );

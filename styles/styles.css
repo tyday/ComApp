@@ -160,6 +160,12 @@ a.buttonpackage{
   box-shadow: 0 .2em .5em 0 hsla(3, 7%, 30%, .9);
   margin:1em;
 }
+.slot-card-small{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  box-shadow: 0 .2em .5em 0 hsla(3, 7%, 30%, .9);
+  margin:1em;
+}
 .card-time, .card-stage, .card-day, .card-favorite-icon{
   word-break: break-word;
   padding:.5em .2em;
