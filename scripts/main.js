@@ -424,8 +424,8 @@ function initializeFavorites(){
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
+  register_serviceWorker();
   initializeApp();
-  register_serviceWorker()
   try{  await getPerformerList()}
   catch(e){ console.error(`Failed to get band schedule\n${e}`)}
   try{  await getSpeakerList()}

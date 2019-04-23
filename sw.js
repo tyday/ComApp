@@ -1,4 +1,9 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js');
+
+workbox.setConfig({
+  debug: true
+});
+
 workbox.precaching.cleanupOutdatedCaches()
 workbox.precaching.precacheAndRoute([
   {
@@ -99,11 +104,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "cc47c3ae83dc6bf8c8640a86bffe55b5"
+    "revision": "a3778d0e39a07db44f445ee7e27b1bf3"
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "096fc030ce4ce03a2e0057b73d66a943"
+    "revision": "7eab8798b58e27d9326630079e100901"
   },
   {
     "url": "styles/styles.css",
@@ -122,7 +127,6 @@ workbox.precaching.precacheAndRoute([
     "revision": "4bcdcc613472037c0f9fe25df8d94ecb"
   }
 ]);
-
 
 workbox.routing.registerRoute(
   'https://api.comfest.com/api/performers/',
