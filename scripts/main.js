@@ -439,7 +439,7 @@ async function getSpeakerList(){
     }
   }
     band_data = await fetch('test_data.json')
-    // band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
+    // band_data = await fetch('https://api.comfest.com/api/performers/', settings)
     await placePerformanceList( await band_data.json(), "speakerslist")
     await initializeScheduleFilter()
 }
@@ -456,7 +456,7 @@ async function getPerformerListTwo(){
     }
   }
     // band_data = await fetch('test_data.json')
-    band_data = await fetch('http://192.168.1.12:8000/api/performers/', settings)
+    band_data = await fetch('https://api.comfest.com/api/performers/', settings)
     await placePerformanceList( await band_data.json(), "performancelist")
     await initializeScheduleFilter()
 }
