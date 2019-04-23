@@ -370,6 +370,18 @@ function initializeApp(){
   if (!localStorage.hasOwnProperty('time_of_last_section_selection')){
     localStorage.time_of_last_section_selection = Date.now()
   }
+  
+  const milliseconds_since_last_selection = Date.now() - localStorage.time_of_last_section_selection;
+  const milliseconds_in_a_day = 86400000; //10000; 
+  if(milliseconds_since_last_selection < milliseconds_in_a_day){
+    openSection(localStorage.currentSection)
+  } else {
+    openSection('sctComFest')
+  }
+}
+
+function initializeFavorites(){
+  console.log('initialize favorites fired')
   if (!localStorage.hasOwnProperty('favorites')){
     localStorage.favorites = JSON.stringify([]);
   } else {
@@ -386,13 +398,7 @@ function initializeApp(){
       copyCardToFavorites(card)})
     console.log(filterList)   
   }
-  const milliseconds_since_last_selection = Date.now() - localStorage.time_of_last_section_selection;
-  const milliseconds_in_a_day = 86400000; //10000; 
-  if(milliseconds_since_last_selection < milliseconds_in_a_day){
-    openSection(localStorage.currentSection)
-  } else {
-    openSection('sctComFest')
-  }
+  
   
   // Detects if device is on iOS 
   const isIos = () => {
@@ -418,13 +424,13 @@ function initializeApp(){
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
-  
+  initializeApp();
   register_serviceWorker()
   try{  await getPerformerList()}
   catch(e){ console.error(`Failed to get band schedule\n${e}`)}
   try{  await getSpeakerList()}
   catch(e){ console.error(`Failed to get speaker schedule\n${e}`)}
-  initializeApp();
+  initializeFavorites()
   button_listeners()
 }
 
