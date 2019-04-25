@@ -429,21 +429,45 @@ async function afterLoadEvents() {
   register_serviceWorker();
   initializeApp();
   try {
-    await getPerformerList();
+    await getPerformerList(
+      "https://api.comfest.com/api/performers/",
+      "performancelist"
+    );
   } catch (e) {
     console.error(`Failed to get band schedule\n${e}`);
   }
   try {
-    await getSpeakerList();
+    await getPerformerList(
+      "https://api.comfest.com/api/workshops/",
+      "speakerslist"
+    );
   } catch (e) {
     console.error(`Failed to get speaker schedule\n${e}`);
   }
   initializeFavorites();
   button_listeners();
+  initializeScheduleFilter();
 }
 
-async function getSpeakerList() {
-  console.log("Fetching Speaker and Workshop data");
+// async function getSpeakerList() {
+//   console.log("Fetching Speaker and Workshop data");
+//   settings = {
+//     method: "GET", // *GET, POST, PUT, DELETE, etc.
+//     mode: "cors", // no-cors, cors, *same-origin
+//     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+//     credentials: "same-origin", // include, *same-origin, omit
+//     headers: {
+//       "Content-Type": "application/json"
+//       // "Content-Type": "application/x-www-form-urlencoded",
+//     }
+//   };
+//   // band_data = await fetch('test_data.json')
+//   band_data = await fetch("https://api.comfest.com/api/workshops/", settings);
+//   await placePerformanceList(await band_data.json(), "speakerslist");
+// }
+
+async function getPerformerList(scheduleURL, category) {
+  console.log(`fetching: ${scheduleURL}`);
   settings = {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, cors, *same-origin
@@ -451,30 +475,11 @@ async function getSpeakerList() {
     credentials: "same-origin", // include, *same-origin, omit
     headers: {
       "Content-Type": "application/json"
-      // "Content-Type": "application/x-www-form-urlencoded",
     }
   };
   // band_data = await fetch('test_data.json')
-  band_data = await fetch("https://api.comfest.com/api/workshops/", settings);
-  await placePerformanceList(await band_data.json(), "speakerslist");
-  await initializeScheduleFilter();
-}
-async function getPerformerList() {
-  console.log("fetching Stage Schedule");
-  settings = {
-    method: "GET", // *GET, POST, PUT, DELETE, etc.
-    mode: "cors", // no-cors, cors, *same-origin
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *same-origin, omit
-    headers: {
-      "Content-Type": "application/json"
-      // "Content-Type": "application/x-www-form-urlencoded",
-    }
-  };
-  // band_data = await fetch('test_data.json')
-  band_data = await fetch("https://api.comfest.com/api/performers/", settings);
-  await placePerformanceList(await band_data.json(), "performancelist");
-  await initializeScheduleFilter();
+  band_data = await fetch(scheduleURL, settings);
+  await placePerformanceList(await band_data.json(), category);
 }
 
 function placePerformanceList(data, save_location) {

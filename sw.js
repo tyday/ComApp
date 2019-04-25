@@ -98,7 +98,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "8dbb07cff7594e5e24224158407eb1b3"
+    "revision": "06f68cae3a186e3becd30a63b27c0dd2"
   },
   {
     "url": "manifest.json",
@@ -106,11 +106,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "8796df46b6adb861ba190897352ac607"
+    "revision": "33d1ea19aac51eb256146017e5353535"
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "1fd8abdac7bac529eec62908162e6244"
+    "revision": "ec502e199f1d5743f832c4d6a908d168"
   },
   {
     "url": "styles/styles.css",
@@ -126,11 +126,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "workbox-config.js",
-    "revision": "4bcdcc613472037c0f9fe25df8d94ecb"
+    "revision": "b38118c2f2268da498050657f535f0f1"
   }
 ]);
 
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/performers/",
-  new workbox.strategies.StaleWhileRevalidate()
+  new workbox.strategies.staleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+  "https://api.comfest.com/api/workshops/",
+  new workbox.strategies.staleWhileRevalidate()
 );
