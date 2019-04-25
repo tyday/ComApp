@@ -1,10 +1,12 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js');
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js"
+);
 
 workbox.setConfig({
   debug: true
 });
 
-workbox.precaching.cleanupOutdatedCaches()
+workbox.precaching.cleanupOutdatedCaches();
 workbox.precaching.precacheAndRoute([
   {
     "url": "images/add.svg",
@@ -96,19 +98,19 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "1686db405e935fe28ffd12ca6e0d8031"
+    "revision": "8dbb07cff7594e5e24224158407eb1b3"
   },
   {
     "url": "manifest.json",
-    "revision": "90a2a7804f1cfc740fda5c16a531f1cc"
+    "revision": "97aed838e0ab85be037a67278ad7b741"
   },
   {
     "url": "scripts/main.js",
-    "revision": "bdbab090ed13509c6b8652140a703420"
+    "revision": "8796df46b6adb861ba190897352ac607"
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "7eab8798b58e27d9326630079e100901"
+    "revision": "1fd8abdac7bac529eec62908162e6244"
   },
   {
     "url": "styles/styles.css",
@@ -129,6 +131,6 @@ workbox.precaching.precacheAndRoute([
 ]);
 
 workbox.routing.registerRoute(
-  'https://api.comfest.com/api/performers/',
-  new workbox.strategies.StaleWhileRevalidate(),
+  "https://api.comfest.com/api/performers/",
+  new workbox.strategies.StaleWhileRevalidate()
 );

@@ -73,7 +73,9 @@ function openSection(sctName) {
   } catch (e) {
     console.error(`Failed to display page: ${sctName}\n${e}`);
   }
-  document.getElementById("pagetitle").innerHTML = sctName.slice(3);
+  document.getElementById("pagetitle").innerHTML = sctName
+    .slice(3)
+    .replace(/_/g, " ");
 
   // Set scroll position to saved value
   // unless this is a reload which returns -1
