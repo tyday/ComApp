@@ -10,7 +10,7 @@ workbox.precaching.cleanupOutdatedCaches();
 workbox.precaching.precacheAndRoute([
   {
     "url": "images/add.svg",
-    "revision": "84a0b8714e7b9a611c2268e7297420d3"
+    "revision": "f590b0491df82f08c93de9a191434977"
   },
   {
     "url": "images/BrettHelling.jpg",
@@ -42,7 +42,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/FunMap.svg",
-    "revision": "8b89fd660eef7e896246d4ab2c71baeb"
+    "revision": "689e2b11e646def69e0f8f4592763d3c"
   },
   {
     "url": "images/Header.svg",
@@ -50,11 +50,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/Map.svg",
-    "revision": "8dacd496550275acb50039f4aa686a6b"
+    "revision": "e194a94314effefefdb7087e674b74ba"
   },
   {
     "url": "images/Program.svg",
-    "revision": "3aeae0ffa42bc36129192fa7a03c08f0"
+    "revision": "17e3290f8cee9c6c656fd3acae9e7acc"
   },
   {
     "url": "images/Program2015.jpg",
@@ -70,31 +70,31 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/Purpose.svg",
-    "revision": "8f7c007967018b5eaa2c3cc49e95912a"
+    "revision": "1e60f4f803786f7afc9502c0dd7cfa17"
   },
   {
     "url": "images/Schedule.svg",
-    "revision": "fe5017096e1c59c67a59d7decf44c2ed"
+    "revision": "4fb3cbc284e07dbe098c7b038b74a44b"
   },
   {
     "url": "images/square-arrow.svg",
-    "revision": "157a276874dfb52b84b4cce61549d2e4"
+    "revision": "b37681d3083ca0134abb9e977959dbf5"
   },
   {
     "url": "images/star.svg",
-    "revision": "95ee328f97d386379bf13fc2efa55dcc"
+    "revision": "a31df5fa9d9d850b5f8805616ed5f329"
   },
   {
     "url": "images/star2.svg",
-    "revision": "d3a75ee06ebb3d44707928b075bcfd75"
+    "revision": "100fc2d1aa7d0812d344e9aee042f8f2"
   },
   {
     "url": "images/Volunteer.svg",
-    "revision": "7c4303eafc266b79ce5ed2713ec3abb1"
+    "revision": "ac8b3aede7953c918668ed357ef3525f"
   },
   {
     "url": "images/Website.svg",
-    "revision": "4c9a7a1c25f6c4b0358bdfd3424e9786"
+    "revision": "3a3e4c01cd4d560002bbdd4d47a60da1"
   },
   {
     "url": "index.html",
@@ -110,7 +110,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "ec502e199f1d5743f832c4d6a908d168"
+    "revision": "4b0af29eb06f74b635eaa657d030fca2"
   },
   {
     "url": "styles/styles.css",
@@ -132,9 +132,9 @@ workbox.precaching.precacheAndRoute([
 
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/performers/",
-  new workbox.strategies.staleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
-  new workbox.strategies.staleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate()
 );
