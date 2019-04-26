@@ -13,10 +13,6 @@ workbox.precaching.precacheAndRoute([
     "revision": "84a0b8714e7b9a611c2268e7297420d3"
   },
   {
-    "url": "images/BrettHelling.jpg",
-    "revision": "c9c13575b5b5865d560faecd6a1fa2b2"
-  },
-  {
     "url": "images/ComfestLogo-Basic-192.png",
     "revision": "102f84e7dee73b604ffe2da8e4cff355"
   },
@@ -41,20 +37,60 @@ workbox.precaching.precacheAndRoute([
     "revision": "e40206344b59318932e2246496337212"
   },
   {
-    "url": "images/FunMap.svg",
-    "revision": "8b89fd660eef7e896246d4ab2c71baeb"
-  },
-  {
     "url": "images/Header.svg",
     "revision": "83c2254e4d8815e807e88bc9a987ca46"
   },
   {
-    "url": "images/Map.svg",
-    "revision": "8dacd496550275acb50039f4aa686a6b"
+    "url": "images/Icons_Favorites-Off.svg",
+    "revision": "035545f9e5ecdd0e95a5d24c234eec80"
   },
   {
-    "url": "images/Program.svg",
-    "revision": "3aeae0ffa42bc36129192fa7a03c08f0"
+    "url": "images/Icons_Favorites-On.svg",
+    "revision": "f55df16a13fc4321edefa364db5ad064"
+  },
+  {
+    "url": "images/Icons_Favorites.svg",
+    "revision": "5fc77eac839f04ad27a75e79f89b599a"
+  },
+  {
+    "url": "images/Icons_Map.svg",
+    "revision": "663c0488201af420d4605c6f74aa1761"
+  },
+  {
+    "url": "images/Icons_Program.svg",
+    "revision": "722053e0d522414224881b7aec08f9ed"
+  },
+  {
+    "url": "images/Icons_Purpose.svg",
+    "revision": "c9a132d2e300d2c077191dd9c3bdb847"
+  },
+  {
+    "url": "images/Icons_Settings.svg",
+    "revision": "c2c5572fb64d4ccab810ecbce893d390"
+  },
+  {
+    "url": "images/Icons_Speakers_Workshops.svg",
+    "revision": "fe5c7bf5aa618be725c16dbe1e658f57"
+  },
+  {
+    "url": "images/Icons_Stage_Schedule.svg",
+    "revision": "5dc193c476973abd9c0d76aeeddd32a9"
+  },
+  {
+    "url": "images/Icons_Street_Fair.svg",
+    "revision": "7ebd84f19ad7a07453a659e50fb31677"
+  },
+  {
+    "url": "images/Icons_Tips_Info.svg",
+    "revision": "1d7475daf3cec907dd50f578f56d72de"
+  },
+  {
+    "url": "images/Icons_Volunteer.svg",
+    "revision": "be4f2b399205eb65fc0bc29b23655c2c"
+  },
+  {
+    "url": "images/Icons_Website.svg",
+    "revision": "10557f9a25194909bea4056f360595d1"
   },
   {
     "url": "images/Program2015.jpg",
@@ -69,36 +105,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "eab21c2db3ee2c8628b7b90adb672aca"
   },
   {
-    "url": "images/Purpose.svg",
-    "revision": "8f7c007967018b5eaa2c3cc49e95912a"
-  },
-  {
-    "url": "images/Schedule.svg",
-    "revision": "fe5017096e1c59c67a59d7decf44c2ed"
-  },
-  {
     "url": "images/square-arrow.svg",
     "revision": "157a276874dfb52b84b4cce61549d2e4"
   },
   {
-    "url": "images/star.svg",
-    "revision": "95ee328f97d386379bf13fc2efa55dcc"
-  },
-  {
-    "url": "images/star2.svg",
-    "revision": "d3a75ee06ebb3d44707928b075bcfd75"
-  },
-  {
-    "url": "images/Volunteer.svg",
-    "revision": "7c4303eafc266b79ce5ed2713ec3abb1"
-  },
-  {
-    "url": "images/Website.svg",
-    "revision": "4c9a7a1c25f6c4b0358bdfd3424e9786"
-  },
-  {
     "url": "index.html",
-    "revision": "06f68cae3a186e3becd30a63b27c0dd2"
+    "revision": "6dd1ef00d6184b625f4f598a263d00bd"
   },
   {
     "url": "manifest.json",
@@ -110,11 +122,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "ec502e199f1d5743f832c4d6a908d168"
+    "revision": "4b0af29eb06f74b635eaa657d030fca2"
   },
   {
     "url": "styles/styles.css",
-    "revision": "253baf45c9f0d5cb85dc7df0d8c77757"
+    "revision": "e98b7cd2e87863b64605c208244426d3"
   },
   {
     "url": "test_data.json",
@@ -132,9 +144,9 @@ workbox.precaching.precacheAndRoute([
 
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/performers/",
-  new workbox.strategies.staleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
-  new workbox.strategies.staleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate()
 );

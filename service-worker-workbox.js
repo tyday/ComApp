@@ -11,9 +11,9 @@ workbox.precaching.precacheAndRoute([]);
 
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/performers/",
-  new workbox.strategies.staleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
-  new workbox.strategies.staleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate()
 );
