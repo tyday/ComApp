@@ -15,7 +15,6 @@
     <meta name='apple-mobile-web-app-status-bar-style' content='black'>
     <meta name='apple-mobile-web-app-title' content='ComFest'>
     <meta name="theme-color" content="#e8554e" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,900&text=THECOMUNIYFS%20.1972VAL"> -->
 
 
 </head>
@@ -62,9 +61,6 @@
     <div class="tabcontent" id="sctCOMFEST">
         <header class="logoTitle">
             <img src="images/cropped-Header2019.png" alt="Comfest. Est: 1972">
-            <!-- <h2>THE C
-                <img src="images/ComfestLogo-Basic.png">MMUNITY FESTIVAL</h2>
-            <h5>EST.1972</h5> -->
         </header>
         <div class="buttongroup">
             <div class="buttonpackage" onclick="openSection('sctSpeakers_Workshops')">
@@ -228,12 +224,22 @@
     </div>
     <!-- end Tips and Info -->
     <!-- Section Volunteer -->
-    <div class="tabcontent" id="sctVolunteer">
+    <div class="tabcontent " id="sctVolunteer">
+        <div class="container-text">
         <h1>Volunteer</h1>
-        <a href="volunteer.comfest.com"><p>Volunteer Now!</p></a><
-        <h3><strong>Behold, the power behind ComFest – OUR VOLUNTEERS!</strong></h3>
-        <p><strong>ComFest is an entirely volunteer run festival, </strong>which means we literally couldn’t pull this off without each and every volunteer. Energetic, friendly volunteers are needed all over for a variety of jobs. <strong>We have roughly 3,000 volunteer shifts to fill each year,</strong> so there’s plenty of room for you to join the ComFest family!</p>
-        <h3>Want to volunteer, but not sure where? Read about some of the different volunteer roles we have available at the festival to see where would be the best fit!</h3>
+        <div class="images">
+                <img width="100%"   src="/images/First-Aid-1-300x200.jpg" alt="First Aid 1" />
+        </div>        
+        <button type="button" class="default-button" onclick="window.location.href = 'https://www.comfest.com'" >Volunteer Now!</button>
+        <!-- <a href="https://www.comfest.com" class="images"><p>Volunteer Now!</p></a> -->
+            <h3><strong>Behold, the power behind ComFest – OUR VOLUNTEERS!</strong></h3>
+            <strong>ComFest is an entirely volunteer run festival, </strong>
+            which means we literally couldn’t pull this off without each and every volunteer. 
+            Energetic, friendly volunteers are needed all over for a variety of jobs. 
+            <strong>We have roughly 3,000 volunteer shifts to fill each year,</strong> 
+            <strong>so there’s plenty of room for you to join the ComFest family!</strong>
+            
+    </div>
     </div>
     <!-- end Volunteer -->
     <!-- Section Schedule -->
@@ -279,7 +285,8 @@
     <!-- end Map -->
 
     <!-- Utilities -->
-    <div class="tabcontent container-text" id="sctUtilities">
+    <div class="tabcontent" id="sctUtilities">
+        <div class="container-text">
         <h2>Welcome to the utilties page</h2>
         <h3>About this App</h3>
         <p>This app is designed to be a simpler, less intrusive alternative to a phone app.</p>
@@ -312,14 +319,15 @@
         <hr>
         <h3>Reset</h3>
         <p>If you're having problems, it may help to reload the app - it's like turning it off and on again</p>
-        <button type="button" id="app_reload_page">Reload</button></br>
+        <button type="button" id="app_reload_page" class="default-button">Reload</button></br>
         <p>If that doesn't work it may be necessary to reset the app. This will remove comfest's saved files from your browser and request the files directly from the server. It should reset the App completely.</p>
-        <button type="button" id="app_reset_app">Reset</button>
+        <button type="button" id="app_reset_app" class="default-button">Reset</button>
         <hr>
         <h3>Contact Us</h3>
         <p>Email us if you like the app, if you have any suggestions to improve it or if you have any problems.</p>
-        <button type="button" onclick="window.location.href = 'mailto:pwa@comfest.com?subject=PWA%20Comment'" >Contact</button>
+        <button type="button" class="default-button" onclick="window.location.href = 'mailto:pwa@comfest.com?subject=PWA%20Comment'" >Contact</button>
     </div>
+</div>
     <!-- end Utilities -->
     <!-- callout button for iOS install -->
     <!-- https://www.w3schools.com/howto/howto_js_callout.asp -->
