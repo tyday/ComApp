@@ -83,9 +83,9 @@
                 <img src="images/Icons_Program.svg" alt="Program icon" />
                 <p>Program</p>
             </div>
-            <div class="buttonpackage" onclick="openSection('sctInfo_and_Tips')">
+            <div class="buttonpackage" onclick="openSection('sctTips_and_Info')">
                 <img src="images/Icons_Tips_Info.svg" alt="Map icon" />
-                <p>Info & Tips</p>
+                <p>Tips & Info</p>
             </div>
             <div class="buttonpackage" onclick="openSection('sctMap')">
                 <img src="images/Icons_Map.svg" alt="Map icon" />
@@ -222,11 +222,11 @@
         <h1>Street Fair</h1>
     </div>
     <!-- end Street Fair -->
-    <!-- Info and Tips -->
-    <div class="tabcontent" id="sctInfo_and_Tips">
-        <h1>Info and Tips</h1>
+    <!-- Tips and Info -->
+    <div class="tabcontent" id="sctTips_and_Info">
+        <h1>Tips and Info</h1>
     </div>
-    <!-- end Info and Tips -->
+    <!-- end Tips and Info -->
     <!-- Section Volunteer -->
     <div class="tabcontent" id="sctVolunteer">
         <h1>Volunteer</h1>
@@ -283,6 +283,12 @@
         <h2>Welcome to the utilties page</h2>
         <h3>About this App</h3>
         <p>This app is designed to be a simpler, less intrusive alternative to a phone app.</p>
+        <p>
+            The ComFest app is designed to give you all the information you need on hand at the festival, in a simpler, less intrusive alternate to a traditional phone app. 
+            This is our first attempt at a this kind of app, so everything may not run perfectly. 
+            Please be patient with us and provide us feedback on what you liked and what you didn't! 
+        </p>
+        <hr>
         <h3>Install Instructions</h3>
         <ul>
             <h4>iPhone Instructions</h4>        
@@ -303,13 +309,16 @@
                 <button class="callout-button android-callout-button-add" id="android-callout-button-add">Add</button>
             </div>
         </ul>
+        <hr>
         <h3>Reset</h3>
-        <p>If you're having issues it may help to reload the app. This is like turning it off and on again.</p>
+        <p>If you're having problems, it may help to reload the app - it's like turning it off and on again</p>
         <button type="button" id="app_reload_page">Reload</button></br>
         <p>If that doesn't work it may be necessary to reset the app. This will remove comfest's saved files from your browser and request the files directly from the server. It should reset the App completely.</p>
         <button type="button" id="app_reset_app">Reset</button>
+        <hr>
         <h3>Contact Us</h3>
-        <a href="mailto:pwa@comfest.com?subject=PWA%20Comment"><p>Email us if you like the app, if you have any suggestions to improve it or if you have any problems.</p></a>
+        <p>Email us if you like the app, if you have any suggestions to improve it or if you have any problems.</p>
+        <button type="button" onclick="window.location.href = 'mailto:pwa@comfest.com?subject=PWA%20Comment'" >Contact</button>
     </div>
     <!-- end Utilities -->
     <!-- callout button for iOS install -->
