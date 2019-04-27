@@ -6,7 +6,11 @@ function fncBtnDropClick(eleID) {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches(".dropbtn")) {
+  console.log(event);
+  if (
+    !event.target.matches(".dropbtn") &&
+    !event.target.matches(".rt-buttons")
+  ) {
     var dropdowns = document.getElementsByClassName("dropdown-toggle");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -363,7 +367,7 @@ function initializeApp() {
   // Opens app to the last page user was on
   // resets to first page after 24 hours
   if (!localStorage.hasOwnProperty("currentSection")) {
-    localStorage.currentSection = "sctComFest";
+    localStorage.currentSection = "sctCOMFEST";
   }
   if (!localStorage.hasOwnProperty("time_of_last_section_selection")) {
     localStorage.time_of_last_section_selection = Date.now();
@@ -375,7 +379,7 @@ function initializeApp() {
   if (milliseconds_since_last_selection < milliseconds_in_a_day) {
     openSection(localStorage.currentSection);
   } else {
-    openSection("sctComFest");
+    openSection("sctCOMFEST");
   }
 }
 
@@ -426,7 +430,7 @@ function initializeFavorites() {
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
-  register_serviceWorker();
+  // register_serviceWorker();
   initializeApp();
   try {
     await getPerformerList(

@@ -104,7 +104,7 @@ div {
   background-color: #e8554e;
 }
 .maincontentholder {
-  height: 47px;
+  height: 51px;
 }
 
 .title {
@@ -130,6 +130,7 @@ div {
 .logoTitle img {
   height: 6em;
   max-width: 90%;
+  object-fit: contain;
 }
 .buttongroup {
   display: flex;
