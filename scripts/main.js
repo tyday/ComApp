@@ -8,7 +8,8 @@ function fncBtnDropClick(eleID) {
 window.onclick = function(event) {
   console.log(event);
   if (
-    !event.target.matches(".dropbtn") &&
+    !event.target.matches(".toggleDropdown") &&
+    // !event.target.matches(".dropbtn") &&
     !event.target.matches(".rt-buttons")
   ) {
     var dropdowns = document.getElementsByClassName("dropdown-toggle");
