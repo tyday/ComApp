@@ -227,7 +227,7 @@ li {
   background-color: var(--main-color);
 }
 .maincontentholder {
-  height: 51px;
+  height: 4rem;
 }
 
 .title {
@@ -463,8 +463,15 @@ a.buttonpackage {
   justify-content: center;
   align-items: center;
 }
+#sctPurpose .container-text,
 #sctUtilities .container-text {
   align-items: flex-start;
+}
+#sctPurpose ul {
+  padding-left: 1rem;
+}
+#sctPurpose li {
+  list-style-type: disc;
 }
 
 @media screen and (min-width: 510px) {
