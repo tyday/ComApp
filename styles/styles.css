@@ -29,10 +29,14 @@ div {
 }
 a:hover,
 a:focus,
+a:link,
 a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
+}
+.tips-list .underline {
+  text-decoration: underline;
 }
 ul {
   padding: 0;
