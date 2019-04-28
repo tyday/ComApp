@@ -24,6 +24,13 @@ ul,
 div {
   font-family: var(--main-font-family);
 }
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 /* Dropdown Button */
 .dropbtn {
   background-color: var(--main-color);
@@ -105,6 +112,7 @@ div {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
   /* margin: auto; */
 }
 .images {

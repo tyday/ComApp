@@ -33,8 +33,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "3d472175d2968cb978121c60d90fae7d"
   },
   {
+    "url": "images/cropped-Header2019.png",
+    "revision": "c5659d8366de2b3d7b3590eaf886afbb"
+  },
+  {
     "url": "images/FestivalMap.svg",
     "revision": "e40206344b59318932e2246496337212"
+  },
+  {
+    "url": "images/First-Aid-1-300x200.jpg",
+    "revision": "96f4fe09775576abf39b96d74127df51"
   },
   {
     "url": "images/Header.svg",
@@ -53,8 +61,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "5fc77eac839f04ad27a75e79f89b599a"
   },
   {
+    "url": "images/Icons_Filter.png",
+    "revision": "8b6aadb77336252acd20a0ab956ea5d0"
+  },
+  {
     "url": "images/Icons_Map.svg",
     "revision": "663c0488201af420d4605c6f74aa1761"
+  },
+  {
+    "url": "images/Icons_Menu.png",
+    "revision": "142689793f70fbf1fdcf1bca55656165"
   },
   {
     "url": "images/Icons_Program.svg",
@@ -110,7 +126,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "377c788ed14543dee3180d1fd63b51f2"
+    "revision": "28c7c3072b0b1518b29ad613f8b831a7"
   },
   {
     "url": "manifest.json",
@@ -118,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "b78d2101ca00d5c86d8e5ebaaa1eb360"
+    "revision": "5d8cd35299cdca176c03a5fabfcbb9ed"
   },
   {
     "url": "service-worker-workbox.js",
@@ -126,7 +142,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "f08ff0b1c98a5b5ff9443c49cc1dd0e0"
+    "revision": "4bec60329cc1a2dbf24babab6d9776f9"
   },
   {
     "url": "test_data.json",
