@@ -1,7 +1,16 @@
 :root {
   --main-font-family: Arial, sans-serif;
-  --main-color: hsl(3, 80%, 60%);
+  --main-color: #ea4f47;
   --secondary-color: hsl(3, 63%, 80%);
+  --stage-bozo: #ff7e79;
+  --stage-gazebo: #ff9300;
+  --stage-offramp: #ffd579;
+  --stage-jazz: #73fdd6;
+  --stage-livearts: #76d6ff;
+  --stage-solar: #d883ff;
+  --stage-peace: #c27ba0;
+  --stage-kidsart: #dd7e6b;
+  --stage-day: #28de3f52;
 }
 html,
 body {
@@ -112,6 +121,49 @@ div {
   .rt-dropdown-content a:hover {
     background-color: #ddd;
   }
+}
+.list__streetfair {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+.list__streetfair-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: black;
+}
+.bkg-bozo {
+  background: var(--stage-bozo);
+}
+.bkg-gazebo {
+  background: var(--stage-gazebo);
+}
+.bkg-offramp {
+  background: var(--stage-offramp);
+}
+.bkg-jazz {
+  background: var(--stage-jazz);
+}
+.bkg-livearts {
+  background: var(--stage-livearts);
+}
+.bkg-solar {
+  background: var(--stage-solar);
+}
+.bkg-peace {
+  background: var(--stage-peace);
+}
+.bkg-kidsart {
+  background: var(--stage-kidsart);
+}
+.bkg-day {
+  background: var(--stage-day);
+}
+.bkg-main {
+  background: var(--main-color);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -284,37 +336,37 @@ a.buttonpackage {
   padding: 0em 1em 1em 1em;
 }
 .stage-bozo {
-  background-color: #ff7e79;
+  background-color: var(--stage-bozo);
 }
 .stage-gazebo {
-  background-color: #ff9300;
+  background-color: var(--stage-gazebo);
 }
 .stage-offramp {
-  background-color: #ffd579;
+  background-color: var(--stage-offramp);
 }
 .stage-jazz {
-  background-color: #73fdd6;
+  background-color: var(--stage-jazz);
 }
 .stage-livearts {
-  background-color: #76d6ff;
+  background-color: var(--stage-livearts);
 }
 .stage-solar {
-  background-color: #d883ff;
+  background-color: var(--stage-solar);
 }
 .stage-peace {
-  background-color: #c27ba0;
+  background-color: var(--stage-peace);
 }
 .stage-kidsart {
-  background-color: #dd7e6b;
+  background-color: var(--stage-kidsart);
 }
 .stage-friday {
-  background-color: #28de3f52;
+  background-color: var(--stage-day);
 }
 .stage-saturday {
-  background-color: #28de3f52;
+  background-color: var(--stage-day);
 }
 .stage-sunday {
-  background-color: #28de3f52;
+  background-color: #var(--stage-day);
 }
 
 /* Callout box - fixed position at the bottom of the page */
