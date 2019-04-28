@@ -15,10 +15,13 @@
 html,
 body {
   height: 100%;
+  margin: 0px;
 }
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 ul,
 div {
@@ -31,6 +34,13 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: var(--main-color);
@@ -174,6 +184,24 @@ a:visited {
   background: var(--main-color);
 }
 
+.tips-list li {
+  font-weight: bold;
+}
+.tips-list p {
+  font-weight: normal;
+  margin-left: 10px;
+}
+.subMenuBar {
+  background: var(--main-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 58px;
+  height: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
@@ -261,6 +289,7 @@ a.buttonpackage {
 /* Schedule CSS */
 .performancelist {
   padding-left: 0em;
+  padding-bottom: 2rem;
 }
 .slot-card {
   display: grid;
@@ -428,8 +457,12 @@ a.buttonpackage {
   flex-direction: column;
   padding: 1em;
   justify-content: center;
+  align-items: center;
+}
+#sctUtilities .container-text {
   align-items: flex-start;
 }
+
 @media screen and (min-width: 510px) {
   .program-main {
     width: 500px;

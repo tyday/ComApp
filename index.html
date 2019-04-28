@@ -1,57 +1,154 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comfest PWA</title>
-    <link rel="shortcut icon" href="images/ComfestLogo-Basic-48.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="/images/ComfestLogo-Basic-192.png">
-    <meta name='mobile-web-app-capable' content='yes'>
-    <meta name='apple-mobile-web-app-capable' content='yes'>
-    <meta name='application-name' content='ComFest'>
-    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
-    <meta name='apple-mobile-web-app-title' content='ComFest'>
+    <link
+      rel="shortcut icon"
+      href="images/ComfestLogo-Basic-48.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/images/ComfestLogo-Basic-192.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="ComFest" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="ComFest" />
     <meta name="theme-color" content="#e8554e" />
+  </head>
 
-
-</head>
-
-<body>
-<!-- <body onload="openSection('sctComFest')"> -->
+  <body>
+    <!-- <body onload="openSection('sctComFest')"> -->
     <div class="titlebar">
-        <div class="dropdown">
-            <!-- <button onclick="openSection('sctCOMFEST')" class="dropbtn">Menu</button>             -->
-            <button onclick="openSection('sctCOMFEST')" class="dropbtn"><img src="/images/Icons_Menu.png" alt="Menu" srcset=""></button>            
+      <div class="dropdown">
+        <!-- <button onclick="openSection('sctCOMFEST')" class="dropbtn">Menu</button>             -->
+        <button onclick="openSection('sctCOMFEST')" class="dropbtn">
+          <img src="/images/Icons_Menu.png" alt="Menu" srcset="" />
+        </button>
+      </div>
+      <div class="title">
+        <h3 id="pagetitle">COMFEST</h3>
+      </div>
+      <!-- <div class="spacer"> -->
+      <div class="rt-dropdown" id="filterButton">
+        <!-- <button onclick="fncBtnDropClick('scheduleDropdown')" class="dropbtn">Filter</button> -->
+        <button
+          onclick="fncBtnDropClick('scheduleDropdown')"
+          class="dropbtn toggleDropdown"
+        >
+          <img
+            class="toggleDropdown"
+            src="/images/Icons_Filter.png"
+            alt="Menu"
+            srcset=""
+          />
+        </button>
+        <!-- <h1>Comfest</h1> -->
+        <div id="scheduleDropdown" class="rt-dropdown-content dropdown-toggle">
+          <a
+            id="btn-bozo"
+            class="stage-bozo rt-buttons"
+            onclick="toggleSlot('show-bozo')"
+            data-visible="true"
+            >Bozo</a
+          >
+          <a
+            id="btn-gazebo"
+            class="stage-gazebo rt-buttons"
+            onclick="toggleSlot('show-gazebo')"
+            data-visible="true"
+            >Gazebo</a
+          >
+          <a
+            id="btn-offramp"
+            class="stage-offramp rt-buttons"
+            onclick="toggleSlot('show-offramp')"
+            data-visible="true"
+            >Off Ramp</a
+          >
+          <a
+            id="btn-jazz"
+            class="stage-jazz rt-buttons"
+            onclick="toggleSlot('show-jazz')"
+            data-visible="true"
+            >Jazz</a
+          >
+          <a
+            id="btn-livearts"
+            class="stage-livearts rt-buttons"
+            onclick="toggleSlot('show-livearts')"
+            data-visible="true"
+            >Live Arts</a
+          >
+          <a
+            id="btn-solar"
+            class="stage-solar rt-buttons"
+            onclick="toggleSlot('show-solar')"
+            data-visible="true"
+            >Solar</a
+          >
+          <a
+            id="btn-peace"
+            class="stage-peace rt-buttons"
+            onclick="toggleSlot('show-peace')"
+            data-visible="true"
+            >Peace & Healing</a
+          >
+          <a
+            id="btn-kidsart"
+            class="stage-kidsart rt-buttons"
+            onclick="toggleSlot('show-kidsart')"
+            data-visible="true"
+            >KiDSART</a
+          >
+          <a
+            id="btn-friday"
+            class="stage-friday rt-buttons"
+            onclick="toggleSlot('show-friday')"
+            data-visible="true"
+            >Friday</a
+          >
+          <a
+            id="btn-saturday"
+            class="stage-saturday rt-buttons"
+            onclick="toggleSlot('show-saturday')"
+            data-visible="true"
+            >Saturday</a
+          >
+          <a
+            id="btn-sunday"
+            class="stage-sunday rt-buttons"
+            onclick="toggleSlot('show-sunday')"
+            data-visible="true"
+            >Sunday</a
+          >
+          <a
+            id="btn-favorites"
+            class="stage-favorites rt-buttons"
+            onclick="openSection('sctFavorites')"
+            data-visible="true"
+            >Favorites</a
+          >
+          <a
+            id="btn-return"
+            class="stage-favorites rt-buttons"
+            onclick="openSection('sctSchedule')"
+            data-visible="true"
+            >Return</a
+          >
+          <a
+            id="btn-clear-filter"
+            class="stage-favorites rt-buttons"
+            onclick="clearFilter()"
+            data-visible="true"
+            >Clear Filters</a
+          >
         </div>
-        <div class="title">
-            <h3 id="pagetitle">COMFEST</h3>
-        </div>
-        <!-- <div class="spacer"> -->
-        <div class="rt-dropdown" id="filterButton">
-            <!-- <button onclick="fncBtnDropClick('scheduleDropdown')" class="dropbtn">Filter</button> -->
-            <button onclick="fncBtnDropClick('scheduleDropdown')" class="dropbtn toggleDropdown"><img class="toggleDropdown"src="/images/Icons_Filter.png" alt="Menu" srcset=""></button>
-            <!-- <h1>Comfest</h1> -->
-            <div id="scheduleDropdown" class="rt-dropdown-content dropdown-toggle">
-                <a id="btn-bozo" class="stage-bozo rt-buttons" onclick="toggleSlot('show-bozo')" data-visible="true">Bozo</a>
-                <a id="btn-gazebo" class="stage-gazebo rt-buttons" onclick="toggleSlot('show-gazebo')" data-visible="true">Gazebo</a>
-                <a id="btn-offramp" class="stage-offramp rt-buttons" onclick="toggleSlot('show-offramp')" data-visible="true">Off Ramp</a>
-                <a id="btn-jazz" class="stage-jazz rt-buttons" onclick="toggleSlot('show-jazz')" data-visible="true">Jazz</a>
-                <a id="btn-livearts" class="stage-livearts rt-buttons" onclick="toggleSlot('show-livearts')" data-visible="true">Live Arts</a>
-                <a id="btn-solar" class="stage-solar rt-buttons" onclick="toggleSlot('show-solar')" data-visible="true">Solar</a>
-                <a id="btn-peace" class="stage-peace rt-buttons" onclick="toggleSlot('show-peace')" data-visible="true">Peace & Healing</a>
-                <a id="btn-kidsart" class="stage-kidsart rt-buttons" onclick="toggleSlot('show-kidsart')" data-visible="true">KiDSART</a>
-                <a id="btn-friday" class="stage-friday rt-buttons" onclick="toggleSlot('show-friday')" data-visible="true">Friday</a>
-                <a id="btn-saturday" class="stage-saturday rt-buttons" onclick="toggleSlot('show-saturday')" data-visible="true">Saturday</a>
-                <a id="btn-sunday" class="stage-sunday rt-buttons" onclick="toggleSlot('show-sunday')" data-visible="true">Sunday</a>
-                <a id="btn-favorites" class="stage-favorites rt-buttons" onclick="openSection('sctFavorites')" data-visible="true">Favorites</a>
-                <a id="btn-return" class="stage-favorites rt-buttons" onclick="openSection('sctSchedule')" data-visible="true">Return</a>
-                <a id="btn-clear-filter" class="stage-favorites rt-buttons" onclick="clearFilter()" data-visible="true">Clear Filters</a>
-            </div>
-            <!-- </div> -->
-        </div>
+        <!-- </div> -->
+      </div>
     </div>
     <!--/titlebar-->
     <!--placing div to space everything below  title bar-->
@@ -59,251 +156,385 @@
 
     <!-- Section Frontpage -->
     <div class="tabcontent" id="sctCOMFEST">
-        <header class="logoTitle">
-            <img src="images/cropped-Header2019.png" alt="Comfest. Est: 1972">
-        </header>
-        <div class="buttongroup">
-            <div class="buttonpackage" onclick="openSection('sctSpeakers_Workshops')">
-                <img src="images/Icons_Speakers_Workshops.svg" alt="Map icon" />
-                <p>Speakers</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctSchedule')">
-                <img src="images/Icons_Stage_Schedule.svg" alt="Schedule icon" />
-                <p>Schedule</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctStreet_Fair')">
-                <img src="images/Icons_Street_Fair.svg" alt="Map icon" />
-                <p>Street Fair</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctProgram')">
-                <img src="images/Icons_Program.svg" alt="Program icon" />
-                <p>Program</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctTips_and_Info')">
-                <img src="images/Icons_Tips_Info.svg" alt="Map icon" />
-                <p>Tips & Info</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctMap')">
-                <img src="images/Icons_Map.svg" alt="Map icon" />
-                <p>Map</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctPurpose')">
-                <img src="images/Icons_Purpose.svg" alt="Purpose icon" />
-                <p>Purpose</p>
-            </div>
-            <div class="buttonpackage" onclick="openSection('sctVolunteer')">
-                <img src="images/Icons_Volunteer.svg" alt="Volunteer icon" />
-                <p>Volunteer</p>
-            </div>
-            <!-- onclick="openSection('sctWebsite')" -->
-            <!-- <div class="buttonpackage" onclick="window.location.href='https://www.comfest.com'"> -->
-            <a href="https://www.comfest.com" class="buttonpackage" target="_blank">
-                <img src="images/Icons_Website.svg" alt="Website icon" />
-                <p>Website</p>
-            </a>
-                <!-- <img src="images/Website.svg" alt="Website icon" />
+      <header class="logoTitle">
+        <img src="images/cropped-Header2019.png" alt="Comfest. Est: 1972" />
+      </header>
+      <div class="buttongroup">
+        <div
+          class="buttonpackage"
+          onclick="openSection('sctSpeakers_Workshops')"
+        >
+          <img src="images/Icons_Speakers_Workshops.svg" alt="Map icon" />
+          <p>Speakers</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctSchedule')">
+          <img src="images/Icons_Stage_Schedule.svg" alt="Schedule icon" />
+          <p>Schedule</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctStreet_Fair')">
+          <img src="images/Icons_Street_Fair.svg" alt="Map icon" />
+          <p>Street Fair</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctProgram')">
+          <img src="images/Icons_Program.svg" alt="Program icon" />
+          <p>Program</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctTips_and_Info')">
+          <img src="images/Icons_Tips_Info.svg" alt="Map icon" />
+          <p>Tips & Info</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctMap')">
+          <img src="images/Icons_Map.svg" alt="Map icon" />
+          <p>Map</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctPurpose')">
+          <img src="images/Icons_Purpose.svg" alt="Purpose icon" />
+          <p>Purpose</p>
+        </div>
+        <div class="buttonpackage" onclick="openSection('sctVolunteer')">
+          <img src="images/Icons_Volunteer.svg" alt="Volunteer icon" />
+          <p>Volunteer</p>
+        </div>
+        <!-- onclick="openSection('sctWebsite')" -->
+        <!-- <div class="buttonpackage" onclick="window.location.href='https://www.comfest.com'"> -->
+        <a href="https://www.comfest.com" class="buttonpackage" target="_blank">
+          <img src="images/Icons_Website.svg" alt="Website icon" />
+          <p>Website</p>
+        </a>
+        <!-- <img src="images/Website.svg" alt="Website icon" />
                 <p>Website</p>
             </div> -->
-            <div class="buttonpackage" onclick="openSection('sctUtilities')">
-                <img src="images/Icons_Settings.svg" alt="Map icon" />
-                <p>Utilities</p>
-            </div>
+        <div class="buttonpackage" onclick="openSection('sctUtilities')">
+          <img src="images/Icons_Settings.svg" alt="Map icon" />
+          <p>Utilities</p>
         </div>
-
-
+      </div>
     </div>
     <!--end front page-->
     <!-- Section Purpose -->
     <div class="tabcontent" id="sctPurpose">
-        <h3>The ComFest Statement of Principles</h3>
-        <p>
-            The Community Festival is guided by its Principles. The Principles are statements of what the members believe is basically
-            important. They are:
-        </p>
-        <p>
-            We think that people ought to work for the collective good of all people rather than for personal gain. We support cooperation
-            and collective activity rather than competition and individual profit.
-        </p>
+      <h3>The ComFest Statement of Principles</h3>
+      <p>
+        The Community Festival is guided by its Principles. The Principles are
+        statements of what the members believe is basically important. They are:
+      </p>
+      <p>
+        We think that people ought to work for the collective good of all people
+        rather than for personal gain. We support cooperation and collective
+        activity rather than competition and individual profit.
+      </p>
 
-        <p>
-            The basic necessities of life are a right and not a privilege. People have the collective right to control the conditions
-            of their lives.
-        </p>
+      <p>
+        The basic necessities of life are a right and not a privilege. People
+        have the collective right to control the conditions of their lives.
+      </p>
 
-        People should strive to conduct their lives in harmony with the environment.
+      People should strive to conduct their lives in harmony with the
+      environment.
 
-        <p>
-            We recognize that there are primary attitudes which divide and oppress people. These attitudes are usually shown by prejudice
-            against people on the basis of age, class, ability, income, race, sex and sexual preference/orientation.
-        </p>
+      <p>
+        We recognize that there are primary attitudes which divide and oppress
+        people. These attitudes are usually shown by prejudice against people on
+        the basis of age, class, ability, income, race, sex and sexual
+        preference/orientation.
+      </p>
 
-        <p>
-            We seek to eliminate these attitudes.
-        </p>
+      <p>
+        We seek to eliminate these attitudes.
+      </p>
 
-        <p>The Statement of Principles is more important than any other writings of the Community Festival.
-        </p>
+      <p>
+        The Statement of Principles is more important than any other writings of
+        the Community Festival.
+      </p>
     </div>
 
     <!-- end Purpose -->
     <!-- Section Program -->
-            <div class="tabcontent" id="sctProgram">
+    <div class="tabcontent" id="sctProgram">
+      <div class="container-text">
         <h1>2018 Program Guide</h1>
-        <a href="http://apgmediaofohio.com/emags/Comfest2018/docs/ComFest2018_eMag.pdf" target="_blank">
-            <img class="alignnone size-large wp-image-649 program-main" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2018_Cover_Full.jpg" alt="" width="300" height="auto" />
+        <a
+          href="http://apgmediaofohio.com/emags/Comfest2018/docs/ComFest2018_eMag.pdf"
+          target="_blank"
+        >
+          <img
+            class="alignnone size-large wp-image-649 program-main"
+            src="/images/ComFest2018_Cover.jpg"
+            alt=""
+            width="300"
+            height="auto"
+          />
         </a>
-        <div style="display: flex; flex-wrap: wrap;"><!-- 2017 -->
-        <div style="width: 250px;">
-        <h2 style="color: #ed1836;">2017 Program Guide</h2>
-        <a href="http://apgmediaofohio.com/emags/Comfest2017/docs/ComFest2017_CS5.pdf" target="_blank">
-            <img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2017_Cover_thumb.jpg" alt="" width="200" height="auto" />
-        </a></div>
-        <!-- 2016 -->
-        <div style="width: 250px;">
-        <h2 style="color: #9933ff;">2016 Program Guide</h2>
-        <!-- <a href="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2016.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2016_Cover_thumb.jpg" alt="" width="200" height="auto" /></a> -->
-        <a href="http://apgmediaofohio.com/emags/Comfest2016/docs/ComFest2016.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2016_Cover_thumb.jpg" alt="" width="200" height="auto" /></a>
-        <p style="color: #400080; font-size: small; padding-right: 2px;"><strong>Program Guide corrections:</strong> On page 57 (printed program) In Memoriam the photo is <u>not</u> Brett Helling.We apologize. Here is the correct photo:</p>
-        <img title="" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/BrettHelling.jpg" alt="" width="46" height="56" />
-        </div>
-        <!-- 2015 -->
-        <div style="width: 250px;">
-        <h2 style="color: #50bc4a;">2015 Program Guide</h2>
-        <a href="http://apgmediaofohio.com/emags/Comfest2015/docs/Comfest2015_eMag.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2015_Cover_thumb.jpg" alt="" width="200" height="auto" /></a>
-        <p style="color: #28621d; font-size: small; padding-right: 2px;"><strong>Program Guide corrections: </strong>On pgs. 24, 25, 27 and 42 the incorrect organization was listed for speakers and a workshop. The speakers and presenters are from Responsible Ohio and not Responsible Ohioans for Cannabis – two different groups. Check out responsibleohioans.org to explore the differences. Sorry from ComFest to both groups.</p>
-        </div>
-        <!-- 2014 -->
-        <div style="width: 250px;">
-        <h2 style="color: #ff7d23;">2014 Program Guide</h2>
-        <a href="http://apgmediaofohio.com/emags/Comfest2014/docs/ComFest2014.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2014_Cover_thumb.jpg" alt="" width="200" height="auto" /></a>
-        </div>
-        <!-- 2009 -->
-        <div style="width: 250px;">
-        <h2 style="color: #366d67;">2009 Program Guide</h2>
-        <a href="https://www.comfest.com/wp-content/uploads/ProgramGuides/ComFest2009.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/Comfest2009_Cover_thumb.jpg" alt="" width="200" height="auto" /> </a></div>
-        <!-- 2008 -->
-        <div style="width: 250px;">
-        <h2 style="color: #4d6c98;">2008 Program Guide</h2>
-        <a href="https://www.comfest.com/wordpress/wp-content/uploads/ProgramGuides/ComFest2008.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/Comfest2008_Cover_thumb.jpg" alt="" width="200" height="auto" /> </a></div>
-        <!-- 2007 -->
-        <div style="width: 250px;">
-        <h2 style="color: #327540;">2007 Program Guide</h2>
-        <a href="https://www.comfest.com/wordpress/wp-content/uploads/ProgramGuides/ComFest2007.pdf" target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/Comfest2007_Cover_thumb.jpg" alt="" width="200" height="auto" /> </a></div>
-        <!-- 2006 -->
-        <div style="width: 250px;">
-        <h2 style="color: #f08f28;">2006 Program Guide</h2>
-        <a href="https://www.comfest.com/wordpress/wp-content/uploads/ProgramGuides/ComFest2006.pdf"target="_blank"><img class="alignnone size-medium wp-image-649" src="https://www.comfest.com/wp-content/uploads/ProgramGuides/Comfest2006_Cover_thumb.jpg" alt="" width="200" height="auto" /> </a></div>
-        </div>
-
+      </div>
     </div>
     <!-- end Program -->
     <!-- Section Website -->
     <div class="tabcontent" id="sctWebsite">
-        <h1>Website</h1>
+      <h1>Website</h1>
     </div>
     <!-- end Website -->
     <!-- Section Speakers Workshops -->
     <div class="tabcontent" id="sctSpeakers_Workshops">
-        <h1>Speakers and Workshops</h1>
-        <div class="subtitleSchedule">
-
-        </div>
-        <!-- end subTitle-->
-        <!-- <h1>Schedule-Test</h1>-->
-        <ul class="performancelist"id="speakerslist">
-        </ul>
+      <h1>Speakers and Workshops</h1>
+      <div class="subtitleSchedule"></div>
+      <!-- end subTitle-->
+      <!-- <h1>Schedule-Test</h1>-->
+      <ul class="performancelist" id="speakerslist"></ul>
     </div>
     <!-- end Speakers Workshops -->
     <!-- Section Street Fair -->
     <div class="tabcontent" id="sctStreet_Fair">
-        <div class="container-text">
+      <div class="container-text">
         <h1>Street Fair</h1>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-gazebo">Gazebo Food</h4>
-            <li><strong>Aloha Ice:</strong> Flavored shaved ice</li>       
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-gazebo">Gazebo Food</h4>
+          <li><strong>Aloha Ice:</strong> Flavored shaved ice</li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-main">Russell Gate</h4>
-            <li><strong>D's Dogs:</strong> Hot dogs, brats</li>
-            <li><strong>CORVA watermelon:</strong> Watermelon cubes</li>
-            <li><strong>Go Bananas:</strong> Chocolate covered bananas</li>        
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-main">Russell Gate</h4>
+          <li><strong>D's Dogs:</strong> Hot dogs, brats</li>
+          <li><strong>CORVA watermelon:</strong> Watermelon cubes</li>
+          <li><strong>Go Bananas:</strong> Chocolate covered bananas</li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-main">Park St. Midway Food</h4>
-            <li><strong>Firdous:</strong> Middle Eastern food</li>
-            <li><strong>Whole World:</strong> Broccoli burger, veggie pizza</li>
-            <li><strong>Gilligans:</strong> Chicken & veggie stir fry</li>
-            <li><strong>Nida Sushi:</strong> Phad thai, sushi</li>
-            <li><strong>Queen's Table:</strong> Fishboat, sandwich</li>        
-            <li><strong>Flavors of India:</strong> Chicken tikka, lamb curry, veggie platter</li>        
-            <li><strong>Free Clinic:</strong> Sun-brewed iced tea</li>        
-            <li><strong>Global Gallery Coffee Shop:</strong> Corn on the cob, Tibetan momos</li>        
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-main">Park St. Midway Food</h4>
+          <li><strong>Firdous:</strong> Middle Eastern food</li>
+          <li><strong>Whole World:</strong> Broccoli burger, veggie pizza</li>
+          <li><strong>Gilligans:</strong> Chicken & veggie stir fry</li>
+          <li><strong>Nida Sushi:</strong> Phad thai, sushi</li>
+          <li><strong>Queen's Table:</strong> Fishboat, sandwich</li>
+          <li>
+            <strong>Flavors of India:</strong> Chicken tikka, lamb curry, veggie
+            platter
+          </li>
+          <li><strong>Free Clinic:</strong> Sun-brewed iced tea</li>
+          <li>
+            <strong>Global Gallery Coffee Shop:</strong> Corn on the cob,
+            Tibetan momos
+          </li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-jazz">Park & Goodale</h4>
-            <li><strong>D's Dogs:</strong> Hot dogs, brats</li>
-            <li><strong>CORVA watermelon:</strong> Watermelon cubes</li>
-            <li><strong>Go Bananas:</strong> Chocolate covered bananas</li>        
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-jazz">Park & Goodale</h4>
+          <li><strong>D's Dogs:</strong> Hot dogs, brats</li>
+          <li><strong>CORVA watermelon:</strong> Watermelon cubes</li>
+          <li><strong>Go Bananas:</strong> Chocolate covered bananas</li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-bozo">Bozo Food</h4>
-            <li><strong>Firdous:</strong> Middle Eastern food</li>
-            <li><strong>Whole World:</strong> Broccoli burger, veggie pizza</li>
-            <li><strong>Gilligans:</strong> Chicken & veggie stir fry</li>
-            <li><strong>Nida Sushi:</strong> Phad thai, sushi</li>
-            <li><strong>Queen's Table:</strong> Fishboat, sandwich</li>        
-            <li><strong>Flavors of India:</strong> Chicken tikka, lamb curry, veggie platter</li>        
-            <li><strong>Free Clinic:</strong> Sun-brewed iced tea</li>        
-            <li><strong>Global Gallery Coffee Shop:</strong> Corn on the cob, Tibetan momos</li>        
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-bozo">Bozo Food</h4>
+          <li><strong>Firdous:</strong> Middle Eastern food</li>
+          <li><strong>Whole World:</strong> Broccoli burger, veggie pizza</li>
+          <li><strong>Gilligans:</strong> Chicken & veggie stir fry</li>
+          <li><strong>Nida Sushi:</strong> Phad thai, sushi</li>
+          <li><strong>Queen's Table:</strong> Fishboat, sandwich</li>
+          <li>
+            <strong>Flavors of India:</strong> Chicken tikka, lamb curry, veggie
+            platter
+          </li>
+          <li><strong>Free Clinic:</strong> Sun-brewed iced tea</li>
+          <li>
+            <strong>Global Gallery Coffee Shop:</strong> Corn on the cob,
+            Tibetan momos
+          </li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-peace">Peace Village Food</h4>
-            <li><strong>Firdous:</strong> Middle Eastern food</li>
-            <li><strong>Whole World:</strong> Broccoli burger, veggie pizza</li>
-            <li><strong>Gilligans:</strong> Chicken & veggie stir fry</li>
-            <li><strong>Nida Sushi:</strong> Phad thai, sushi</li>
-            <li><strong>Queen's Table:</strong> Fishboat, sandwich</li>        
-            <li><strong>Flavors of India:</strong> Chicken tikka, lamb curry, veggie platter</li>        
-            <li><strong>Free Clinic:</strong> Sun-brewed iced tea</li>        
-            <li><strong>Global Gallery Coffee Shop:</strong> Corn on the cob, Tibetan momos</li>        
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-peace">Peace Village Food</h4>
+          <li><strong>Firdous:</strong> Middle Eastern food</li>
+          <li><strong>Whole World:</strong> Broccoli burger, veggie pizza</li>
+          <li><strong>Gilligans:</strong> Chicken & veggie stir fry</li>
+          <li><strong>Nida Sushi:</strong> Phad thai, sushi</li>
+          <li><strong>Queen's Table:</strong> Fishboat, sandwich</li>
+          <li>
+            <strong>Flavors of India:</strong> Chicken tikka, lamb curry, veggie
+            platter
+          </li>
+          <li><strong>Free Clinic:</strong> Sun-brewed iced tea</li>
+          <li>
+            <strong>Global Gallery Coffee Shop:</strong> Corn on the cob,
+            Tibetan momos
+          </li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-livearts">Near Live Arts Stage</h4>
-            <li><strong>Aloha Ice:</strong> Flavored shaved ice</li>       
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-livearts">
+            Near Live Arts Stage
+          </h4>
+          <li><strong>Aloha Ice:</strong> Flavored shaved ice</li>
         </ul>
-        <ul class="list__streetfair"><h4 class="list__streetfair-title bkg-main">Fair Food</h4>
-            <li>Along Goodale you will find the finest in "Fair" food from corndogs and candy apples to pizza and cream puffs. 
-                You can't miss the beautiful trailers along Goodale!</li>       
+        <ul class="list__streetfair">
+          <h4 class="list__streetfair-title bkg-main">Fair Food</h4>
+          <li>
+            Along Goodale you will find the finest in "Fair" food from corndogs
+            and candy apples to pizza and cream puffs. You can't miss the
+            beautiful trailers along Goodale!
+          </li>
         </ul>
-        </div>
+      </div>
     </div>
     <!-- end Street Fair -->
     <!-- Tips and Info -->
     <div class="tabcontent" id="sctTips_and_Info">
-        <h1>Tips and Info</h1>
+      <!-- <h1>Tips and Info</h1> -->
+      <!-- <div class="subMenuBar">
+          <div>FAQ</div>
+          <div>Getting Here</div>
+          <div>No BYOB</div>
+      </div> -->
+      <div class="container-text">
+        <ul class="tips-list">
+          <li>
+            How much does it cost to get into ComFest?
+            <p>
+              The Community Festival is free to attend! There are no tickets or
+              cover charges.
+            </p>
+          </li>
+          <li>
+            Where is ComFest? How do I get there? Where do I park?
+            <p>
+              The festival is held in <a href="https://www.google.com/maps/place/Goodale+Park/@39.9756383,-83.0091869,17z/data=!3m1!4b1!4m5!3m4!1s0x88388ed881f122a5:0x7f4fdac22ecc5768!8m2!3d39.9756342!4d-83.0069982" target="_blank">Goodale Park</a>, near downtown Columbus,
+              Ohio.
+            </p>
+            <p>
+              Because of the traffic caused by our event, and to help the
+              environment, we highly recommend riding a bicycle and using our $1
+              bicycle valet, or riding the COTA bus which will be running late
+              on Friday and Saturday.
+            </p>
+            <p>
+              If you must drive, you should park in the Arena District, as most
+              street parking in the neighborhood requires a residential parking
+              permit; cars parked illegally in the neighborhood will be towed.
+              If you must street park, please plan for the new meter system in
+              the Short North and download the new mobile app for parking in the
+              Short North area by searching for: ParkColumbus App. You can also
+              read up on the new parking information by searching for ‘The City
+              of Columbus Parking’.
+            </p>
+          </li>
+          <li>
+            When are my volunteer shifts?
+            <p>
+              If you have already signed up and need a list of your shifts, just
+              send an email to
+              <a onclick="window.location.href = 'mailto:myshifts@comfest.com'"
+                >myshifts@comfest.com</a
+              >, and our shift robot will reply with shift details and important
+              info.
+            </p>
+          </li>
+          <li>
+            How do I volunteer?
+            <p>
+              Fill out your
+              <a href="https://www.comfest.com/volunteer" target="_blank"
+                >volunteer application</a
+              >, where you can pick jobs and shifts that suit your unique
+              talents. Applications are usually available by March.
+            </p>
+          </li>
+          <li>
+            What’s the minimum age to attend?
+            <p>
+              ComFest is open to all ages, however for their own safety, we ask
+              that children be accompanied by a parent or guardian. Parents can
+              get a wristband at KiDSART or Safety Base Station and write a
+              parents cell number on it so we can quickly reunite lost kids with
+              parents.
+            </p>
+          </li>
+          <li>
+            Who is performing? What is there to do at ComFest?
+            <p>
+              Workshops, speakers, dancers, music, arts & crafts, food and
+              vendors—there is so much to do at ComFest. Our performance
+              schedule is available at: comfest.com/stages. Even more event
+              information is available in our annual Program Guide.
+            </p>
+          </li>
+          <li>
+            Can I bring alcoholic beverages from home?
+            <p>
+              NO! Carry-in alcohol is illegal in city parks. Police officers
+              will be present at the event to enforce all laws. ComFest will
+              have multiple Beer and Wine booths on Park Street and Goodale
+              Street. Avoid a ticket (or worse) by buying your alcoholic
+              beverages at the festival. Please cooperate with our NO BYOB
+              volunteers and remove all alcohol from the premises when asked.
+            </p>
+          </li>
+          <li>
+            Are coolers allowed at ComFest?
+            <p>
+              We are asking that you please leave your coolers at home. We also
+              ask that you do not leave backpacks unattended. Stay with your
+              stuff and tag those bags with your name and cell number. If you
+              bring something into the park, please take it back home with you.
+              Otherwise, make sure to clean up after yourself, and use one of
+              the recycling areas located throughout the event.
+            </p>
+          </li>
+          <li>
+            How can I have a booth or sell items at ComFest?
+            <p>
+              <a href="https://www.comfest.com/applications/" target="_blank"
+                >Check out our applications page.</a
+              >
+            </p>
+          </li>
+          <li>
+            How can I perform at the festival?
+            <p>
+              <a href="https://www.comfest.com/applications/" target="_blank">
+                Check out our applications page.</a
+              >
+            </p>
+          </li>
+        <!-- </ul>
+        <h3>Getting to ComFest</h3>
+        <ul class="tipslist"></ul> -->
+      </div>
     </div>
     <!-- end Tips and Info -->
     <!-- Section Volunteer -->
     <div class="tabcontent " id="sctVolunteer">
-        <div class="container-text">
+      <div class="container-text">
         <h1>Volunteer</h1>
         <div class="images">
-                <img width="100%"   src="/images/First-Aid-1-300x200.jpg" alt="First Aid 1" />
-        </div>        
+          <img
+            width="100%"
+            src="/images/First-Aid-1-300x200.jpg"
+            alt="First Aid 1"
+          />
+        </div>
         <!-- <button type="button" class="default-button" onclick="window.location.href = 'https://www.comfest.com/volunteer'" >Volunteer Now!</button> -->
-        <a href="https://www.comfest.com/volunteer" class="default-button" target="_blank">Volunteer Now!</a>
-            <h3><strong>Behold, the power behind ComFest – OUR VOLUNTEERS!</strong></h3>
-            <strong>ComFest is an entirely volunteer run festival, </strong>
-            which means we literally couldn’t pull this off without each and every volunteer. 
-            Energetic, friendly volunteers are needed all over for a variety of jobs. 
-            <strong>We have roughly 3,000 volunteer shifts to fill each year,</strong> 
-            <strong>so there’s plenty of room for you to join the ComFest family!</strong>
-            
-    </div>
+        <a
+          href="https://www.comfest.com/volunteer"
+          class="default-button"
+          target="_blank"
+          >Volunteer Now!</a
+        >
+        <h3>Behold, the power behind ComFest – OUR VOLUNTEERS!</h3>
+        <p>
+          <strong>ComFest is an entirely volunteer run festival.</strong> We
+          literally couldn’t pull this off without our volunteers. Energetic,
+          friendly volunteers are needed all over for a variety of jobs.
+        </p>
+        <p>
+          <strong
+            >We have roughly 3,000 volunteer shifts to fill each year</strong
+          >
+          There's plenty of room for you in the ComFest family!
+        </p>
+      </div>
     </div>
     <!-- end Volunteer -->
     <!-- Section Schedule -->
     <div class="tabcontent" id="sctSchedule">
-        <div class="subtitleSchedule">
-
-        </div>
-        <!-- end subTitle-->
-        <!-- <h1>Schedule-Test</h1>-->
-        <ul class="performancelist" id="performancelist">
-            <!--<li class="slot-card show-jazz">
+      <div class="subtitleSchedule"></div>
+      <!-- end subTitle-->
+      <!-- <h1>Schedule-Test</h1>-->
+      <ul class="performancelist" id="performancelist">
+        <!--<li class="slot-card show-jazz">
                 <div class="card-time">1:50 PM</div>
                 <div class="card-stage">I wish you Jazz</div>
                 <div class="card-day">Friday</div>
@@ -324,88 +555,132 @@
                 <div class="card-band">Band Name</div>
                 <div class="card-description">Description</div>
             </li>-->
-        </ul>
+      </ul>
     </div>
     <!-- end Schedule -->
     <!-- Favorites -->
-    <div class="tabcontent" id="sctFavorites">
-
-    </div>
+    <div class="tabcontent" id="sctFavorites"></div>
     <!-- Section Map -->
     <div class="tabcontent" id="sctMap">
-        <img src="images/FestivalMap.svg" alt="Park Map">
+      <img src="images/FestivalMap.svg" alt="Park Map" />
     </div>
     <!-- end Map -->
 
     <!-- Utilities -->
     <div class="tabcontent" id="sctUtilities">
-        <div class="container-text">
+      <div class="container-text">
         <h2>Welcome to the utilties page</h2>
         <h3>About this App</h3>
-        <p>This app is designed to be a simpler, less intrusive alternative to a phone app.</p>
         <p>
-            The ComFest app is designed to give you all the information you need on hand at the festival, in a simpler, less intrusive alternate to a traditional phone app. 
-            This is our first attempt at a this kind of app, so everything may not run perfectly. 
-            Please be patient with us and provide us feedback on what you liked and what you didn't! 
+          This app is designed to be a simpler, less intrusive alternative to a
+          phone app.
         </p>
-        <hr>
+        <p>
+          The ComFest app is designed to give you all the information you need
+          on hand at the festival, in a simpler, less intrusive alternate to a
+          traditional phone app. This is our first attempt at a this kind of
+          app, so everything may not run perfectly. Please be patient with us
+          and provide us feedback on what you liked and what you didn't!
+        </p>
+        <hr />
         <h3>Install Instructions</h3>
-        <ul>
-            <h4>iPhone Instructions</h4>        
-            <div class="callout">
-                <div class="callout-image">
-                    <img src="images/add.svg" alt="add icon">
-                </div>
-                <div class="callout-text">Install this webapp on your iPhone: tap 
-                    <img src="images/square-arrow.svg">
-                    then Add to Home Screen</div>
-            </div>
-            <h4>Android Instructions:</h4>
-            <div class="callout" id="android-callout-static">
-                <div class="callout-image">
-                    <img src="images/ComfestLogo-Basic-48.png" alt="Hopewell symbol">
-                </div>
-                <div class="callout-text">Add ComFest to your Home Screen:&nbsp;&nbsp;</div>
-                <button class="callout-button android-callout-button-add" id="android-callout-button-add">Add</button>
-            </div>
-        </ul>
-        <hr>
+        <!-- <ul> -->
+        <h4>iPhone Instructions</h4>
+        <div class="callout">
+          <div class="callout-image">
+            <img src="images/add.svg" alt="add icon" />
+          </div>
+          <div class="callout-text">
+            Install this webapp on your iPhone: tap
+            <img src="images/square-arrow.svg" />
+            then Add to Home Screen
+          </div>
+        </div>
+        <h4>Android Instructions:</h4>
+        <div class="callout" id="android-callout-static">
+          <div class="callout-image">
+            <img src="images/ComfestLogo-Basic-48.png" alt="Hopewell symbol" />
+          </div>
+          <div class="callout-text">
+            Add ComFest to your Home Screen:&nbsp;&nbsp;
+          </div>
+          <button
+            class="callout-button android-callout-button-add"
+            id="android-callout-button-add"
+          >
+            Add
+          </button>
+        </div>
+        <!-- </ul> -->
+        <hr />
         <h3>Reset</h3>
-        <p>If you're having problems, it may help to reload the app - it's like turning it off and on again</p>
-        <button type="button" id="app_reload_page" class="default-button">Reload</button></br>
-        <p>If that doesn't work it may be necessary to reset the app. This will remove comfest's saved files from your browser and request the files directly from the server. It should reset the App completely.</p>
-        <button type="button" id="app_reset_app" class="default-button">Reset</button>
-        <hr>
+        <p>
+          If you're having problems, it may help to reload the app - it's like
+          turning it off and on again
+        </p>
+        <button type="button" id="app_reload_page" class="default-button">
+          Reload</button
+        ><br />
+        <p>
+          If that doesn't work it may be necessary to reset the app. This will
+          remove comfest's saved files from your browser and request the files
+          directly from the server. It should reset the App completely.
+        </p>
+        <button type="button" id="app_reset_app" class="default-button">
+          Reset
+        </button>
+        <hr />
         <h3>Contact Us</h3>
-        <p>Email us if you like the app, if you have any suggestions to improve it or if you have any problems.</p>
-        <button type="button" class="default-button" onclick="window.location.href = 'mailto:pwa@comfest.com?subject=PWA%20Comment'" >Contact</button>
+        <p>
+          Email us if you like the app, if you have any suggestions to improve
+          it or if you have any problems.
+        </p>
+        <button
+          type="button"
+          class="default-button"
+          onclick="window.location.href = 'mailto:pwa@comfest.com?subject=PWA%20Comment'"
+        >
+          Contact
+        </button>
+      </div>
     </div>
-</div>
     <!-- end Utilities -->
     <!-- callout button for iOS install -->
     <!-- https://www.w3schools.com/howto/howto_js_callout.asp -->
     <!-- https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native -->
     <div class="callout-container">
-        <div class="callout" id="iOS-callout" style="display: none">
-          <div class="callout-image">
-                <img src="images/add.svg" alt="add icon">
-          </div>
-          <div class="callout-text">Install this webapp on your iPhone: tap 
-              <img src="images/square-arrow.svg">
-               then Add to Home Screen</div>
-          <div class="callout-closebtn" onclick="this.parentElement.style.display='none';">&times;</div>
+      <div class="callout" id="iOS-callout" style="display: none">
+        <div class="callout-image">
+          <img src="images/add.svg" alt="add icon" />
         </div>
-        <div class="callout" id="android-callout" style="display: none">
-            <div class="callout-image">
-                <img src="images/ComfestLogo-Basic-48.png" alt="Hopewell symbol">
-            </div>
-            <div class="callout-text">Add ComFest to your Home Screen</div>
-            <button class="callout-button" id="android-callout-button-cancel">Cancel</button>
-            <button class="callout-button android-callout-button-add" id="android-callout-button-add">Add</button>
+        <div class="callout-text">
+          Install this webapp on your iPhone: tap
+          <img src="images/square-arrow.svg" />
+          then Add to Home Screen
         </div>
+        <div
+          class="callout-closebtn"
+          onclick="this.parentElement.style.display='none';"
+        >
+          &times;
+        </div>
+      </div>
+      <div class="callout" id="android-callout" style="display: none">
+        <div class="callout-image">
+          <img src="images/ComfestLogo-Basic-48.png" alt="Hopewell symbol" />
+        </div>
+        <div class="callout-text">Add ComFest to your Home Screen</div>
+        <button class="callout-button" id="android-callout-button-cancel">
+          Cancel
+        </button>
+        <button
+          class="callout-button android-callout-button-add"
+          id="android-callout-button-add"
+        >
+          Add
+        </button>
+      </div>
     </div>
-
-</body>
-<script src="scripts/main.js"></script>
-
+  </body>
+  <script src="scripts/main.js"></script>
 </html>
