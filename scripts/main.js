@@ -431,7 +431,7 @@ function initializeFavorites() {
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
-  // register_serviceWorker();
+  register_serviceWorker();
   initializeApp();
   try {
     await getPerformerList(
@@ -454,23 +454,6 @@ async function afterLoadEvents() {
   initializeScheduleFilter();
 }
 
-// async function getSpeakerList() {
-//   console.log("Fetching Speaker and Workshop data");
-//   settings = {
-//     method: "GET", // *GET, POST, PUT, DELETE, etc.
-//     mode: "cors", // no-cors, cors, *same-origin
-//     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-//     credentials: "same-origin", // include, *same-origin, omit
-//     headers: {
-//       "Content-Type": "application/json"
-//       // "Content-Type": "application/x-www-form-urlencoded",
-//     }
-//   };
-//   // band_data = await fetch('test_data.json')
-//   band_data = await fetch("https://api.comfest.com/api/workshops/", settings);
-//   await placePerformanceList(await band_data.json(), "speakerslist");
-// }
-
 async function getPerformerList(scheduleURL, category) {
   console.log(`fetching: ${scheduleURL}`);
   settings = {
@@ -482,7 +465,6 @@ async function getPerformerList(scheduleURL, category) {
       "Content-Type": "application/json"
     }
   };
-  // band_data = await fetch('test_data.json')
   band_data = await fetch(scheduleURL, settings);
   await placePerformanceList(await band_data.json(), category);
 }

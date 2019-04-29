@@ -13,6 +13,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "84a0b8714e7b9a611c2268e7297420d3"
   },
   {
+    "url": "images/ComFest2018_Cover.jpg",
+    "revision": "b9040789c90425dc9d0f82a3a676a4af"
+  },
+  {
     "url": "images/ComfestLogo-Basic-192.png",
     "revision": "102f84e7dee73b604ffe2da8e4cff355"
   },
@@ -37,8 +41,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "c5659d8366de2b3d7b3590eaf886afbb"
   },
   {
-    "url": "images/FestivalMap.svg",
-    "revision": "e40206344b59318932e2246496337212"
+    "url": "images/FestivalMap19r2.svg",
+    "revision": "3b0716d16eceec41a310541203ed0c4e"
   },
   {
     "url": "images/First-Aid-1-300x200.jpg",
@@ -109,24 +113,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "10557f9a25194909bea4056f360595d1"
   },
   {
-    "url": "images/Program2015.jpg",
-    "revision": "ae8c24e5e29764c18dca4537a08ea6b5"
-  },
-  {
-    "url": "images/Program2016.jpg",
-    "revision": "1002140e36b48511ea590e5dd802110f"
-  },
-  {
-    "url": "images/Program2017-full.jpg",
-    "revision": "eab21c2db3ee2c8628b7b90adb672aca"
-  },
-  {
     "url": "images/square-arrow.svg",
     "revision": "157a276874dfb52b84b4cce61549d2e4"
   },
   {
+    "url": "images/Volunteer-Now.jpg",
+    "revision": "ae83cde1c1ef2c2e14c6fcc7aeb05826"
+  },
+  {
     "url": "index.html",
-    "revision": "28c7c3072b0b1518b29ad613f8b831a7"
+    "revision": "d68bc1be228ce136bde9ecaf4c1eab1d"
   },
   {
     "url": "manifest.json",
@@ -134,7 +130,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "5d8cd35299cdca176c03a5fabfcbb9ed"
+    "revision": "86914e7829b6b7d0fe89dc732dc121c9"
   },
   {
     "url": "service-worker-workbox.js",
@@ -142,7 +138,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "4bec60329cc1a2dbf24babab6d9776f9"
+    "revision": "f22f6f51309fbf06bb402428a4445504"
   },
   {
     "url": "test_data.json",
