@@ -407,7 +407,7 @@ a.buttonpackage {
   background-color: var(--stage-day);
 }
 .stage-sunday {
-  background-color: #var(--stage-day);
+  background-color: var(--stage-day);
 }
 
 /* Callout box - fixed position at the bottom of the page */

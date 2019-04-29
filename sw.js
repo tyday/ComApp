@@ -130,7 +130,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "86914e7829b6b7d0fe89dc732dc121c9"
+    "revision": "2e0f26a1372aa7779fea780672f94639"
   },
   {
     "url": "service-worker-workbox.js",

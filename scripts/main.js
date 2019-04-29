@@ -289,10 +289,19 @@ window.addEventListener("beforeinstallprompt", e => {
   }
 });
 function button_listeners() {
+  const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+  };
   btnReload = document.getElementById("app_reload_page");
   btnReload.addEventListener("click", e => {
     // window.location.reload(true);
-    location.href = location.href;
+    if (isIos()) {
+      console.log("reload");
+      location.href = location.href;
+    } else {
+      window.location.reload(true);
+    }
   });
   btnReset = document.getElementById("app_reset_app");
   btnReset.addEventListener("click", e => {
@@ -303,8 +312,12 @@ function button_listeners() {
         registration.unregister();
       }
     });
-    //  window.location.reload(true);
-    location.href = location.href;
+    if (isIos()) {
+      console.log("reload");
+      location.href = location.href;
+    } else {
+      window.location.reload(true);
+    }
   });
   android_add_buttons = document.getElementsByClassName(
     "android-callout-button-add"
