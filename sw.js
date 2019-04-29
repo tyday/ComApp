@@ -122,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "d68bc1be228ce136bde9ecaf4c1eab1d"
+    "revision": "b41c75eecb32d47bfb3b30f5aed77105"
   },
   {
     "url": "manifest.json",
@@ -138,7 +138,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "3dd09913de72a7467aff041776246678"
+    "revision": "d7d55df4dbf650d93d99ef0598e71262"
   },
   {
     "url": "test_data.json",
