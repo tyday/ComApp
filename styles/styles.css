@@ -364,7 +364,7 @@ a.buttonpackage {
   max-width: 90%;
   object-fit: contain;
   order: 1;
-  max-height: 50%;
+  max-height: 50vh;
   padding: 1em;
   align-self: center;
 }
