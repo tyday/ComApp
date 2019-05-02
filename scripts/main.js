@@ -36,6 +36,7 @@ function getScrollToPosition(previousSection, newSection) {
     return 0;
   }
 }
+
 /**********
  * open tabs that correspond to menu name or front page button
  * https://www.w3schools.com/howto/howto_js_tab_header.asp
@@ -75,6 +76,7 @@ function openSection(sctName) {
   // Show the specific tab content
   try {
     document.getElementById(sctName).style.display = "block";
+    history.pushState({ section: sctName }, sctName, `?page=${sctName}`);
   } catch (e) {
     console.error(`Failed to display page: ${sctName}\n${e}`);
   }
@@ -465,6 +467,15 @@ async function afterLoadEvents() {
   initializeFavorites();
   button_listeners();
   initializeScheduleFilter();
+  window.onpopstate = function(event) {
+    popEvent(event);
+  };
+}
+function popEvent(event) {
+  console.log(
+    "location: " + document.location + ", state: " + JSON.stringify(event.state)
+  );
+  openSection(event.state.section);
 }
 
 async function getPerformerList(scheduleURL, category) {
