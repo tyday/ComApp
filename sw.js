@@ -10,7 +10,7 @@ workbox.precaching.cleanupOutdatedCaches();
 workbox.precaching.precacheAndRoute([
   {
     "url": "images/add.svg",
-    "revision": "84a0b8714e7b9a611c2268e7297420d3"
+    "revision": "f590b0491df82f08c93de9a191434977"
   },
   {
     "url": "images/ComFest2018_Cover.jpg",
@@ -114,7 +114,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/square-arrow.svg",
-    "revision": "157a276874dfb52b84b4cce61549d2e4"
+    "revision": "b37681d3083ca0134abb9e977959dbf5"
   },
   {
     "url": "images/Volunteer-Now.jpg",
@@ -130,7 +130,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "2e0f26a1372aa7779fea780672f94639"
+    "revision": "e08ad6679cf6e73529f6eb5e47bb55e1"
   },
   {
     "url": "service-worker-workbox.js",
