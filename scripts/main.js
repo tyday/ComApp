@@ -212,55 +212,6 @@ function copyCardToFavorites(card) {
   eleFavorite[0].addEventListener("click", toggleFavorite);
   sctFavorites.appendChild(newCard);
 }
-/************
- * Toggle extended performance card
- *
- */
-function toggleExtendedCard(card) {
-  if (!card.className.includes("extended-card")) {
-    //   fill out extended card info
-    card.classList.add("extended-card");
-    // Grab photo info/ description/ website from server
-    //
-    // var data = {"Description":"Words about the band", "Image":"http://t2.ftcdn.net/jpg/00/43/60/13/400_F_43601359_7i5eXOlvXVmMms2NudQ7e3uykHuSV8PS.jpg","Website":"https://www.facebook.com/Blue-Spectrum-1439630629605363/"};
-    // var query = {'Performer': card.children[3].innerHTML}
-    //var data = getBandData(query);
-    var getDescription = card.dataset.description;
-    if (getDescription == "null") {
-      getDescription = "";
-    }
-    var getImage = card.dataset.image;
-    var getWebsite = card.dataset.website;
-    var cardExtension = document.createElement("div");
-    var bandImage = document.createElement("img");
-    var bandDescription = document.createElement("p");
-    var subBandDescription = document.createTextNode(getDescription);
-    var bandWebsite = document.createElement("a");
-    bandWebsite.setAttribute("href", getWebsite);
-    bandWebsite.setAttribute("target", "_blank");
-    bandWebsite.setAttribute("rel", "external");
-    bandWebsite.innerHTML = getWebsite;
-    bandWebsite.className = "card-website";
-    cardExtension.className = "card-extension";
-    bandDescription.appendChild(subBandDescription);
-    bandDescription.className = "card-extendedDescription";
-    bandImage.src = getImage;
-    bandImage.onerror = "imageError(this)";
-    bandImage.className = "card-photo";
-    cardExtension.appendChild(bandImage);
-    cardExtension.appendChild(bandDescription);
-    cardExtension.appendChild(bandWebsite);
-
-    card.appendChild(cardExtension);
-  } else {
-    // toggle card on or off
-    if (card.children[6].style.display === "none") {
-      card.children[6].style.display = "flex";
-    } else {
-      card.children[6].style.display = "none";
-    }
-  }
-}
 
 function register_serviceWorker() {
   if ("serviceWorker" in navigator) {
@@ -443,6 +394,11 @@ function initializeFavorites() {
   }
 }
 
+// Stops propogation of events
+function stopEvent(e) {
+  e.stopPropagation();
+}
+
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
@@ -603,4 +559,55 @@ function createPerformanceCard(
   card.appendChild(ele3Words);
 
   return card;
+}
+
+/************
+ * Toggle extended performance card
+ *
+ */
+function toggleExtendedCard(card) {
+  if (!card.className.includes("extended-card")) {
+    //   fill out extended card info
+    card.classList.add("extended-card");
+    // Grab photo info/ description/ website from server
+    //
+    // var data = {"Description":"Words about the band", "Image":"http://t2.ftcdn.net/jpg/00/43/60/13/400_F_43601359_7i5eXOlvXVmMms2NudQ7e3uykHuSV8PS.jpg","Website":"https://www.facebook.com/Blue-Spectrum-1439630629605363/"};
+    // var query = {'Performer': card.children[3].innerHTML}
+    //var data = getBandData(query);
+    var getDescription = card.dataset.description;
+    if (getDescription == "null") {
+      getDescription = "";
+    }
+    var getImage = card.dataset.image;
+    var getWebsite = card.dataset.website;
+    var cardExtension = document.createElement("div");
+    var bandImage = document.createElement("img");
+    var bandDescription = document.createElement("p");
+    var subBandDescription = document.createTextNode(getDescription);
+    var bandWebsite = document.createElement("a");
+    bandWebsite.setAttribute("href", getWebsite);
+    bandWebsite.setAttribute("target", "_blank");
+    bandWebsite.setAttribute("rel", "external");
+    bandWebsite.setAttribute("onClick", "stopEvent(event);");
+    bandWebsite.innerHTML = getWebsite;
+    bandWebsite.className = "card-website";
+    cardExtension.className = "card-extension";
+    bandDescription.appendChild(subBandDescription);
+    bandDescription.className = "card-extendedDescription";
+    bandImage.src = getImage;
+    bandImage.onerror = "imageError(this)";
+    bandImage.className = "card-photo";
+    cardExtension.appendChild(bandImage);
+    cardExtension.appendChild(bandDescription);
+    cardExtension.appendChild(bandWebsite);
+
+    card.appendChild(cardExtension);
+  } else {
+    // toggle card on or off
+    if (card.children[6].style.display === "none") {
+      card.children[6].style.display = "flex";
+    } else {
+      card.children[6].style.display = "none";
+    }
+  }
 }
