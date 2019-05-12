@@ -10,7 +10,7 @@ workbox.precaching.cleanupOutdatedCaches();
 workbox.precaching.precacheAndRoute([
   {
     "url": "images/add.svg",
-    "revision": "f590b0491df82f08c93de9a191434977"
+    "revision": "84a0b8714e7b9a611c2268e7297420d3"
   },
   {
     "url": "images/ComFest2018_Cover.jpg",
@@ -114,7 +114,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/square-arrow.svg",
-    "revision": "b37681d3083ca0134abb9e977959dbf5"
+    "revision": "157a276874dfb52b84b4cce61549d2e4"
   },
   {
     "url": "images/Volunteer-Now.jpg",
@@ -134,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "4b0af29eb06f74b635eaa657d030fca2"
+    "revision": "0fdd2d28c232c9aaffa8760fe41a229b"
   },
   {
     "url": "styles/styles.css",
@@ -162,3 +162,6 @@ workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
   new workbox.strategies.StaleWhileRevalidate()
 );
+workbox.routing.setDefaultHandler(
+  new workbox.strategies.StaleWhileRevalidate()
+)

@@ -17,3 +17,6 @@ workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
   new workbox.strategies.StaleWhileRevalidate()
 );
+workbox.routing.setDefaultHandler(
+  new workbox.strategies.StaleWhileRevalidate()
+)
