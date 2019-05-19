@@ -134,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "0fdd2d28c232c9aaffa8760fe41a229b"
+    "revision": "4296281611ef3921c1901c1faf622844"
   },
   {
     "url": "styles/styles.css",
@@ -162,6 +162,10 @@ workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
   new workbox.strategies.StaleWhileRevalidate()
 );
-workbox.routing.setDefaultHandler(
-  new workbox.strategies.StaleWhileRevalidate()
-)
+workbox.routing.setDefaultHandler(()=>{
+  workbox.routing.registerNavigationRoute(
+    // Assuming '/single-page-app.html' has been precached,
+    // look up its corresponding cache key.
+    workbox.precaching.getCacheKeyForURL('/index.html')
+    );
+})

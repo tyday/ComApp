@@ -17,6 +17,10 @@ workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/",
   new workbox.strategies.StaleWhileRevalidate()
 );
-workbox.routing.setDefaultHandler(
-  new workbox.strategies.StaleWhileRevalidate()
-)
+workbox.routing.setDefaultHandler(()=>{
+  workbox.routing.registerNavigationRoute(
+    // Assuming '/single-page-app.html' has been precached,
+    // look up its corresponding cache key.
+    workbox.precaching.getCacheKeyForURL('/index.html')
+    );
+})
