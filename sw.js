@@ -65,16 +65,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "5fc77eac839f04ad27a75e79f89b599a"
   },
   {
-    "url": "images/Icons_Filter.png",
-    "revision": "8b6aadb77336252acd20a0ab956ea5d0"
+    "url": "images/Icons_Filter_2.svg",
+    "revision": "1aa923d5745b1be6b839c511dbdb1d35"
   },
   {
     "url": "images/Icons_Map.svg",
     "revision": "663c0488201af420d4605c6f74aa1761"
   },
   {
-    "url": "images/Icons_Menu.png",
-    "revision": "142689793f70fbf1fdcf1bca55656165"
+    "url": "images/Icons_Menu_2.svg",
+    "revision": "5b079ec82fa92031ad309d77f93d4580"
   },
   {
     "url": "images/Icons_Program.svg",
@@ -122,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "27164c63be75e974505bf4daa875026f"
+    "revision": "0fdc9cbee82ecce05e697d5f4171aee7"
   },
   {
     "url": "manifest.json",
