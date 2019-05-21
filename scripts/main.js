@@ -466,7 +466,7 @@ function placePerformanceList(data, save_location) {
         performance.performer,
         performance.three_word_desc,
         performance.description,
-        performance.image,
+        performance.image_400,
         performance.website,
         showFavoriteIcon
       );
