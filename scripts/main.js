@@ -406,7 +406,7 @@ async function afterLoadEvents() {
   initializeApp();
   try {
     await getPerformerList(
-      "https://api.comfest.com/api/performers/",
+      "https://api.comfest.com/api/performers/?ordering=performance_time",
       "performancelist"
     );
   } catch (e) {
@@ -414,7 +414,7 @@ async function afterLoadEvents() {
   }
   try {
     await getPerformerList(
-      "https://api.comfest.com/api/workshops/",
+      "https://api.comfest.com/api/workshops/?ordering=performance_time",
       "speakerslist"
     );
   } catch (e) {

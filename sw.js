@@ -130,11 +130,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "68a83d2bb5c0b3d2d096505ec28d36c9"
+    "revision": "d0321ef3f2b8a98d8bb7619b3d931b8e"
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "4296281611ef3921c1901c1faf622844"
+    "revision": "a3028b230c746849b366596c4e8b7419"
   },
   {
     "url": "styles/styles.css",
@@ -155,11 +155,11 @@ workbox.precaching.precacheAndRoute([
 ]);
 
 workbox.routing.registerRoute(
-  "https://api.comfest.com/api/performers/",
+  "https://api.comfest.com/api/performers/?ordering=performance_time",
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
-  "https://api.comfest.com/api/workshops/",
+  "https://api.comfest.com/api/workshops/?ordering=performance_time",
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.setDefaultHandler(()=>{
