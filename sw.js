@@ -13,6 +13,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "84a0b8714e7b9a611c2268e7297420d3"
   },
   {
+    "url": "images/ComFest_2019_logo.jpg",
+    "revision": "c7d5fbc723fe438c2cc8774ecda0477b"
+  },
+  {
     "url": "images/ComFest2018_Cover.jpg",
     "revision": "b9040789c90425dc9d0f82a3a676a4af"
   },
@@ -122,7 +126,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "62956e19a6ba5ccc480b1d1ab20e8e19"
+    "revision": "5400c50f7a32a0aa5ca25b4316efb53f"
   },
   {
     "url": "manifest.json",
@@ -130,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "d0321ef3f2b8a98d8bb7619b3d931b8e"
+    "revision": "be912cd5306ff9e4b5b3bfa861cb3778"
   },
   {
     "url": "service-worker-workbox.js",
@@ -138,7 +142,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "a91a30faca630aa6a34ba220c64fe4f2"
+    "revision": "fc82e967dba25de6f1580b5e295ca79d"
   },
   {
     "url": "test_data.json",

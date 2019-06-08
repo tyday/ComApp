@@ -10,7 +10,8 @@
   --stage-solar: #d883ff;
   --stage-peace: #c27ba0;
   --stage-kidsart: #dd7e6b;
-  --stage-day: #28de3f52;
+  --stage-day: #a4e0ac;
+  --background-white:#f1f1f1;
 }
 html,
 body {
@@ -211,6 +212,20 @@ li {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+  
+}
+#scheduleDropdown.show{
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap-reverse;
+  max-height: calc(100vh - 3.6rem);
+}
+.white-background{
+  background-color: var(--background-white);
+}
+.grey-background{
+  background-color: var(--background-white);
 }
 .hide {
   visibility: hidden;

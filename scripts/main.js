@@ -53,7 +53,7 @@ function openSection(sctName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  if ((sctName == "sctSchedule") | (sctName == "sctFavorites")) {
+  if ((sctName == "sctSchedule") | (sctName == "sctFavorites") |(sctName == "sctSpeakers_&_Workshops")) {
     // document.getElementById('filterButton').style.visibility = "visible";
     document.getElementById("filterButton").classList.add("show");
     document.getElementById("filterButton").classList.remove("hide");
