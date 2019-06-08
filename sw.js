@@ -14,7 +14,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/ComFest_2019_logo.jpg",
-    "revision": "c7d5fbc723fe438c2cc8774ecda0477b"
+    "revision": "b604834aa92e4f4ecf0957f4392fa298"
   },
   {
     "url": "images/ComFest2018_Cover.jpg",
