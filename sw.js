@@ -17,6 +17,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "b9040789c90425dc9d0f82a3a676a4af"
   },
   {
+    "url": "images/ComFest2019_Map.png",
+    "revision": "a94558fcd4333c116856ccc24c3cca81"
+  },
+  {
     "url": "images/ComfestLogo-Basic-192.png",
     "revision": "102f84e7dee73b604ffe2da8e4cff355"
   },
@@ -39,10 +43,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "images/cropped-Header2019.png",
     "revision": "c5659d8366de2b3d7b3590eaf886afbb"
-  },
-  {
-    "url": "images/FestivalMap19r2.svg",
-    "revision": "3b0716d16eceec41a310541203ed0c4e"
   },
   {
     "url": "images/First-Aid-1-300x200.jpg",
@@ -122,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "0fdc9cbee82ecce05e697d5f4171aee7"
+    "revision": "62956e19a6ba5ccc480b1d1ab20e8e19"
   },
   {
     "url": "manifest.json",
@@ -138,7 +138,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "3cd3200acb0977982604a909cc894991"
+    "revision": "a91a30faca630aa6a34ba220c64fe4f2"
   },
   {
     "url": "test_data.json",

@@ -465,6 +465,13 @@ a.buttonpackage {
   justify-content: center;
   align-items: center;
 }
+#sctMap{
+  height: 100%;
+}
+.image-map{
+  width: 100%;
+  object-fit: contain;
+}
 #sctPurpose .container-text,
 #sctUtilities .container-text {
   align-items: flex-start;
