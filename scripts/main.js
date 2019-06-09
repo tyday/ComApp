@@ -6,7 +6,6 @@ function fncBtnDropClick(eleID) {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  console.log(event);
   if (
     !event.target.matches(".toggleDropdown") &&
     // !event.target.matches(".dropbtn") &&
@@ -171,9 +170,9 @@ function addOrRemoveFavoriteFromStorage(performer) {
   }
 }
 function toggleFavorite(event) {
-  console.log(event);
+  // console.log(event);
   event.stopPropagation();
-  console.log("toggleFavorite Fired");
+  // console.log("toggleFavorite Fired");
   // this.parentElement.classList.add('card-favorite')
   const card = this.parentElement;
   addOrRemoveFavoriteFromStorage(this.parentElement.dataset.performer);
@@ -216,7 +215,7 @@ function copyCardToFavorites(card) {
 function register_serviceWorker() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js").then(function() {
-      console.log("Service Worker Registered");
+      // console.log("Service Worker Registered");
     });
   }
 }
@@ -321,11 +320,11 @@ function clearFilter() {
 async function initializeScheduleFilter() {
   if (!localStorage.hasOwnProperty("filteredList")) {
     localStorage.filteredList = JSON.stringify([]);
-    console.log(localStorage.filteredList);
+    // console.log(localStorage.filteredList);
   } else {
-    console.log("attempt to run initialize schedule filter");
+    // console.log("attempt to run initialize schedule filter");
     for (let listItem of JSON.parse(localStorage.filteredList)) {
-      console.log(listItem);
+      // console.log(listItem);
       toggleSlot(listItem);
     }
   }
@@ -351,23 +350,23 @@ function initializeApp() {
 }
 
 function initializeFavorites() {
-  console.log("initialize favorites fired");
+  // console.log("initialize favorites fired");
   if (!localStorage.hasOwnProperty("favorites")) {
     localStorage.favorites = JSON.stringify([]);
   } else {
     favorites = JSON.parse(localStorage.favorites);
-    console.log(favorites);
+    // console.log(favorites);
     cardList = document.getElementsByClassName("slot-card");
     // filterList = Array.prototype.filter(cardList => favorites.includes(cardList.dataset.performer))
     filterList = Array.prototype.filter.call(cardList, function(card) {
       return favorites.includes(card.dataset.performer);
     });
     filterList.forEach(card => {
-      console.log("this should add cards to favorite");
+      // console.log("this should add cards to favorite");
       card.classList.add("show-favorite");
       copyCardToFavorites(card);
     });
-    console.log(filterList);
+    // console.log(filterList);
   }
 
   // Detects if device is on iOS
@@ -428,14 +427,14 @@ async function afterLoadEvents() {
   };
 }
 function popEvent(event) {
-  console.log(
-    "location: " + document.location + ", state: " + JSON.stringify(event.state)
-  );
+  // console.log(
+  //   "location: " + document.location + ", state: " + JSON.stringify(event.state)
+  // );
   openSection(event.state.section);
 }
 
 async function getPerformerList(scheduleURL, category) {
-  console.log(`fetching: ${scheduleURL}`);
+  // console.log(`fetching: ${scheduleURL}`);
   settings = {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, cors, *same-origin
