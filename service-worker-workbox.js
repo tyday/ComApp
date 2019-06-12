@@ -18,7 +18,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
-  "http://apgmediaofohio.com/emags/ComFest_2019/docs/ComFest_2019.pdf",
+  "/assets/ComFest_2019.pdf",
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.setDefaultHandler(()=>{

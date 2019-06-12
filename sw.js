@@ -122,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "353d6f725a858cf33d83424332245788"
+    "revision": "f3c51406738fcceb8dec2e7d2acda550"
   },
   {
     "url": "manifest.json",
@@ -134,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "54fc92af3edc582c26ddc53105cf9bcb"
+    "revision": "a5d8f09d5536dbe26892bc6fdd4f1dd1"
   },
   {
     "url": "styles/styles.css",
@@ -163,7 +163,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
-  "http://apgmediaofohio.com/emags/ComFest_2019/docs/ComFest_2019.pdf",
+  "/assets/ComFest_2019.pdf",
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.setDefaultHandler(()=>{
