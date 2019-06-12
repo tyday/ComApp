@@ -3,7 +3,7 @@ importScripts(
 );
 
 workbox.setConfig({
-  debug: true
+  debug: false
 });
 
 workbox.precaching.cleanupOutdatedCaches();
@@ -122,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "f3c51406738fcceb8dec2e7d2acda550"
+    "revision": "cd45b48a3323f263f825fde7fcb96eb5"
   },
   {
     "url": "manifest.json",
@@ -134,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "a5d8f09d5536dbe26892bc6fdd4f1dd1"
+    "revision": "a6db48a569678c7148aa0bbeea77fd08"
   },
   {
     "url": "styles/styles.css",
