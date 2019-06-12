@@ -3,22 +3,18 @@ importScripts(
 );
 
 workbox.setConfig({
-  debug: false
+  debug: true
 });
 
 workbox.precaching.cleanupOutdatedCaches();
 workbox.precaching.precacheAndRoute([
   {
     "url": "images/add.svg",
-    "revision": "84a0b8714e7b9a611c2268e7297420d3"
+    "revision": "f590b0491df82f08c93de9a191434977"
   },
   {
-    "url": "images/ComFest_2019_logo.jpg",
-    "revision": "b604834aa92e4f4ecf0957f4392fa298"
-  },
-  {
-    "url": "images/ComFest2018_Cover.jpg",
-    "revision": "b9040789c90425dc9d0f82a3a676a4af"
+    "url": "images/ComFest_2019_1.jpg",
+    "revision": "92ad292dbb2e17047092f330a34f2126"
   },
   {
     "url": "images/ComFest2019_Map.png",
@@ -118,7 +114,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/square-arrow.svg",
-    "revision": "157a276874dfb52b84b4cce61549d2e4"
+    "revision": "b37681d3083ca0134abb9e977959dbf5"
   },
   {
     "url": "images/Volunteer-Now.jpg",
@@ -126,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "24bc10a0859dac68040b6c6d58d0113e"
+    "revision": "353d6f725a858cf33d83424332245788"
   },
   {
     "url": "manifest.json",
@@ -138,7 +134,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "service-worker-workbox.js",
-    "revision": "3031c9c53c7898b890d5e43987d63238"
+    "revision": "54fc92af3edc582c26ddc53105cf9bcb"
   },
   {
     "url": "styles/styles.css",
@@ -164,6 +160,10 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/?ordering=performance_time",
+  new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+  "http://apgmediaofohio.com/emags/ComFest_2019/docs/ComFest_2019.pdf",
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.setDefaultHandler(()=>{

@@ -3,7 +3,7 @@ importScripts(
 );
 
 workbox.setConfig({
-  debug: false
+  debug: true
 });
 
 workbox.precaching.cleanupOutdatedCaches();
@@ -15,6 +15,10 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
   "https://api.comfest.com/api/workshops/?ordering=performance_time",
+  new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+  "http://apgmediaofohio.com/emags/ComFest_2019/docs/ComFest_2019.pdf",
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.setDefaultHandler(()=>{
