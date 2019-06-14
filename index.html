@@ -48,6 +48,7 @@
         </button>
         <!-- <h1>Comfest</h1> -->
         <div id="scheduleDropdown" class="rt-dropdown-content dropdown-toggle">
+            <input class="search-input rt-buttons" type="text" id="searchDropDown" onkeyup="searchActs_2()" placeholder="Search...">
           <a
             id="btn-bozo"
             class="stage-bozo rt-buttons"
@@ -306,6 +307,9 @@
     <!-- Section Speakers Workshops -->
     <div class="tabcontent" id="sctSpeakers_&_Workshops">
       <div class="subtitleSchedule"></div>
+      <!-- <div class="center-text">
+        <input class="search-input" type="text" id="searchWorkshop" onkeyup="searchActs('searchWorkshop','speakerslist')" placeholder="Search..">
+      </div> -->
       <!-- end subTitle-->
       <!-- <h1>Schedule-Test</h1>-->
       <ul class="performancelist" id="speakerslist"></ul>

@@ -9,8 +9,16 @@ workbox.setConfig({
 workbox.precaching.cleanupOutdatedCaches();
 workbox.precaching.precacheAndRoute([
   {
+    "url": "images/2018-Comfest_Robert-Berry-248_300.jpg",
+    "revision": "fdbad0027aa0b0c6eaef4d5d1b7760e6"
+  },
+  {
     "url": "images/add.svg",
     "revision": "f590b0491df82f08c93de9a191434977"
+  },
+  {
+    "url": "images/COMFEST_1A_06222018_IMGL0447_1_300.jpg",
+    "revision": "4ff8c3130b38409ac2cb99bc1c505f67"
   },
   {
     "url": "images/ComFest_2019_1.jpg",
@@ -122,7 +130,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "cd45b48a3323f263f825fde7fcb96eb5"
+    "revision": "88799323a133c0c86ed0cda8ed459b70"
   },
   {
     "url": "manifest.json",
@@ -130,7 +138,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "scripts/main.js",
-    "revision": "f3a15d77cf36d10858ee873ce0159eec"
+    "revision": "a83f4e207ab2dd481d1d1979be14d1af"
   },
   {
     "url": "service-worker-workbox.js",
@@ -138,7 +146,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "fc82e967dba25de6f1580b5e295ca79d"
+    "revision": "387052457cfc4935b18d273cf832bed0"
   },
   {
     "url": "test_data.json",

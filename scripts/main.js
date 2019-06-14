@@ -610,3 +610,45 @@ function toggleExtendedCard(card) {
     }
   }
 }
+function searchActs(seaker_id, search_id){
+  var input = document.getElementById(seaker_id)
+  console.log(input)
+  var filter = input.value.toUpperCase();
+  var ul = document.getElementById(search_id);
+  var li = ul.getElementsByTagName('li')
+  console.log(filter)
+  for(i=0;i<li.length;i++){
+    performer = li[i].dataset['performer']
+    if(performer.toUpperCase().indexOf(filter)>-1){
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none"
+    }
+  }
+}
+function searchActs_2(){
+  var input = document.getElementById('searchDropDown')
+  console.log(input)
+  var filter = input.value.toUpperCase();
+  // var ul = document.getElementById(search_id);
+  // var li = ul.getElementsByTagName('li')
+  var worshopList = document.getElementById('speakerslist').getElementsByTagName('li')
+  var performanceList = document.getElementById('performancelist').getElementsByTagName('li')
+  console.log(filter)
+  for(i=0;i<worshopList.length;i++){
+    performer = worshopList[i].dataset['performer']
+    if(performer.toUpperCase().indexOf(filter)>-1){
+      worshopList[i].style.display = "";
+    } else {
+      worshopList[i].style.display = "none"
+    }
+  }
+  for(i=0;i<performanceList.length;i++){
+    performer = performanceList[i].dataset['performer']
+    if(performer.toUpperCase().indexOf(filter)>-1){
+      performanceList[i].style.display = "";
+    } else {
+      performanceList[i].style.display = "none"
+    }
+  }
+}

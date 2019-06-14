@@ -131,6 +131,9 @@ li {
   text-decoration: none;
   /* margin: auto; */
 }
+.search-input{
+  font-family: var(--main-font-family);
+}
 .images {
   width: 300px;
   margin: 10px 0;
