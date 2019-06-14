@@ -136,8 +136,18 @@ li {
   margin: 10px 0;
   box-shadow: 5px 10px 10px #ddd;
 }
+.images-other {
+  /* width: 300px; */
+  /* margin: 10px 0; */
+  box-shadow: 5px 10px 10px #ddd;
+}
 .images img {
   object-fit: contain;
+}
+.image{
+  width: 300px;
+  object-fit: contain;
+  box-shadow: 5px 10px 10px #ddd;
 }
 @media (hover: hover) {
   /* Change color of dropdown links on hover */
@@ -242,9 +252,10 @@ li {
   display: flex;
   align-items: center;
   background-color: var(--main-color);
+  box-shadow: 0 0.2em 0.5em 0 hsla(3, 7%, 30%, 0.9);
 }
 .maincontentholder {
-  height: 3.6rem;
+  height: 4.2rem;
 }
 
 .title {
