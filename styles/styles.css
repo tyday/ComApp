@@ -133,6 +133,8 @@ li {
 }
 .search-input{
   font-family: var(--main-font-family);
+  font-size: 16px;
+  border: none;
 }
 .images {
   width: 300px;

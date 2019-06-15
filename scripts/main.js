@@ -135,6 +135,7 @@ function toggleSlot(showstage) {
       }
     }
   }
+  searchActs_2()
 }
 
 /***************
@@ -312,6 +313,8 @@ function button_listeners() {
 }
 
 function clearFilter() {
+  document.getElementById('searchDropDown').value = ""
+  searchActs_2()
   if (localStorage.hasOwnProperty("filteredList")) {
     localStorage.filterList = JSON.stringify([]);
     initializeScheduleFilter();
@@ -628,24 +631,33 @@ function searchActs(seaker_id, search_id){
 }
 function searchActs_2(){
   var input = document.getElementById('searchDropDown')
-  console.log(input)
+  // console.log(input)
   var filter = input.value.toUpperCase();
   // var ul = document.getElementById(search_id);
   // var li = ul.getElementsByTagName('li')
-  var worshopList = document.getElementById('speakerslist').getElementsByTagName('li')
+  var workshopList = document.getElementById('speakerslist').getElementsByTagName('li')
   var performanceList = document.getElementById('performancelist').getElementsByTagName('li')
-  console.log(filter)
-  for(i=0;i<worshopList.length;i++){
-    performer = worshopList[i].dataset['performer']
-    if(performer.toUpperCase().indexOf(filter)>-1){
-      worshopList[i].style.display = "";
+  // console.log(filter)
+  for(i=0;i<workshopList.length;i++){
+    performer = workshopList[i].dataset['performer']
+    // dont_display = workshopList[i].getAttribute('style') == "display: none;"
+    // console.log(dont_display)
+
+    let filteredList = JSON.parse(localStorage.filteredList)
+    dont_display = findCommonality(filteredList,workshopList[i].classList)
+    
+    if(performer.toUpperCase().indexOf(filter)>-1 && !dont_display){
+      workshopList[i].style.display = "";
     } else {
-      worshopList[i].style.display = "none"
+      workshopList[i].style.display = "none"
     }
   }
   for(i=0;i<performanceList.length;i++){
     performer = performanceList[i].dataset['performer']
-    if(performer.toUpperCase().indexOf(filter)>-1){
+    let filteredList = JSON.parse(localStorage.filteredList)
+    dont_display = findCommonality(filteredList,performanceList[i].classList)
+
+    if(performer.toUpperCase().indexOf(filter)>-1 && !dont_display){
       performanceList[i].style.display = "";
     } else {
       performanceList[i].style.display = "none"
