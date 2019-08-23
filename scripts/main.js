@@ -404,7 +404,7 @@ function stopEvent(e) {
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
-  // register_serviceWorker();
+  register_serviceWorker();
   initializeApp();
   try {
     await getPerformerList(
