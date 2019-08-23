@@ -530,7 +530,7 @@ a.buttonpackage {
   display: none;
 }
 .menu-alternate-visibility{
-  display: none;
+  /* display: none; */
 }
 #alternate_home_icon{
   filter: brightness(0.41) sepia(1) hue-rotate(314deg) saturate(2.9);
@@ -593,4 +593,39 @@ a.buttonpackage {
   .container-text, #sctVolunteer .container-text {
     align-items: flex-start
 }
+}
+
+
+.menu-alternate-visibility{
+  display: block;
+}
+.menu-alternate{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.menu-alternate>a{
+  width: 300px;    
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 0.2em 0.5em 0 hsla(3, 7%, 30%, 0.9); 
+}
+.menu-alternate>a>div{
+  /* width: 300px;    
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 0.2em 0.5em 0 hsla(3, 7%, 30%, 0.9);  */
+  /* height: 85%; */
+}
+.menu-alternate img{
+  display: block;
+  /* max-width: 300px;
+  max-height: 300px; */
+  height:300px;
+  width: 300px;
+  object-fit: contain;
+  margin: 1em auto;
+}
+.menu-alternate a{
+  text-align: center;
 }
