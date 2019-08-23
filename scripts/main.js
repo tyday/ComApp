@@ -664,3 +664,44 @@ function searchActs_2(){
     }
   }
 }
+
+function getPostsFromWebsite(url='https://www.comfest.com/wp-json/wp/v2/posts?_embed', numberOfPosts =6){
+  // this retrieves the posts from the wordpress site and returns them as a list
+  // defaults to 4 posts
+  fetch(url)
+    .then(res =>  res.json())
+    
+    // .then(res => console.log(res))
+    // .then(data => data)
+    .then(res => createPostsFromWebsite(res.slice(0,numberOfPosts)))
+}
+function createPostsFromWebsite(postList){
+  const root = document.getElementsByClassName('menu-alternate')[0]
+
+  postList.forEach(post=> {
+    let container = document.createElement('div')
+    container.classList = "blogItem"
+    const title = document.createElement('div')
+    title.innerHTML = post.title.rendered
+    const link = document.createElement('a')
+    link.href = post.link
+    // link.innerHTML = post.title.rendered
+    
+    let image_url = null
+    try{
+      image_url = post._embedded['wp:featuredmedia'][0].source_url
+    }
+    catch{
+      image_url = 'https://www.comfest.com/wp-content/uploads/2017/04/Title-Image-1.jpg'
+    }
+    if(image_url){
+      let image = document.createElement('img')
+      image.src = image_url
+      container.appendChild(image)
+    }
+    container.appendChild(title)
+    link.appendChild(container)
+    root.appendChild(link)
+  })
+}
+getPostsFromWebsite()

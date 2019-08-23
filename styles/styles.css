@@ -529,6 +529,12 @@ a.buttonpackage {
 .menu-large_screen{
   display: none;
 }
+.menu-alternate-visibility{
+  display: none;
+}
+#alternate_home_icon{
+  filter: brightness(0.41) sepia(1) hue-rotate(314deg) saturate(2.9);
+}
 @media screen and (min-width: 700px){
   .menu-large_screen{
     display: block;
@@ -544,11 +550,47 @@ a.buttonpackage {
   .responsive-all_content{
     flex-basis: 70%;
     flex-grow: 1;
+    padding: 1em;
   }
   #sctCOMFEST{
-    background-color: #c27ba0;
+    /* background-color: #c27ba0; */
   }
-  #sctCOMFEST header, #sctCOMFEST .buttongroup-{
+  #sctCOMFEST header, #sctCOMFEST .buttongroup{
     display: none;
   }
+  .menu-alternate-visibility{
+    display: block;
+  }
+  .menu-alternate{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-alternate>a{
+    width: 300px;    
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0.2em 0.5em 0 hsla(3, 7%, 30%, 0.9); 
+  }
+  .menu-alternate>a>div{
+    /* width: 300px;    
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0.2em 0.5em 0 hsla(3, 7%, 30%, 0.9);  */
+    /* height: 85%; */
+  }
+  .menu-alternate img{
+    display: block;
+    /* max-width: 300px;
+    max-height: 300px; */
+    height:300px;
+    width: 300px;
+    object-fit: contain;
+    margin: 1em auto;
+  }
+  .menu-alternate a{
+    text-align: center;
+  }
+  .container-text, #sctVolunteer .container-text {
+    align-items: flex-start
+}
 }
