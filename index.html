@@ -153,8 +153,74 @@
     </div>
     <!--/titlebar-->
     <!--placing div to space everything below  title bar-->
-    <div class="maincontentholder"></div>
+    <div class="headerspace"></div>
+    <div class="contentwrapper">
 
+      <!-- This div holds a copy of the main menu when on large screen -->
+      <div class="responsive-menu-large_screen">
+          <div class="menu-large_screen" >
+              <header class="logoTitle">
+                <img src="images/cropped-Header2019.png" alt="Comfest. Est: 1972" />
+              </header>
+              <div class="buttongroup">
+                <div
+                  class="buttonpackage"
+                  onclick="openSection('sctSpeakers_&_Workshops')"
+                >
+                  <img src="images/Icons_Speakers_Workshops.svg" alt="Bullhorn" />
+                  <p>Speakers</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctSchedule')">
+                  <img src="images/Icons_Stage_Schedule.svg" alt="Schedule icon" />
+                  <p>Schedule</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctStreet_Fair')">
+                  <img src="images/Icons_Street_Fair.svg" alt="Vendor booth" />
+                  <p>Street Fair</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctFavorites')">
+                  <img src="images/Icons_Favorites.svg" alt="Heart" />
+                  <p>Favorites</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctProgram')">
+                  <img src="images/Icons_Program.svg" alt="Program icon" />
+                  <p>Program</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctTips_and_Info')">
+                  <img src="images/Icons_Tips_Info.svg" alt="Lightbulb" />
+                  <p>Tips & Info</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctMap')">
+                  <img src="images/Icons_Map.svg" alt="Map icon" />
+                  <p>Map</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctPurpose')">
+                  <img src="images/Icons_Purpose.svg" alt="Purpose icon" />
+                  <p>Purpose</p>
+                </div>
+                <div class="buttonpackage" onclick="openSection('sctVolunteer')">
+                  <img src="images/Icons_Volunteer.svg" alt="Volunteer icon" />
+                  <p>Volunteer</p>
+                </div>
+                <!-- onclick="openSection('sctWebsite')" -->
+                <!-- <div class="buttonpackage" onclick="window.location.href='https://www.comfest.com'"> -->
+                <a href="https://www.comfest.com" class="buttonpackage" target="_blank">
+                  <img src="images/Icons_Website.svg" alt="Website icon" />
+                  <p>Website</p>
+                </a>
+                <!-- <img src="images/Website.svg" alt="Website icon" />
+                        <p>Website</p>
+                    </div> -->
+                <div class="buttonpackage" onclick="openSection('sctUtilities')">
+                  <img src="images/Icons_Settings.svg" alt="utilities" />
+                  <p>Utilities</p>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <!-- This div holds everything else. when on small screen it  -->
+      <div class="responsive-all_content">
     <!-- Section Frontpage -->
     <div class="tabcontent" id="sctCOMFEST">
       <header class="logoTitle">
@@ -213,6 +279,10 @@
           <img src="images/Icons_Settings.svg" alt="utilities" />
           <p>Utilities</p>
         </div>
+      </div>
+      <div class="menu-alternate">
+        <!-- This div is visible on large screens -->
+        Some sample words
       </div>
     </div>
     <!--end front page-->
@@ -715,6 +785,8 @@
           Add
         </button>
       </div>
+    </div>
+  </div>
     </div>
   </body>
   <script src="scripts/main.js"></script>
