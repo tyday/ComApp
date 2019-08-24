@@ -589,6 +589,11 @@ a.buttonpackage {
     padding: 1em;
     margin-left: 40vw;
   }
+  .buttongroup{
+    overflow-y: scroll;
+    height: 60vh;
+    height: calc(100vh - 10.8rem);
+  }
   #sctCOMFEST{
     /* background-color: #c27ba0; */
   }
