@@ -14,7 +14,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/add.svg",
-    "revision": "f590b0491df82f08c93de9a191434977"
+    "revision": "84a0b8714e7b9a611c2268e7297420d3"
   },
   {
     "url": "images/COMFEST_1A_06222018_IMGL0447_1_300.jpg",
@@ -122,7 +122,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/square-arrow.svg",
-    "revision": "b37681d3083ca0134abb9e977959dbf5"
+    "revision": "157a276874dfb52b84b4cce61549d2e4"
   },
   {
     "url": "images/Volunteer-Now.jpg",
@@ -146,7 +146,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles/styles.css",
-    "revision": "f90138821f3e4e9e18ec6bff1c9f8d0b"
+    "revision": "f5ece7ddf00df91e8a61b07884a63ffa"
   },
   {
     "url": "test_data.json",
