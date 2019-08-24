@@ -572,6 +572,7 @@ a.buttonpackage {
 }
 @media screen and (min-width: 700px){
   .menu-large_screen{
+    position: fixed;
     display: block;
     flex-basis: 30%;
     flex-grow: 0;
@@ -586,6 +587,7 @@ a.buttonpackage {
     flex-basis: 70%;
     flex-grow: 1;
     padding: 1em;
+    margin-left: 40vw;
   }
   #sctCOMFEST{
     /* background-color: #c27ba0; */
