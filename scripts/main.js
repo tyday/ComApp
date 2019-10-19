@@ -668,7 +668,8 @@ function searchActs_2(){
 function getPostsFromWebsite(url='https://www.comfest.com/wp-json/wp/v2/posts?_embed', numberOfPosts =6){
   // this retrieves the posts from the wordpress site and returns them as a list
   // defaults to 4 posts
-  fetch(url)
+  // fetch(url)
+  fetch('2019_comfest_wordpress.json')
     .then(res =>  res.json())
     
     // .then(res => console.log(res))
@@ -692,7 +693,8 @@ function createPostsFromWebsite(postList){
       image_url = post._embedded['wp:featuredmedia'][0].source_url
     }
     catch{
-      image_url = 'https://www.comfest.com/wp-content/uploads/2017/04/Title-Image-1.jpg'
+      // image_url = 'https://www.comfest.com/wp-content/uploads/2017/04/Title-Image-1.jpg'
+      image_url = '2019/Title-Image-1.jpg'
     }
     if(image_url){
       let image = document.createElement('img')

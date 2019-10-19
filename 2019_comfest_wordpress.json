@@ -1,0 +1,2557 @@
+[
+  {
+    "id": 1462,
+    "date": "2019-10-18T10:52:56",
+    "date_gmt": "2019-10-18T14:52:56",
+    "guid": { "rendered": "https://www.comfest.com/?p=1462" },
+    "modified": "2019-10-18T15:07:58",
+    "modified_gmt": "2019-10-18T19:07:58",
+    "slug": "simply-living-gift-to-be-simple",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/simply-living-gift-to-be-simple/",
+    "title": {
+      "rendered": "Simply Living A Gift to be Simple \u2022 October 24 2019"
+    },
+    "content": {
+      "rendered": "<h4 style=\"text-align: center;\"><img class=\"alignnone wp-image-1468 size-medium\" src=\"https://www.comfest.com/wp-content/uploads/2019/10/GTBS-2019-graphic-300x150.jpg\" alt=\"\" width=\"300\" height=\"150\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/10/GTBS-2019-graphic-300x150.jpg 300w, https://www.comfest.com/wp-content/uploads/2019/10/GTBS-2019-graphic-768x384.jpg 768w, https://www.comfest.com/wp-content/uploads/2019/10/GTBS-2019-graphic-1024x512.jpg 1024w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></h4>\n<h4 style=\"text-align: left;\">This year Simply Living\u2019s A Gift to be Simple annual fundraiser\u2019s theme is \u201cMaking a Difference.\u201d Join us on Thursday evening, October 24 \u2022\u00a05pm to 8 pm</h4>\n<h4 style=\"text-align: left;\">Strongwater Food and Spirits \u2022 \u00a0\u2022\u00a0<span class=\"tribe-street-address\">401 West Town Street</span>\u00a0\u00a0<span class=\"tribe-locality\">Columbus</span><span class=\"tribe-delimiter\">,</span> <abbr class=\"tribe-region tribe-events-abbr\" title=\"Ohio\">OH</abbr> <span class=\"tribe-postal-code\">43215</span> <span class=\"tribe-country-name\">United States.</span></h4>\n<h4>For more info go to <a href=\"http://simplyliving.org/event/simply-living-gift-to-be-simple-2019-making-a-difference/\">Gift to Be Simple</a></h4>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>This year Simply Living\u2019s A Gift to be Simple annual fundraiser\u2019s theme is \u201cMaking a Difference.\u201d Join us on Thursday evening, October 24 \u2022\u00a05pm to 8 pm Strongwater Food and Spirits \u2022 \u00a0\u2022\u00a0401 West Town Street\u00a0\u00a0Columbus, OH 43215 United States. For more info go to Gift to Be Simple</p>\n",
+      "protected": false
+    },
+    "author": 17,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [29, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1462" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/17"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1462"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 14,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1462/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1481,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1462/revisions/1481"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1462" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1462"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1462"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 29,
+            "link": "https://www.comfest.com/category/community/",
+            "name": "Community",
+            "slug": "community",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/29"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=29"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1457,
+    "date": "2019-08-26T21:17:20",
+    "date_gmt": "2019-08-27T01:17:20",
+    "guid": { "rendered": "https://www.comfest.com/?p=1457" },
+    "modified": "2019-08-26T21:21:33",
+    "modified_gmt": "2019-08-27T01:21:33",
+    "slug": "thank-you-to-all-the-2019-volunteers",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/thank-you-to-all-the-2019-volunteers/",
+    "title": { "rendered": "THANK YOU TO ALL THE 2019 VOLUNTEERS" },
+    "content": {
+      "rendered": "<h3><span style=\"font-weight: 400;\"><img class=\"size-full wp-image-528 aligncenter\" src=\"https://www.comfest.com/wp-content/uploads/2018/07/thank-you-volunteers.jpg\" alt=\"\" width=\"277\" height=\"182\" /></span></h3>\n<h3><span style=\"font-weight: 400;\">Archive</span></h3>\n<p><span style=\"font-weight: 400;\">W.e. Arnold, Beth Baird, Andy Basista, Cortney Brown, Richard Carr, Rob Cohen, Larry Davis, Earnest Dillard, Roger Doyle, Matt Ellis, Wayne Ellyson, Scott Heffner, Faye Herskovits, Deshawn Isaac, Chester Kresiak, Fred Lappert, Erie Meyer, Tom Meyer, Emily Morgan, Kami Myers, Trina Oconnor, Aaron Paulley, Tevon Porter, Ian Powell, Eric Ray, Ebony Rozzelle, Kamaya Rozzelle-daniels, Amanda Shugert, Samantha Tibbetts, Kimo Tichgelaar, Sophia Wang, Drew Washek</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Bike Corral</span></h3>\n<p><span style=\"font-weight: 400;\">Thomas Babb, John Bannon, Chris\u00a0 Benedetti , Tanya Bils, Hobbs Boots, Britt Butler, Jack Butler, Matt Cline, Brian Cooperider, Keiffer Erdmann, Jared Finchum, Esther\u00a0 Flatto , Alex Gallegos, Jennifer Gibson, Edward Hara, Rebecca Henry, Emma Hite, Benjamin Houck, Susan m James, Ana Kabakova, Jeffrey Katz , Jay Keyarts, Benjamin Kile, Deanne Krouse, Maggie Mahoney, Peri Mcdougle, Pamela Mcgough, Julie ann Mckinney, Dan Montour , Ellie Murphy, Alex Oliszewski, Brian Pace, Emily Patterson, Brian Perkins, Amy\u00a0 Planchet, Jason Poindexter, Ben Rapson, Chris Rapson, Cindy e Rapson, Ernie Rapson, Teddy Reese, Joy Robinson, Isaac Sarton, Eric Schafer, Adam Schirtzinger, Steave Scott, Rick Shears, Scott Shiveley, Sherri Sims, Jayme Snuggles, Cherie Snyder, Whitney Thompson , Heidi Vanderpool, Nathan Wallace, Stephen Woods, Gretel Young</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Cleanup &amp; Recycling</span></h3>\n<p><span style=\"font-weight: 400;\">Aden Abdille, Colin Adams, Adam Albers, Maureen Alley, Lisa Lea Allshouse, Elisa Amari, Lauren Archer, Nitin Arora, Lorena Asadi, Elizabeth Austin, Nick Babika, Lee Bailey, Jeremy Baker, Patrick Barnacle, Zachary Barnes, William Barney, Beaann Bedford, Adian Bias, Mark Bias, Melinda Bizones, Evan Botkin, Stephanie Botkin, Victoria Bowman, Angel Boyer, Karen\u00a0 Bradford, Kerri Brand, Owen Brand, Laura Brewer, Bill Brill, Gray Brooks, Brian Brumfield, Sarah Bunch, Don Burkey, Karen Burkey, Rayleigh Burton, Brandon Carter, Kayla Carter, Marcina Carter, Laura Chavis, Joshua Clark, Joe Cleary, Michel Coconis, Nate Coffman, Bethany Combs, Dina Combs, Pam Combs, Megan Conaway, Craven Craven, Melissa Curtis, Abby Davies, Kyle Davis, Derek Dehart, Coady Dirutigliano, Nick Dirutigliano, Ricky Dixon , Alan Dondanville, Kathy Doss, Matt Doss, Thomas Dotson, Kyle Downs, Yang Du, Nichole Duran, Dominique Eatmon, Karlene Evans, Mitchell Evans, Nickie Evans, Erin Feilen, Jose Feliciano, Lourdes Feliciano, Lisa Figueroa, Carrie Fisherhinkle, Katie Foreman, Alex Fotis, Betty Frazier, James Frazier, Brian Fridenmaker, Kathy Frye, Ryan Garza, Laura Gehres, Stephanie Gehres, Johneesha Glass, Kelsey Graf, Devon Gravette, Robert Greer, Erika Grove, Brent Gugliemotto, Ashley Hale, Amanda Hall, David Hall , Tom Hamilton, Jennifer Hammel, Brock Harbolt, Maureen Harbolt, Scott Hare, Laura Herrold, Mari Hiemstra, Charlene\u00a0 Hopkins, Olivia Horlocker, Suzie Horlocker, Bettina Hughes, Chihiro Inoue, Kierra Jamison, Nancy Jesser , Sam Johns, David Johnson, Simiya Johnson-hunter, Alexandria Kalika, Jay Keyarts, Scott Kidd, Adam Kline, Joel Knepp, Emily Kriss, Ben Krongauz, Michael Laflamme, Jennifer Landau, Alia Lattimore, Kevin Lauterbach, Cassie Lewis, Beth Long, Anthony Long , William Lyons, Gabriel Mann, Tyler Marcus, Nicholas Marko, Matthew Marsh, Channie Mayfield, Kyle Mcclafferty, Hope Mcgonigle, Nick Mckinney, Sarah Mcvicker, Kelly Meyer, Blake Miller, Tessa Miller, Valerie Montgomery, Malcolm Montoney , Timothy Montoney , Gary Morkassel, Robyn Moroz, Lisa Much, Miyako Munakata , Amanda Muncy, Damarcus Nelson, Andrew Newell, Bradley Newkirk, Michael Nichols , Liam O&#8217;connor, Robyn O&#8217;day4, Don Omalley, Charlotte Owens, Elizabeth Pagano, Lili-mae Parker, John Pashke, John Paulson, Corrie Pieterson, Kasha Planck, Andrea Popkie, Julie Porr, Emma Potter, Maggie Potter, Michael Preston, Dawan Pulce, Jovita Purqueras, Blondia Pyfrom, Nadja Ramos, Jason Redinger , Forrest Reed, George Reed, Mattie Reitman, Duane Richardson, Nathan Riggens, Rachel Rowen, Ebony Rozzelle, Kamaya Rozzelle-daniels, Chris Ruiz, Samantha Rundell, Kimberly Russell, Takanori Sakurai, Kristopher\u00a0 Sanders, Isaac Sarton, Matt Scavo, Meredith Schilling, Adrianne Seemann, Tracy Semanski, Alan Sexton, Latandra Shepherd, Chris Skalski, Mike Smith, Shannon Snapp, Heather Southwick, Scott Spira, Heather Splain, John Splain, Jennifer Stacy, John Stacy, Kyle Stock, Andrew Stoner, Bea Straughter , Amber Thompson, Melissa Thompson, Kevin Tibbs, Michael Valles, Matthew Vanorder, Sophia Wang, Matt Ward, Brock Weinstein, Susan Wendt, Amy Weyand, Sara Wheeler, Alisha Winslow, Brad Wintersteen, David Wright, The Zeppelin, Dayne Zinser, Melanie Zinser</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Comfest Merch Booth</span></h3>\n<p><span style=\"font-weight: 400;\">Janet Adams, Alyssa Alcorn, Frederick Apolonio, Jericho Betton, Scott Blodgett, Jack Buckingham, Joseph Calmer, Giavanna\u00a0 Cantelmo, Josie Cantelmo, Maria Cantelmo, Sarah Carruthers, Kerra Carson, William Casino, Roberto Cervantes, Ricky Dixon , Mary Donaldson, Michael Dorgan, Deb Eckstrom, Tina Eisenbrandt, Sue Esh, Betsy Feuer, Jared Finchum, Laurie frank Gang, Arturo Garcia, Babette Gorman, Josh Greif, Ria Greiff, Karin Henderson, Faye Herskovits, Beth Hicks, Stephen Hicks, Drew Hilinski, Matt Hilinski, Tom House, Richard Hurni, Taylor Jackson, Bharati Jayanthi, Natasha Johnson, Sarah Jordan, Jan Kinney, Leslie Klevay, Inessa Koehler, Tina Krempasky, Craig Kullik, Sierra Lacy, Terri Latourelle, Deborah Lefman, Roger Long, Latoya Louis, Sean Lunsford sr , Shandale Mayo, Paula Mccoy , Erin Mcgovern, Gail Meese, Makenzie Mills, Megan Moriarty, Sharon Morton, Lisa Much, Catherine Nelson, Caryn Neumann, Peyton Nichols, Sarah Patrick, Frank Phillips, Julie Pinsonneault, Kaye Platte, Nathan\u00a0 Prunty, Tiffany Ramos, Mary Rathke, Saraya Record, Robert Reilly, Tammy Roberts, Rina Rotolo, Kimberly Russell, Dustin Salter, Bobbie Satterfield, Marty( martha) Schatmeyer , Christine Sharp-straughter, Alexander Sheets, Jeannie Simmons, Erik Smith, Joel Speyer, Heather Stabler, Lynn Stan, Ashley Taft, Tom Taylor, Daniela Vidal, Clayton White, Kelana Williams, Diane Woods, Mary ann Yohosmith, Heather Ziegler</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Entertainment</span></h3>\n<p><span style=\"font-weight: 400;\">Allison A., Dale Akula, Rajeev Alahari, Marc Archuleta, Ben Arnoold, Tim attrell Attrell, Jeremy Baker, Deirdre Barrington, Patrick Begley, Beth Bennett, Love Benton, Jennifer Blix, Brianna Bookman, Deborah Bowers-wilson, Lu Brammer, Christopher Brown, Tj Brown, Alex Browning, Scott Brubach, Roberto Bryer, Jeanne Budde, Mike Busch, Stevie Cade, Tony Cantelmo, Paul Carney, Cole Carroll, Joshua Carter, Dakota Carullo, Danny Cashin, Ted Chaney, Banfield Charles, Joel Chastain, Tim Chavez, Cathryn Chuey, Jason Cicola, Brian\u00a0 Clash, Eric Clemens, Russ Coffman, Gabe Condo, Lynnette Cook, Andrew Cooney, Jason Cotton, Sasha Cowart, Andrea Craig, Kim Crawford, Michael Cundiff, Bryan Curtiss, Bruce Dadisman, Andrew Davis, Bhas Davis, Dustin Davis, Jeff Davis, Katie Davis, Galen Deak, Orion Difranco, Stephen Dodge, Steve Dodge, Jon Dowers, Jonathan Dowers, John Downard, Matthew Draudt, Charlene Dubin, Margot Edge, Trevor Edge, Kristen Elliott, Nathan Emond, Alex Esselstein, Lucas Esterline , Mel Feinberg, Robert Ferguson , Roy Fish, Randy Fleming, Mike Folker, Jeni Ford, Jim Fowler, Rebekah Fox, Ron Freeman, Evan Fuller, Veronica Gardner , Kevin Glassco, Jamie Goldsberry, Jen Goldsberry, Bean Gonzalez , Kristin Gramza, Tony Gregorc, Scott Hare, Jason Harris, Troy anthony Harris, Steve Heink, Blake Herschler , Travis Hoewischer, Toshia Hogan, Ryan Horns, Andrew Hull, Kim Huth, James Hutter, Katanya\u00a0 Ingram , Michael Irwin, Vijay Jat, Steven Jones, Michelle Katona, Scott Kidd, Greg Kilcup, Gabor Klein, Paul Koehler, Samuel dodge Koppert, Bill Kurzenberger, Andy Kuss, Sonia Ladjadj, Bart Lambert, Elizabeth Landrigan, Michael Lanning, Tommy Lee, Ralph Leeseberg , Lily Lu, Preston Lynch, Meghna Mahambrey, Mondo Marroquin, Steven Marsh, Liz Martin, Damon May, Mark Mayes, Megan Mcclung, Darryl Mendelson, Justin Metz, Anna Meyer, Brandon Middleton , David Miller, Jen Miller, Kevin Miller, Jason Montgomery, Kristi Moore, Steve Moore, Tony Moore, Warner Moore, Pete Morales, Aleysha Morales , Brad Morgan, Brett Morris, Lyndzi Murphy, Eric Nassau, Diane Newberry, Chuck Oney, Dan Pace, Claressa Page, Paolucci Paolucci, Nikole Patson, Wilking Paulino, Larry Pike, Andy Prehm, Dope Prezz, Dan Rako, Dustin Rees, Michael Renner, Joyce Rice, Johnny Riddle, Jenny Riegler, Tammy Roberts, Paula Robinett, Paul Robinson, Helena Rose, Jeff Rosenbloom, Rich Ruenzi, Kaylyn Russell, Les Rutland, Russell Satori, Matt\u00a0 Scavo, Schear Schaer, Ed Schiebel, Curt Schieber, Michael Schiller, David Schmidt, Micah Schnabel, Amy Schocken, Lou Schocken, Charles Sealy, Ben Sharper, Nathan Shoup, Bec Silveous, Kelly Slone, Ernest Smith, Jahrie Smith, Jonathan Southworth, Austin Spears, Jennifer Stelling, Amy Strawser, Nick Sudimack, Michael Swift, Patricia Swimgle, Stephen Takacs, Val-christopher Tekaucic, Jay Tharp, Jeff Tobin, Michael Tom, Carlos Torres, John Turck, Paige Vandiver, Mark Vetter, John Vince, Vince Vohnout, Dustin Wade, Carole Walker, Debbie Walther, Casey Ward, Kathy Warfield , Chloe Welch, Chris Westra, Chris White, Eliza Whitling, Geoff Wilcox, Brandie Williams, Krista Williams, Matthew Wolf, Sean Woosley, Brian Yarbrough</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">First Aid</span></h3>\n<p><span style=\"font-weight: 400;\">Alexander Aly, Hannah Amick, Frederick Apolonio, April Bainter, Jenny Bell, Elizabeth Braithwiate, Jerry Brooks, Herbert Buckel, Jeni Bynes, Chikako C, Douglas Calem, Dennis Carlson, Dawn Chapman, Keanna Chatman, Lisa Coleman, David Docktor, Paula Durbin, Jason Edwards, Wendy Everett, Alex Fasuled, Robert Ferguson, *Bill* Finzel, Matt Flanigan, Holly Freeman, Michael Froehle, Mark Furuhashi, Jack Gabalski, James Gallagher, Stephanie Garcia, Atticus Garden, Jen Garner, Zachariah Gorman, Henry Gorsuch, Daniel Granite, Jenna Groezinger, Sarah Haag, Tossiah Haynes, Vickie Himmelman, Jessy Holmes, Taylor Hylinski, Sarah Ivancic, Tammy Jackson, Ann Kemble, Gregory Kinney, Jenni Kristoff, Jim Krupp, Melissa Le roux, Casey Lowery , Mckaileah Lykes, Brian Mathess, Mandi Mauck, Terry May, Justin Mcfadden, Brad Mcneil, Brad Mcneil , Lois Miller, Ketki Mougey, Lyndzi Murphy, Kami Myers, Beth Nicola, Megan Novotny, Scott Oman, Montana Osler, Lili-mae Parker, Jose Parra, Phil Pemberton, Natalie Poindexter, Dwayne Potts, Mary Rathke, Amy Renock, Jeff Reynolds, Katie Ries, Shannon Riley, Rebecca Rings, Marvin Robertson, Liz Rossi, Na&#8217;tasha Sams, Mindy Schroeder, Angi Seals, John Shade, Sharice Smith, Brionne Spry, Stephanie Thompson, Jennifer Tincher, Kristine Usselman, Christina Veite, Tatanisha Wade, Mary Wehrle, Debbie Whitt, Michelle Wilcox, Joy Williams, Miranda Yoder, Robert Young, Jacqueline Yurkoski, Nicole Zahrndt, Stephanie\u00a0 Zinkhon</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Food Fairy</span></h3>\n<p><span style=\"font-weight: 400;\">Colin Adams, Elisa Amari, Robert Ayala, Maddie Berry, Melinda Bizones, Tim Brown, Keri Burgoon, Sarah Carruthers, Jamie Claxton, Bob Cope, Gina Cristofani, Lori Davis , Sully Gerdeman, Jeff Gondek, Cynthia Hempy, Brenda Hosey, Jacob Hutmire, Charlie Kall, Jacqueline Kelley, Andi Lewis, Eloy Martinez, Gary Pandora, Evan Pond, Joyce Rice, Kamaya Rozzelle-daniels, Jessica\u00a0 Smith , Micah Stromsoe delorenzo, Deirdre Tobin</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Libations (Beer/Wine/Liquor)</span></h3>\n<p><span style=\"font-weight: 400;\">Dawn Ace, Arya Acier, Darcy Acier-cass, Christina Alicardi, Matthew Alicardi, Diane\u00a0 Allen, Tracy Allen, Caleea Alls, Blair Ames, Emily Anderson, Anthony Andrews, Carrie Antosz, Matt Antosz , Joel Archibald, George Armstrong, Emily Astorian, David Azusenis, Rahel Babb, April Bainter, Haley Bakies, Erin Ball, Scott Barile, Rikki Barton, Tishanda Bassett, Nick Bates, Yana Belan, Tim\u00a0 Bell, Grace Bernhard, Kristen Berry, Lynne Bieber, Paul Birken, Ann Biron, Thomas Biron, James Blakeslee, Edward Blau, Mike Blenk, Hollie Blevins, Jb Blevins, Rick Blevins, Ariel Bocook, laura Bolte, Hobbs Boots, Cheryl Boschert, Brad Boschert , Tyler Bowlin, Brett Bowlus , Terry Bowman, Allen Bradley, Kathryn Bradley, Kevin\u00a0 Brammer, Mason Brazelle, Mandy Breedlove, Angie Brooks, Delena Brown, August Brunsman, Theresa Bruskin, Hans Buchner, Ryan Buening, David Bumb, Pat Burks, Mason Cajka, Joseph Calmer, Kris Cannon, Kim Caris, Douglas Carmack, Jacien Carr, Sarah Carruthers, Greg Cass, Shirley Cass, Randy Castle, Nicole Cecil, Brenda Chaney, Dawn Chapman, Jeff Charette, Ning Chen, Ramakrishna Cherukuri, Colleen Clark, Curtis Clark, Katrina Clark, Mary Clyde, Kayla Coate, Deshanna Coleman, Larry Colley, Tamara Collins, Jonathan Cordray, Erin Corrigan, Misti Crane, Emily Crawford, Mary Crawford, Rebecca Craycraft, Kelli Crispin, Lindsay\u00a0 Cronin, Katelynn Crow, Bryan Curtiss, Matt Cushwa, Misty Cushwa, James D mccullars jr, Harold Davis, Jamar Davis , Lin Dawson, Al Debelak, Jim Deerhake, Dino Degirolamo, Amy Densborn, Tyler Depo, Kim Deramus, Anthony Deskins, Caterina Difrangia, Erica Disher, Michael Dobson, Brian Doegen, Dayna Donahue, James Donovan, John Dorn, Justin Dortch, Michael Doskocil, Gretchen Douglas, Jeff Dubin, Ray Dudek, Mo Dundon, Sandy Dunlap, David Dunn, Kelli Durham, 2e Dyer, Robert Dykes, Krista Edington, Marsha Edwards, Elizabeth Egbert, Melinda Egbert, Katie Eisel, Rick Elder, Kala Elkins, Jason Erskin, Shawn Evanoski, Laura Evert, Ben Fannin, Gaynl Farmer, Joyce\u00a0 Fasone, Liza Faulkner, Chelci Fauss-johnson, Amy Fearn, Marshall Fearn, Jess Fecke, Kat Feresen, Matt Fetters, James Fisher, Jillian Ford, Katie Fort, Cameo Frantz, Mike Franzoni, Olivia Friend, Robert Friend, Bud Fuller, Bill Gallaer, Debra Gallagher, Kayleigh Gallagher, Sara Garrett, Vanessa Garvin, Kylie George, Mia Gerardi, Ben Gibbons, Cindy Gildersleeve, Debbie Gillum, Diane Gin, Jackie Gleason, Mackenzie Gleason, Chris Gobeli, Rose Gobeli, Eric Goldman, Jeff Gondek, Missy Gordon, Jarod Gorrell, Stephanie Grabey, Amanda Grace, Chynell Graham, Sheryl Graham, Gregg Greathouse, Cornell Green, Tom Griffin, Anthony Groeber, Jill Groeniger, Jenna Groezinger, Josh Groves , Dean Grundei, Rachel Grundei, Morgan Guinn, Amanda Hamilton, Scott Hansan, Regina Hanshaw, Jinit Haria, Terrance Harmon sr, Shope Harper, Jerome Harris, Kate Harris, Shanetta Harris, Troy anthony Harris, Zack Harris, Rick Harrison, Brooke Harshbarger, Seana Hartman, David Hawkins, Jonathan\u00a0 Hayes, Rob Hayes, Tommy Heath, Zach Hedrick, Karin Henderson, Joshua Henry, Jim Herbeck, Susan Herczeg, Brenda Herman, Stephen Hicks, Michael Higgins, Gordon Hobson, Lisa Hobson, Amanda Hogan, Dave Holland, Steven Holley, John Holmes, Charlene Hopkins, Kitty Horan, Matt Hornberger, Benjamin Houck, Jen House, Morgan Hoxworth, Kristina Hoyer, Eric Hubbell, Trixie Hubbell, Angelo Huerte, Heather Huffman, Sara Hunter, Beth Hurst, Nikki Imbrogno, Clay Irwin, Raveen Ivery, Debra Jackson, Derek Jackson, Laura Jaketic, Keith Jasinski, Yalande Jeffries, Maja Jera, Jason Johns, Sam Johns, Autumn Johnson, Emily Johnson, Elizabeth Jones, Wendy Jones, Matt Jorgenson, Lisa Juckett, Amy Karnes, Jason Kay, Harry Kearns, Bob Keen, Cats Keen, Sam Keen, Jordan Keiser, Kaylie Kellenbarger, Shannan Keller, Grayson Kelly, Dairdre Kennedy, Kathy Kern, Jamie Kerr, Jen Kin , Robert Kinnan, Annie Kondrot, Lisl Kotheimer, Susan Kreis, Tonya Krinks, Jim Krupp, Kimberly Kuhn, Kymberly Kurpuis, Michael Laflamme, Jeff Lambert, Rick Lance, Ariq Lashaun, Andrew Lee, Tigest Lemlem, Tim Lemmon, Laura Lewis, Matt Lewis, Michael Lewis, Erin Ley, Kris Liard, Crystal Link, John Lloyd, Beth Long, Patrick Long, Jen Longacre, Tony Ludovico, Devon Lykins, Tom Lynch, Jess Maffett, Beth Mallett, Randy\u00a0 Malloy, Gabriel Mann, David Manning, Lora Manning, Karen Manross, Daniel Marcelain, Julie Marsh, Aaron Marshall, Maria Marth, Walter Mason, Tony Massara, Jennifer Matteson, Karen Matteson, Josh May, Paul May, Mike Mayoka , Robert Mazzaferro, Colin Mcbride, Laura Mccabe, Trevor Mccleery, Megan Mcclung, Jessie Mccoy, Nathan Mccullough, Kirk Mcdonald, Dan Mcelroy, Whitney Mcghee, Brian Mcgrath, Josh Mcgregor, Megan Mckee, Alison Mckim, Emily Mckisson, Jason Mclaughlin, Jamie Mehic, Trish Melvin, William Melvin, Stacey Menefee, Diane Meves, Julie Mickley, Jeff Miller, Paula Miller, Allison Mills, John Mills, Ashley Minney, Chip Moats, Carolyn Mockus , Bobbi Moore, Cindy Moore, Hannah Moore, Leanne Moore, Michele Morris, Amandrea Mortensen, Sharde Moser, Violet Mowry, Tessie Moynihan, Lisa Much, Catherine Mueller, Shane Mueller, Shannon Mulroy, Judy Murran, Kraig Myers, Lionel Naphier, Michelle Narog, Sarah Natoce, Andrew Newell, Bradley Newkirk, Peyton Nichols, Sheri Nordman, Eamon O&#8217;brien, Betsy O&#8217;brochta, Matt O&#8217;donnell, Sarah O&#8217;donnell, Katie O&#8217;leary, Ryan O&#8217;neil, Erin O&#8217;reilly-mazon, Evan Oakley, D&#8217;arcy john Oaks, Taylor Oberst, Rusty Ortman, Dwight Orwig, Beth Osborn, Bob Osborn, Eleanor Pahutski, Gary Pandora, Nikki Pappas, Charlene Peachey, Chartelle Peachey, Frank Phillips, Jonathan Philson , Courtney Piehl, Tricia Pike, Joe Piparo, Tim Pitts, Julie Poeppelman, Jason Poindexter, Susan Porter, Tiffany\u00a0 Prater, Tim Price, Laura Puhl, Jeff Radcliff, David Ramsington, J.r. Ray, Justin (jay) Raymond, Angie Reed, John Reed, Kenneth Reed, Gerry Rich, Jan Rich, Cindy Richmond, Steve Richmond, Lisa Ridenour, Mark Ridenour, Dan Riffle, Judy Riffle, Don Ritchey, Mary Ritchey, Bobbie Rose, Liz Rossi, Linda Rowell, Shawn Rowell, Shawn Rynd, Linda Sabo, Tanya Salyers, Lisa Sams, Bailey Sandin, Isaac Sarton, Stephen Schab, Kendra Schiller, Matthew Schilling, Micki Schmitt, Adam Schock, Jorie Schwartz, Brain Schweickart, Cathy Scott, Peter Scranton, Angi Seals, Jen Secrest, Tom Sedlock, Sunrita Sen, Jillian Sharkey, Brianna Sharp, Christine Sharp-straughter, Dan Sheeran, Kandi Sherfy, Rachel Shininger, Jay Silva, Amanda Sisia, Ford Sledge, Abigail Smith, Jason Smith, Amanda Smoke, Trina Smoke-mcgrath, Anita Snatch, Amir Sohrabi mollayousef, Melissa Sorrell, Kyle Sowash, Anne Speakman, Joe Speakman, Sue Speakman, John Paul Sperling, Thursday St giles, Justin Stauffer, Stephanie Stephens, Tiffany Stephenson, Annie Stevens, Chad Stevens, Kyle Stewart, Jeff Suchy, Nicholas Sudimack , Kevin Sweet, Aaron Syguda, Lindsay Tanner, Jaleesa Taylor, Julie Taylor, Hannah Thaxton, Aaron Theesfeld, Loyce Theesfeld, Karen Thomas, Ken Thomas, Derrick Thomas , Marley Thompson, Jennifer Tincher, Tony Toller, Joanna Tornes, Don Treadway, Dan Trevas, Kevin Truitt, Benjamin Tucker, Tia Tucker, Annie Tullis, Charlotte Tuomaala, Shalonda Turns, Mechelle Vail, Emma Van bakel, Lindsey Vanfossen, Diana Vara, Leslie Vazquez, Robyn Victorine, Patti Von niessen, Robert Voyles, Anne\u00a0 Vukcevich, Ian Vukcevich, Bob Waddell, Chuck Wagner, Nate Wakefield, Nathan Wakefield, Jessica Warner, Lisa Warner, Jody Wasbro, Paul Wasson, Courtney Weber, Debbie Weber, Deirdre Wedig, James Wedig, Joe Weiler, Jonathan Welch, Carrie Weld, Nikki Westfall, Derrick White, Matia White, Nalea Whiting-cobb, Kathy Whitt, Brandon Wichers, Kryssi Wichers, James Williams, Krista Williams, Morgan Wills, Kyle Wilson, Timyra Wilson, Phil Winkelmann, Nancy Withers, Ralph Wolfe, Amanda Woods, Denyse Woods, Stephanie Woodward , Jen Wooster, Elizabeth Workman, Crystal Wright, Wilming Yee, Shelby Young , Jingyi Yu, Derek Zack, William Zeng, Ting Zhou</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Logistics</span></h3>\n<p><span style=\"font-weight: 400;\">Karl\u00a0 biery, Carrie Abel, Alli Acuff , Heather Adair, Aaron Albert, Terry Bowman, Jason Deck, Therese Edwards, John Feerick, Michael Goff, William\u00a0 Gort, Heath Grimm , Jennifer Gugliemotto, Stephen Hanna, Mike Hansen, Brock Harbolt, Maureen Harbolt, Mary louise Hawkins, David Hecht, Bharati Jayanthi, Kyle Jepson, Wehseh Juty, Poppy Karppala, Rebekah Karppala, Gregory Kilcup, Kamal Kimball, Mary Klain, Verbz Kloth, Jake Kopetski, Megan Krisby, Carlos Maciel, William Mcgillivray, William Midgley, Adeline Musser, Violet Musser, Tae Person, Michael Pesce, Micki Pike, Alan Ramey, Lizeth Rascon, Jordan Reed, Chet Ridenour, Liz Rossi, Dan Rosu, Quinn Sarver, Zoe Sarver, Frank Shearer , Leo Simpson, Moran Sinclair , Mikelle Smith, Nicholas Steinbrecher, Jeff Suchy, Julie Willis, Nick Woods, Mollie Workman</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Parking &amp; Permits</span></h3>\n<p><span style=\"font-weight: 400;\">Christina Carr, Ricky Dixon , Thomas Haas, Courtney Hampshire, Zac Heuer, Ryan Hlavin, Ellie Inglesi, Destiny Jenkins, Michael Kaizar, Jo Lee, John Magary , Brice Patterson, Bethany Sanders, Dee Shumaker\u00a0</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Peace &amp; Healing Village</span></h3>\n<p><span style=\"font-weight: 400;\">Erin Aluise, Charles Atkins, Stephen Begala, Cheri Bowman, Alex Criado, Susan Donley, Therese Edwards, Teresa Featherstone, Jared Hall, Tom Hamilton, Mike Kositzke, Julie Kurzenberger, Kelly Montgomery, Aleysha Morales , Ellie Murphy, Yalan Papillons, Tim Parrish, David Pollock, Terence Robertson, Kristine Usselman, Pete Wiseman</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Program</span></h3>\n<p><span style=\"font-weight: 400;\">Tonja Aleshire, David Azusenis, Dwain Baer, Ashley Bartnick, Dave Beckman, Gregory Booton, Roberto Cervantes, Lori Coleman, Gianna Collins, Jocelyn Curry, Tracy Daly, Charity Eilerman, Allison Ellis, Jeffrey Ellis, Julie Ellis, Charles Fannin, Aaron Frisby, Camden Frisby, Cynthia Hanke, Jeremy Hirschfelt, Liza Hoopes, Kitty Horan, Morgan Hoxworth, Page Hunt, Scott Jackson, Kitty Johns, Kelly Johnson, Julie Karlock, Jay Keyarts, Nichole Kline, Sarah Kriebel, Paul Lada, Juliette Leukart , Lucy Lucero, Lynda Mcclanahan, John Mckeown, Stephanie Miller, Mimi Morris, Diana Morrison, Brenda O&#8217;herron, Betsy Obrochta, Eric Peters, Corrie Pieterson, Allyson Pitts, Vanessa Prentice, Courtney Riley, Alan Sheppard, Heather Soha, Maki\u00a0 Sonezaki, Jackie Stanton, Jaimie Striff, Robin Swanson, Melanie Travers, Amy Turn sharp , Grace Wallace, Michael Weber, Elise White, V White, Brian Williams, Wilming Yee</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Safety</span></h3>\n<p><span style=\"font-weight: 400;\">Shea Adams, Jeffry Alexander, George Armstrong, Mark Baller, Charlotte Bark, Lindsay Barrie, Nick Bates, Baryl Baylis, Jordan Bernas, Paul Birken, Anne Blankestyn, David Blankestyn, Rick Blevins, Devanne Bradley, Thom Brainard, Scott Brooks, David Browning, Joseph Bryant, Sarah Bunch, Joseph Burch, Brendan Burke, David Burleson, Nan Cameron, Paul Carnevale, Daniel Carroll, Clarence Caudill, Elisa Celio, Daniel Chester, Jill Clark, Mike Clark, Jason Clever, John\u00a0 Clever, Michel Coconis, Anthony Cognion, Chris Coleman , Jeremy Collins, Shaun Curry, Terry Davis, Kristopher Dionne, Mak Dopler, Thomas Dotson, Lisa Dupler, Nichole Duran, Tanya Dvorsky, Demonta Eady, Christian Englund, Charles Fannin, Alex Fasuled, Peggy Findlay-stoll, Justin Foster, Kaitlin Francis, Jerry Friedman, Evan Fuller, Connie Gadell-newton, Danniza Giles, Lora Glover, Tony Glynn, Jeff Gove, Henry Griffy, Gregory Gross, Michael Gruber, Linda Hahn, Reneigh Hamilton, Darrell Hanke, Micki Hernandez, Lisa Hobson, Saul Hoffman, Kitty Horan, Andy Hudson, Trenton Hython, Ellie Inglesi, Jim Janik, Stacey Johnson, Joshua Jones, Jaime Kelly-warner, Jerry Kerr, Levi Kill, Michael Knoll, Jake Kopetski, Paul Kotheimer, Matthew Kuhn, Jodi Kushins, Michael Lanning, Jim Larosa, Kris Larosa, Nick Larusso, Kevin Lauterbach, James Loel, Joanna Marshall, Stefaun Mason , William Mc gee, Malya Mccain, William Mcgillivray, Mark Mellenger, David Mellon, Larry Metz, Allie Meyerhoefer, Jason Miller, Richard Miller, Jeanette Mira, Robert Moody, Lorien Moore, Mika Mori, Viviane Nye, David Patrick, Don Pelfrey, Daniel Persico, Ester Phells, John Pinna, David Poole, Dawan Pulce, Vanessa Rebollar, Samuel Richards, Arthur\u00a0 Robinson , Brian Roy, Chip Santer, Daniel Scheffers, Joshawa Schultz, Amber Scott, Latandra Shepherd, Leo Simpson, Leon Sinoff, Emily Slye, Aaron Smith, Bob Snow, Dan Spurgeon, John Spurlock, Micheal Stang, Justin Stewart, John Stuckey, King Talbert, Whitney Thompson , Kim Thurston, Reynaldo Thurston jr , Tom Tkaczyk, Larry Umansky, Kristine Usselman, Daryl Van mercetta, Katie Van mercetta, Landon Vance, Justin Vogel, Edward Voogt, Jack Wagoner, Dustin Watson, Jessica Watson, Jackie Webb, Paul Weber, Amy Weyand, Jodi Whittenberger, Sara Whittington, Tom Wildman, Anna Wiltse, Andy Woodmansee, Elizabeth Young, Nicole Zahrndt</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Signage</span></h3>\n<p><span style=\"font-weight: 400;\">Ashley Baker, Alan Ramey, Ebony Rozzelle, Kamaya Rozzelle-daniels, Kelly Slone, Ryan Smith, Tony Toller, Kathy Whitt, Pete Wiseman</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Street Fair</span></h3>\n<p><span style=\"font-weight: 400;\">Amy\u00a0 Adams, Colin Adams, William Barney, Amanda Bauer, Paul Birken, Peter Bliley, Keri Burgoon, Linc Burkholder, David Burleson, Wm Carpenter, Debra Dyer, Matthew Erhard, Bobby Fidler, Carlos Gutierrez, Joseph Hart, Jameson Hemmerly, Samuel Hoar, Kiracofe Kiracofe, Paul Koehler, Gail Larned, David Miller, Stephanie Miller, Ellie Murphy, Kami Myers, Lisa Nezovich, Jim Nuzum, Betsy Pandora, Margie Pandora, Neil Preston, Greg Rich, Scott Risner, Kimberly Russell, Katie Russell , Mimi Russell , Steve Russell , Amanda Shugert, Perry Straughter, Pete Wiseman</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Volunteer Central / Info</span></h3>\n<p><span style=\"font-weight: 400;\">Tonja Aleshire, Andy Basista, Susan Donley, Patricia Fluellen, Joe George, Mary louise Hawkins, Wendy Haynes, Denyse Hemsley, Brenda Hosey, Pam\u00a0 Hunt, Ryan Kimberling, Candida Kingery-redman , Megan Lusk, Courtnee Mueller, Alan Ramey, Daniel Ross, Nicole Saavedra, Bethany Sanders, Matt Scavo, Joy Scott, Rosalyn (roxy) Scruton, Thomas Seelbach, John Vince, Moniqua Wallace, Ryan Wise, Bruce Wylie, Sandy Wylie, Caitlin Yahr</span></p>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">Voter Registration</span></h3>\n<p><span style=\"font-weight: 400;\">Erika Baker, Joanie Calem, Daniel Carroll, Philena Farley, Joe George, Rachael Holland, Jen House, Scott Jackson, Destiny Jenkins, Jen Knox, Daniel Lorz, Michael Marrero, Rachel Moore, Jeannell Nutter , Caitlin Peet, Kristen\u00a0 Sharrock, Hilary Shaw, Kay Slone, Kelly Slone, Ryder Smith , Scott Solsman, Thursday St giles, Cyndy Stratton, Nova pax Thrasher, Justin Vance, Rick Zwelling</span></p>\n<p>&nbsp;</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Archive W.e. Arnold, Beth Baird, Andy Basista, Cortney Brown, Richard Carr, Rob Cohen, Larry Davis, Earnest Dillard, Roger Doyle, Matt Ellis, Wayne Ellyson, Scott Heffner, Faye Herskovits, Deshawn Isaac, Chester Kresiak, Fred Lappert, Erie Meyer, Tom Meyer, Emily Morgan, Kami Myers, Trina Oconnor, Aaron Paulley, Tevon Porter, Ian Powell, Eric Ray, Ebony Rozzelle, Kamaya Rozzelle-daniels, [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 14,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [1],
+    "tags": [28],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1457" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/14"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1457"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1457/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1460,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1457/revisions/1460"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1457" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1457"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1457"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 28,
+            "link": "https://www.comfest.com/tag/thankyou/",
+            "name": "Thankyou",
+            "slug": "thankyou",
+            "taxonomy": "post_tag",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/tags/28" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/tags" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?tags=28"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1402,
+    "date": "2019-06-22T21:50:00",
+    "date_gmt": "2019-06-23T01:50:00",
+    "guid": { "rendered": "https://www.comfest.com/?p=1402" },
+    "modified": "2019-06-22T23:19:19",
+    "modified_gmt": "2019-06-23T03:19:19",
+    "slug": "new-for-2019-download-our-app",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/new-for-2019-download-our-app/",
+    "title": { "rendered": "New for 2019 &#8211; Download Our App!" },
+    "content": {
+      "rendered": "<p><img class=\"alignleft wp-image-1403\" src=\"https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-1024x768.jpg\" alt=\"\" width=\"650\" height=\"493\" /></p>\n<div>\n<h3>We&#8217;ve been working hard on a new app for the 2019 festival, and we&#8217;re super excited to share it with everyone!</h3>\n<p>This year we&#8217;re releasing a progressive web app which is a little different from a traditional smartphone app or website.</p>\n<p>Get it at <a href=\"https://app.comfest.com\">app.comfest.com</a></p>\n<ul>\n<li>Search for bands and save them to your favorites in the Schedule.</li>\n<li>Look through all the workshops in Speakers.</li>\n<li>Find your favorite food vendors in Street Fair.</li>\n<li>Bask in its majestic red glow.</li>\n<li>There&#8217;s a map, link to the program and a link to volunteer as well.</li>\n</ul>\n<p>Because it&#8217;s a progressive web app, it should save the info to your phone and work even if you lose connection while at the festival.</p>\n<p>Like a regular website it\u2019s usable without installation. However, it is designed to be added to your homescreen. <strong>There are instructions to add it to your phone in the app &#8211; just go to the link on your smartphone&#8217;s web browser, scroll all the way to the bottom, and tap the Utilities button.</strong></p>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>We&#8217;ve been working hard on a new app for the 2019 festival, and we&#8217;re super excited to share it with everyone! This year we&#8217;re releasing a progressive web app which is a little different from a traditional smartphone app or website. Get it at app.comfest.com Search for bands and save them to your favorites in [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 19,
+    "featured_media": 1403,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1402" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/19"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1402"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 13,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1402/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1420,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1402/revisions/1420"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/media/1403"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1402" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1402"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1402"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 1403,
+          "date": "2019-06-22T21:42:50",
+          "slug": "app-goes-live2",
+          "type": "attachment",
+          "link": "https://www.comfest.com/new-for-2019-download-our-app/app-goes-live2/",
+          "title": { "rendered": "App Goes Live2" },
+          "author": 2,
+          "caption": { "rendered": "" },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1667,
+            "height": 1250,
+            "file": "2019/06/App-Goes-Live2.jpg",
+            "sizes": {
+              "thumbnail": {
+                "file": "App-Goes-Live2-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-150x150.jpg"
+              },
+              "medium": {
+                "file": "App-Goes-Live2-300x225.jpg",
+                "width": 300,
+                "height": 225,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-300x225.jpg"
+              },
+              "medium_large": {
+                "file": "App-Goes-Live2-768x576.jpg",
+                "width": 768,
+                "height": 576,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-768x576.jpg"
+              },
+              "large": {
+                "file": "App-Goes-Live2-1024x768.jpg",
+                "width": 1024,
+                "height": 768,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-1024x768.jpg"
+              },
+              "home-middle": {
+                "file": "App-Goes-Live2-630x350.jpg",
+                "width": 630,
+                "height": 350,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-630x350.jpg"
+              },
+              "home-top": {
+                "file": "App-Goes-Live2-750x420.jpg",
+                "width": 750,
+                "height": 420,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-750x420.jpg"
+              },
+              "sidebar-thumbnail": {
+                "file": "App-Goes-Live2-100x100.jpg",
+                "width": 100,
+                "height": 100,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2-100x100.jpg"
+              },
+              "full": {
+                "file": "App-Goes-Live2.jpg",
+                "width": 1667,
+                "height": 1250,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/App-Goes-Live2.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "2019/App-Goes-Live2.jpg",
+          "_links": {
+            "self": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media/1403" }
+            ],
+            "collection": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media" }
+            ],
+            "about": [
+              {
+                "href": "https://www.comfest.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1403"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1355,
+    "date": "2019-06-15T17:33:10",
+    "date_gmt": "2019-06-15T21:33:10",
+    "guid": { "rendered": "https://www.comfest.com/?p=1355" },
+    "modified": "2019-06-15T22:34:04",
+    "modified_gmt": "2019-06-16T02:34:04",
+    "slug": "new-for-2019-vodka-slushies-the-jazz-bar",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/new-for-2019-vodka-slushies-the-jazz-bar/",
+    "title": {
+      "rendered": "New for 2019 &#8211; Vodka Slushies @ The Jazz Bar"
+    },
+    "content": {
+      "rendered": "<p><img class=\"alignleft wp-image-1356 size-medium\" src=\"https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-240x300.jpg\" alt=\"\" width=\"240\" height=\"300\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-240x300.jpg 240w, https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-768x961.jpg 768w, https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-819x1024.jpg 819w, https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post.jpg 833w\" sizes=\"(max-width: 240px) 100vw, 240px\" /> Brand new for 2019 &#8211; Vodka Slushies are available in Lemonade or Mango, and can only be found at the Jazz Bar&#8217;s Volunteer line. 1 Volunteer Chip will get you a 20 oz slushie!</p>\n<p>So if you haven&#8217;t signed up for your volunteer shift yet, do it now so you can enjoy the newest drink we offer. After all, volunteering is the only way you can get those white volunteer chips.\ud83d\ude04</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Brand new for 2019 &#8211; Vodka Slushies are available in Lemonade or Mango, and can only be found at the Jazz Bar&#8217;s Volunteer line. 1 Volunteer Chip will get you a 20 oz slushie! So if you haven&#8217;t signed up for your volunteer shift yet, do it now so you can enjoy the newest drink [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 28,
+    "featured_media": 1356,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 19, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1355" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/28"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1355"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1355/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1361,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1355/revisions/1361"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/media/1356"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1355" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1355"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1355"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 1356,
+          "date": "2019-06-15T22:27:43",
+          "slug": "slushies-post",
+          "type": "attachment",
+          "link": "https://www.comfest.com/new-for-2019-vodka-slushies-the-jazz-bar/slushies-post/",
+          "title": { "rendered": "Slushies Post" },
+          "author": 2,
+          "caption": { "rendered": "" },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 833,
+            "height": 1042,
+            "file": "2019/06/Slushies-Post.jpg",
+            "sizes": {
+              "thumbnail": {
+                "file": "Slushies-Post-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-150x150.jpg"
+              },
+              "medium": {
+                "file": "Slushies-Post-240x300.jpg",
+                "width": 240,
+                "height": 300,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-240x300.jpg"
+              },
+              "medium_large": {
+                "file": "Slushies-Post-768x961.jpg",
+                "width": 768,
+                "height": 961,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-768x961.jpg"
+              },
+              "large": {
+                "file": "Slushies-Post-819x1024.jpg",
+                "width": 819,
+                "height": 1024,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-819x1024.jpg"
+              },
+              "home-middle": {
+                "file": "Slushies-Post-630x350.jpg",
+                "width": 630,
+                "height": 350,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-630x350.jpg"
+              },
+              "home-top": {
+                "file": "Slushies-Post-750x420.jpg",
+                "width": 750,
+                "height": 420,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-750x420.jpg"
+              },
+              "sidebar-thumbnail": {
+                "file": "Slushies-Post-100x100.jpg",
+                "width": 100,
+                "height": 100,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post-100x100.jpg"
+              },
+              "full": {
+                "file": "Slushies-Post.jpg",
+                "width": 833,
+                "height": 1042,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Slushies-Post.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "2019/Slushies-Post.jpg",
+          "_links": {
+            "self": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media/1356" }
+            ],
+            "collection": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media" }
+            ],
+            "about": [
+              {
+                "href": "https://www.comfest.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1356"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 19,
+            "link": "https://www.comfest.com/category/committees/libations/",
+            "name": "Libations",
+            "slug": "libations",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/19"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/13"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=19"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1318,
+    "date": "2019-06-11T20:13:49",
+    "date_gmt": "2019-06-12T00:13:49",
+    "guid": { "rendered": "https://www.comfest.com/?p=1318" },
+    "modified": "2019-06-11T21:26:35",
+    "modified_gmt": "2019-06-12T01:26:35",
+    "slug": "2019-program-guide-is-online",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/2019-program-guide-is-online/",
+    "title": { "rendered": "2019 Program Guide is ONLINE!" },
+    "content": {
+      "rendered": "<p><a href=\"http://apgmediaofohio.com/emags/ComFest_2019/\"><img class=\"alignleft wp-image-1323\" src=\"https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-793x1024.jpg\" alt=\"\" width=\"500\" height=\"645\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-793x1024.jpg 793w, https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-232x300.jpg 232w, https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-768x991.jpg 768w, https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019.jpg 1166w\" sizes=\"(max-width: 500px) 100vw, 500px\" /></a><a href=\"http://apgmediaofohio.com/emags/ComFest_2019/\"><strong>The 2019 Program Guide is live and online!</strong> </a>Get a head start reading up on this year&#8217;s Grant Recipients, Honored Volunteers, Honored Artist, Honored Activist, and Honored Community Organization.</p>\n<p>We&#8217;re really proud of the work that was put into the Program this year, and we hope that you enjoy it. As always, we&#8217;ll have plenty of the at the festival, so don&#8217;t forget to pick up your copy. We can&#8217;t wait to see you there!</p>\n<p>&nbsp;</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The 2019 Program Guide is live and online! Get a head start reading up on this year&#8217;s Grant Recipients, Honored Volunteers, Honored Artist, Honored Activist, and Honored Community Organization. We&#8217;re really proud of the work that was put into the Program this year, and we hope that you enjoy it. As always, we&#8217;ll have plenty [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 23,
+    "featured_media": 1323,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 8, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1318" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/23"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1318"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 7,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1318/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1337,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1318/revisions/1337"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/media/1323"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1318" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1318"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1318"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 1323,
+          "date": "2019-06-11T20:12:17",
+          "slug": "comfest_2019",
+          "type": "attachment",
+          "link": "https://www.comfest.com/2019-program-guide-is-online/comfest_2019/",
+          "title": { "rendered": "ComFest_2019" },
+          "author": 2,
+          "caption": { "rendered": "" },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1166,
+            "height": 1505,
+            "file": "2019/06/ComFest_2019.jpg",
+            "sizes": {
+              "thumbnail": {
+                "file": "ComFest_2019-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-150x150.jpg"
+              },
+              "medium": {
+                "file": "ComFest_2019-232x300.jpg",
+                "width": 232,
+                "height": 300,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-232x300.jpg"
+              },
+              "medium_large": {
+                "file": "ComFest_2019-768x991.jpg",
+                "width": 768,
+                "height": 991,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-768x991.jpg"
+              },
+              "large": {
+                "file": "ComFest_2019-793x1024.jpg",
+                "width": 793,
+                "height": 1024,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-793x1024.jpg"
+              },
+              "home-middle": {
+                "file": "ComFest_2019-630x350.jpg",
+                "width": 630,
+                "height": 350,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-630x350.jpg"
+              },
+              "home-top": {
+                "file": "ComFest_2019-750x420.jpg",
+                "width": 750,
+                "height": 420,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-750x420.jpg"
+              },
+              "sidebar-thumbnail": {
+                "file": "ComFest_2019-100x100.jpg",
+                "width": 100,
+                "height": 100,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019-100x100.jpg"
+              },
+              "full": {
+                "file": "ComFest_2019.jpg",
+                "width": 1166,
+                "height": 1505,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/ComFest_2019.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "2019/ComFest_2019.jpg",
+          "_links": {
+            "self": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media/1323" }
+            ],
+            "collection": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media" }
+            ],
+            "about": [
+              {
+                "href": "https://www.comfest.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1323"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 8,
+            "link": "https://www.comfest.com/category/committees/program/",
+            "name": "Program",
+            "slug": "program",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/8" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/13"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=8"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1305,
+    "date": "2019-06-09T17:54:08",
+    "date_gmt": "2019-06-09T21:54:08",
+    "guid": { "rendered": "https://www.comfest.com/?p=1305" },
+    "modified": "2019-06-09T19:44:55",
+    "modified_gmt": "2019-06-09T23:44:55",
+    "slug": "official-statement-from-comfest",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/official-statement-from-comfest/",
+    "title": { "rendered": "Official Statement from ComFest" },
+    "content": {
+      "rendered": "<p dir=\"ltr\"><img class=\"alignleft wp-image-1306 \" src=\"https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-1024x512.jpg\" alt=\"\" width=\"498\" height=\"249\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-1024x512.jpg 1024w, https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-300x150.jpg 300w, https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-768x384.jpg 768w, https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled.jpg 1042w\" sizes=\"(max-width: 498px) 100vw, 498px\" /></p>\n<p><span style=\"font-weight: 400;\">For no good reason, on May 31st, less than 30 days out from ComFest beginning, the insurance company we use informed us that two of the bands scheduled to play the Off Ramp Stage &#8211; Unchipped and Weed Demon &#8211; can not play if ComFest wants to keep Assault &amp; Battery coverage for the entire festival. Without this coverage, ComFest would not be able to get the necessary permits to operate at all, and would be cancelled.</span></p>\n<p><span style=\"font-weight: 400;\">This is a very serious question of whether or not a company gets to determine who performs at our festival. We know it&#8217;s only two bands &#8211; this time. But, it is likely that we will run into this again in the future. Should any company be given that much power over what this organization can do? We don&#8217;t think so.</span></p>\n<p><span style=\"font-weight: 400;\">Cancelling these bands\u2019 performances at ComFest directly violates our Statement of Principles. As a grassroots community organization opposed to corporate abuse, letting a corporation tell us which members of our community can and cannot participate is antithetical to who we are. We acknowledge this violation because it is critically important, but posed with the choice of cancelling the festival or removing the two bands, we were forced to make a choice we are not comfortable with in order to ensure the continuation of the festival. </span></p>\n<p><span style=\"font-weight: 400;\">The people in these bands are a part of the ComFest family and Columbus community. They would never want to endanger anyone at the festival or our organization by being associated with violence. </span></p>\n<p><span style=\"font-weight: 400;\">The decisions we have been forced to make this year were made by the insurance company. This situation is unacceptable, and is not an option for us moving forward. ComFest will do everything in our power to ensure that our principles and values are upheld, and not compromised by outside interests. We will be working hard to ensure that this situation is not repeated in the future. Once we have resolved these issues with companies we contract, we have every intention to bring both of these bands back as soon as possible.</span></p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>For no good reason, on May 31st, less than 30 days out from ComFest beginning, the insurance company we use informed us that two of the bands scheduled to play the Off Ramp Stage &#8211; Unchipped and Weed Demon &#8211; can not play if ComFest wants to keep Assault &amp; Battery coverage for the entire [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 11,
+    "featured_media": 1306,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1305" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/11"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1305"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1305/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1311,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1305/revisions/1311"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/media/1306"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1305" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1305"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1305"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 1306,
+          "date": "2019-06-09T17:52:25",
+          "slug": "unchipped-weed-demon-cancelled",
+          "type": "attachment",
+          "link": "https://www.comfest.com/official-statement-from-comfest/unchipped-weed-demon-cancelled/",
+          "title": { "rendered": "Unchipped &#038; Weed Demon Cancelled" },
+          "author": 2,
+          "caption": { "rendered": "" },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1042,
+            "height": 521,
+            "file": "2019/06/Unchipped-Weed-Demon-Cancelled.jpg",
+            "sizes": {
+              "thumbnail": {
+                "file": "Unchipped-Weed-Demon-Cancelled-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-150x150.jpg"
+              },
+              "medium": {
+                "file": "Unchipped-Weed-Demon-Cancelled-300x150.jpg",
+                "width": 300,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-300x150.jpg"
+              },
+              "medium_large": {
+                "file": "Unchipped-Weed-Demon-Cancelled-768x384.jpg",
+                "width": 768,
+                "height": 384,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-768x384.jpg"
+              },
+              "large": {
+                "file": "Unchipped-Weed-Demon-Cancelled-1024x512.jpg",
+                "width": 1024,
+                "height": 512,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-1024x512.jpg"
+              },
+              "home-middle": {
+                "file": "Unchipped-Weed-Demon-Cancelled-630x350.jpg",
+                "width": 630,
+                "height": 350,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-630x350.jpg"
+              },
+              "home-top": {
+                "file": "Unchipped-Weed-Demon-Cancelled-750x420.jpg",
+                "width": 750,
+                "height": 420,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-750x420.jpg"
+              },
+              "sidebar-thumbnail": {
+                "file": "Unchipped-Weed-Demon-Cancelled-100x100.jpg",
+                "width": 100,
+                "height": 100,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled-100x100.jpg"
+              },
+              "full": {
+                "file": "Unchipped-Weed-Demon-Cancelled.jpg",
+                "width": 1042,
+                "height": 521,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/06/Unchipped-Weed-Demon-Cancelled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "2019/Unchipped-Weed-Demon-Cancelled.jpg",
+          "_links": {
+            "self": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media/1306" }
+            ],
+            "collection": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media" }
+            ],
+            "about": [
+              {
+                "href": "https://www.comfest.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1306"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1281,
+    "date": "2019-06-03T19:18:06",
+    "date_gmt": "2019-06-03T23:18:06",
+    "guid": { "rendered": "https://www.comfest.com/?p=1281" },
+    "modified": "2019-06-03T19:18:44",
+    "modified_gmt": "2019-06-03T23:18:44",
+    "slug": "2019-tie-dye-comfest-t-giveaway-has-begun",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/2019-tie-dye-comfest-t-giveaway-has-begun/",
+    "title": { "rendered": "2019 Tie Dye ComFest T Giveaway has Begun!" },
+    "content": {
+      "rendered": "<p><img class=\"size-medium wp-image-1283 alignleft\" src=\"https://www.comfest.com/wp-content/uploads/2019/06/TieDyeShirt-Black-Text-300x290.png\" alt=\"\" width=\"300\" height=\"290\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/06/TieDyeShirt-Black-Text-300x290.png 300w, https://www.comfest.com/wp-content/uploads/2019/06/TieDyeShirt-Black-Text.png 450w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></p>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"dcmms-0-0\">\n<h4 class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"dcmms-0-0\"><strong>Have you already signed up for your volunteer shift? Well, THANK YOU!</strong></h4>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"djm2u-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"djm2u-0-0\"><span data-offset-key=\"djm2u-0-0\">\u00a0</span></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"8pc5b-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"8pc5b-0-0\"><span data-offset-key=\"8pc5b-0-0\">We still have lots of spots to fill, so do us a favor and share this post with why you love to volunteer! You can win a limited edition 2019 tie dye ComFest Shirt! \u270c\ufe0f\ud83d\ude0d</span></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"1lh6m-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"1lh6m-0-0\"><span data-offset-key=\"1lh6m-0-0\">\u00a0</span></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"4b02s-0-0\">\n<h6 class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"4b02s-0-0\"><strong>To enter:</strong></h6>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"g1ha-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"g1ha-0-0\"><strong>1. Follow us and like this post</strong></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"eupef-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"eupef-0-0\"><strong>2. Share this post and add the reason you love volunteering at ComFest</strong></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"ft3ec-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ft3ec-0-0\"><strong>3. Tag us <span class=\"sc-jskUVp InactiveMention iLfDfj\">@ComFest365</span> and use #ComFestVolunteer</strong></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"b3hvl-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b3hvl-0-0\"><span data-offset-key=\"b3hvl-0-0\">\u00a0</span></div>\n</div>\n<div class=\"\" data-block=\"true\" data-editor=\"fgfte\" data-offset-key=\"7bdnq-0-0\">\n<div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"7bdnq-0-0\"><span data-offset-key=\"7bdnq-0-0\">*You must tag us, use #ComFestVolunteer, and signed up to work a volunteer shift to qualify. 30 lucky ComFesters will be drawn randomly and notified by June 27th.</span></div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Have you already signed up for your volunteer shift? Well, THANK YOU! \u00a0 We still have lots of spots to fill, so do us a favor and share this post with why you love to volunteer! You can win a limited edition 2019 tie dye ComFest Shirt! \u270c\ufe0f\ud83d\ude0d \u00a0 To enter: 1. Follow us and [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 3,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1281" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/3"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1281"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1281/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1287,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1281/revisions/1287"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1281" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1281"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1281"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1181,
+    "date": "2019-04-26T19:40:46",
+    "date_gmt": "2019-04-26T23:40:46",
+    "guid": { "rendered": "https://www.comfest.com/?p=1181" },
+    "modified": "2019-04-26T20:04:46",
+    "modified_gmt": "2019-04-27T00:04:46",
+    "slug": "comfest-2019-mc-applications-open",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/comfest-2019-mc-applications-open/",
+    "title": { "rendered": "ComFest 2019 MC Applications Open!" },
+    "content": {
+      "rendered": "<p><a href=\"http://bit.ly/CFMCApp\" target=\"_blank\" rel=\"noopener noreferrer\"><img class=\"alignleft wp-image-1182 size-medium\" src=\"https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-300x225.jpg 300w, https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-768x576.jpg 768w, https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-1024x768.jpg 1024w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></a></p>\n<p>For 2019, we want to think bigger and build more alignment with our MCs, diverse music acts, and stages. So, for the first time, we are pleased to announce that our MC process is now accepting applications in a way that&#8217;s similar to how performers and speakers apply each year.</p>\n<p>We&#8217;re looking at where you&#8217;re from, what your experience has been, and what communities you represent &#8211; because we want our neighborhoods represented, and represented well at COMFEST 2019.</p>\n<p>We&#8217;re inviting all our previous MCs, and and volunteers that are interested, to fill out an application for 2019!</p>\n<p>&nbsp;</p>\n<h3>Head over to <a href=\"http://bit.ly/CFMCApp\">http://bit.ly/CFMCApp</a> now, the application only takes about 2 minutes!</h3>\n<p>&nbsp;</p>\n<div>For those of you that are returning from MCing previously: We will, of course, take into consideration all of our previous MCs spots. However, we&#8217;re shaping our stages in several ways, so there&#8217;s no guarantee you&#8217;ll have the same ones you&#8217;ve had before, but don&#8217;t rule it out.</div>\n<div></div>\n<div></div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>For 2019, we want to think bigger and build more alignment with our MCs, diverse music acts, and stages. So, for the first time, we are pleased to announce that our MC process is now accepting applications in a way that&#8217;s similar to how performers and speakers apply each year. We&#8217;re looking at where you&#8217;re [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 25,
+    "featured_media": 1182,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 24, 1, 27],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1181" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/25"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1181"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1181/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1188,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1181/revisions/1188"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/media/1182"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1181" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1181"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1181"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 1182,
+          "date": "2019-04-26T19:35:03",
+          "slug": "mc-apps-open",
+          "type": "attachment",
+          "link": "https://www.comfest.com/comfest-2019-mc-applications-open/mc-apps-open/",
+          "title": { "rendered": "MC Apps Open" },
+          "author": 2,
+          "caption": { "rendered": "" },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1667,
+            "height": 1250,
+            "file": "2019/04/MC-Apps-Open.jpg",
+            "sizes": {
+              "thumbnail": {
+                "file": "MC-Apps-Open-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-150x150.jpg"
+              },
+              "medium": {
+                "file": "MC-Apps-Open-300x225.jpg",
+                "width": 300,
+                "height": 225,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-300x225.jpg"
+              },
+              "medium_large": {
+                "file": "MC-Apps-Open-768x576.jpg",
+                "width": 768,
+                "height": 576,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-768x576.jpg"
+              },
+              "large": {
+                "file": "MC-Apps-Open-1024x768.jpg",
+                "width": 1024,
+                "height": 768,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-1024x768.jpg"
+              },
+              "home-middle": {
+                "file": "MC-Apps-Open-630x350.jpg",
+                "width": 630,
+                "height": 350,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-630x350.jpg"
+              },
+              "home-top": {
+                "file": "MC-Apps-Open-750x420.jpg",
+                "width": 750,
+                "height": 420,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-750x420.jpg"
+              },
+              "sidebar-thumbnail": {
+                "file": "MC-Apps-Open-100x100.jpg",
+                "width": 100,
+                "height": 100,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open-100x100.jpg"
+              },
+              "full": {
+                "file": "MC-Apps-Open.jpg",
+                "width": 1667,
+                "height": 1250,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/MC-Apps-Open.jpg",
+          "_links": {
+            "self": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media/1182" }
+            ],
+            "collection": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media" }
+            ],
+            "about": [
+              {
+                "href": "https://www.comfest.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1182"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 24,
+            "link": "https://www.comfest.com/category/committees/spirit-purpose/",
+            "name": "Spirit &amp; Purpose",
+            "slug": "spirit-purpose",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/24"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/13"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=24"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 27,
+            "link": "https://www.comfest.com/category/committees/volunteer/",
+            "name": "Volunteer",
+            "slug": "volunteer",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/27"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/13"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=27"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1160,
+    "date": "2019-04-24T22:25:10",
+    "date_gmt": "2019-04-25T02:25:10",
+    "guid": { "rendered": "https://www.comfest.com/?p=1160" },
+    "modified": "2019-04-24T23:12:10",
+    "modified_gmt": "2019-04-25T03:12:10",
+    "slug": "2019-comfest-grants-recipients",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/2019-comfest-grants-recipients/",
+    "title": { "rendered": "2019 ComFest Grants Recipients" },
+    "content": {
+      "rendered": "\r\n<p>ComFest is happy to announce this year&#8217;s grants recipients!</p>\r\n\r\n\r\n\r\n<div class=\"wp-block-image\">\r\n<figure class=\"alignleft\"><img class=\"wp-image-1162\" src=\"https://www.comfest.com/wp-content/uploads/2019/04/GRANTS-fluorescent-Neon-tube-Sign-on-brickwork-Front-view-3D-rendered-royalty-free-stock-picture.-Can-be-used-for-online-banner-ads-and-direct-mailers_-1024x512.jpg\" alt=\"\" /></figure>\r\n</div>\r\n\r\n\r\n\r\n<ul>\r\n<li>EC for All &#8212; Women Have Options &#8211; Ohio</li>\r\n<li>Navigating Healthy Relationships &#8212; Your Best Self -YBS</li>\r\n<li>Matter Mobile Studio &#8212; Grey Matter Media</li>\r\n<li>934 Gallery Summer Music Program &#8212; 934 Gallery</li>\r\n<li>Location support &#8212; Growlers Dog Bones</li>\r\n</ul>\r\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>ComFest is happy to announce this year&#8217;s grants recipients! EC for All &#8212; Women Have Options &#8211; Ohio Navigating Healthy Relationships &#8212; Your Best Self -YBS Matter Mobile Studio &#8212; Grey Matter Media 934 Gallery Summer Music Program &#8212; 934 Gallery Location support &#8212; Growlers Dog Bones</p>\n",
+      "protected": false
+    },
+    "author": 6,
+    "featured_media": 1162,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [6, 10, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1160" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/6"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1160"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1160/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1171,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1160/revisions/1171"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/media/1162"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1160" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1160"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1160"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 1162,
+          "date": "2019-04-24T22:22:42",
+          "slug": "grants-neon-lights.jpg",
+          "type": "attachment",
+          "link": "https://www.comfest.com/grants-neon-lights.jpg/",
+          "title": { "rendered": "grants-neon-lights.jpg" },
+          "author": 2,
+          "caption": { "rendered": "" },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1080,
+            "height": 540,
+            "file": "2019/04/grants-neon-lights.jpg",
+            "sizes": {
+              "thumbnail": {
+                "file": "grants-neon-lights-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-150x150.jpg"
+              },
+              "medium": {
+                "file": "grants-neon-lights-300x150.jpg",
+                "width": 300,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-300x150.jpg"
+              },
+              "medium_large": {
+                "file": "grants-neon-lights-768x384.jpg",
+                "width": 768,
+                "height": 384,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-768x384.jpg"
+              },
+              "large": {
+                "file": "grants-neon-lights-1024x512.jpg",
+                "width": 1024,
+                "height": 512,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-1024x512.jpg"
+              },
+              "home-middle": {
+                "file": "grants-neon-lights-630x350.jpg",
+                "width": 630,
+                "height": 350,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-630x350.jpg"
+              },
+              "home-top": {
+                "file": "grants-neon-lights-750x420.jpg",
+                "width": 750,
+                "height": 420,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-750x420.jpg"
+              },
+              "sidebar-thumbnail": {
+                "file": "grants-neon-lights-100x100.jpg",
+                "width": 100,
+                "height": 100,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights-100x100.jpg"
+              },
+              "full": {
+                "file": "grants-neon-lights.jpg",
+                "width": 1080,
+                "height": 540,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://www.comfest.com/wp-content/uploads/2019/04/grants-neon-lights.jpg",
+          "_links": {
+            "self": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media/1162" }
+            ],
+            "collection": [
+              { "href": "https://www.comfest.com/wp-json/wp/v2/media" }
+            ],
+            "about": [
+              {
+                "href": "https://www.comfest.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1162"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 6,
+            "link": "https://www.comfest.com/category/committees/grants/",
+            "name": "Grants",
+            "slug": "grants",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/6" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/13"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=6"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1113,
+    "date": "2019-04-10T21:43:05",
+    "date_gmt": "2019-04-11T01:43:05",
+    "guid": { "rendered": "https://comfest.com/?p=1113" },
+    "modified": "2019-04-24T12:40:45",
+    "modified_gmt": "2019-04-24T16:40:45",
+    "slug": "comfest-2019-logo-contest-winner",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.comfest.com/comfest-2019-logo-contest-winner/",
+    "title": { "rendered": "ComFest 2019 Logo Contest Winner" },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image is-resized\"><img src=\"https://www.comfest.com/wp-content/uploads/2019/04/ComFest_2019-logo-e15540829105261-804x1024.jpg\" alt=\"\" class=\"wp-image-1115\" width=\"453\" height=\"577\" srcset=\"https://www.comfest.com/wp-content/uploads/2019/04/ComFest_2019-logo-e15540829105261-804x1024.jpg 804w, https://www.comfest.com/wp-content/uploads/2019/04/ComFest_2019-logo-e15540829105261-236x300.jpg 236w, https://www.comfest.com/wp-content/uploads/2019/04/ComFest_2019-logo-e15540829105261-768x978.jpg 768w, https://www.comfest.com/wp-content/uploads/2019/04/ComFest_2019-logo-e15540829105261.jpg 1260w\" sizes=\"(max-width: 453px) 100vw, 453px\" /></figure>\n\n\n\n<h4> <br>We&#8217;re proud to share the 2019 ComFest Logo by David Browning! Thank you to all the artists who submitted designs this year! With over 20 entries, it was a tough choice. Have you signed up to get your 2019  shirt? The only way to get one is to volunteer! &#8211; Click <strong>Volunteer!</strong> on the menu.  </h4>\n\n\n\n<p>Click <a href=\"https://www.facebook.com/comfestcbus/videos/335353346957702/\">HERE</a> to see a short video from the top 3 artists talking about their work.</p>\n\n\n<p><!--EndFragment--></p>\n<p></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>We&#8217;re proud to share the 2019 ComFest Logo by David Browning! Thank you to all the artists who submitted designs this year! With over 20 entries, it was a tough choice. Have you signed up to get your 2019 shirt? The only way to get one is to volunteer! &#8211; Click Volunteer! on the menu. [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 3,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [7, 10, 1],
+    "tags": [],
+    "_links": {
+      "self": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts/1113" }],
+      "collection": [{ "href": "https://www.comfest.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "https://www.comfest.com/wp-json/wp/v2/types/post" }],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/users/3"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/comments?post=1113"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1113/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1156,
+          "href": "https://www.comfest.com/wp-json/wp/v2/posts/1113/revisions/1156"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.comfest.com/wp-json/wp/v2/media?parent=1113" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/categories?post=1113"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.comfest.com/wp-json/wp/v2/tags?post=1113"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "Invalid user ID.",
+          "data": { "status": 404 }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 7,
+            "link": "https://www.comfest.com/category/gpc/",
+            "name": "GPC",
+            "slug": "gpc",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/7" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=7"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 10,
+            "link": "https://www.comfest.com/category/important-update/",
+            "name": "Important Update",
+            "slug": "important-update",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/categories/10"
+                }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=10"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1,
+            "link": "https://www.comfest.com/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories/1" }
+              ],
+              "collection": [
+                { "href": "https://www.comfest.com/wp-json/wp/v2/categories" }
+              ],
+              "about": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.comfest.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  }
+]
