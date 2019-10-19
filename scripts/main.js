@@ -404,11 +404,11 @@ function stopEvent(e) {
 async function afterLoadEvents() {
   // Initializing app before fetching performer list should solve loading problem
   // Nope, initializing app before fetching prevents favorite lists to be built correctly
-  register_serviceWorker();
+  // register_serviceWorker();
   initializeApp();
   try {
     await getPerformerList(
-      "https://api.comfest.com/api/performers/?ordering=performance_time",
+      "2019_performer_data.json",
       "performancelist"
     );
   } catch (e) {
@@ -416,7 +416,7 @@ async function afterLoadEvents() {
   }
   try {
     await getPerformerList(
-      "https://api.comfest.com/api/workshops/?ordering=performance_time",
+      "2019_workshop_data.json",
       "speakerslist"
     );
   } catch (e) {
